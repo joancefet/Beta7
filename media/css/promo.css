@@ -1,0 +1,30 @@
+@charset "utf-8";*{margin:0 auto;padding:0;border:0;}
+body{font-family:Arial, Helvetica, sans-serif;font-size:13px;color:#fff;background:url(http://uni4.zyperaxgalaxy.de/media/images/bg_promo.jpg) #000111 no-repeat top center;}
+a{font-weight:normal;color:#009adb;text-decoration:underline;}
+a:hover{text-decoration:none;}
+:focus{outline:0;}
+.clear{clear:both;}
+.body{width:980px;}
+#logo{width:270px;height:102px;display:block;margin-top:35px;}
+#head{margin-top:45px;}
+#head_txt{width:680px;height:80px;}
+#head h2{font-size:25px;font-family:Play, Arial, Helvetica, sans-serif;font-weight:100;color:#ffffff;float:right;line-height:23px;}
+#head h1{font-size:49px;font-family:Play, Arial, Helvetica, sans-serif;color:#ffffff;float:right;line-height:43px;}
+#head span{font-size:99px;font-family:Play, Arial, Helvetica, sans-serif;font-weight:100;color:#ffffff;float:right;line-height:70px;display:block;margin-top:-8px;}
+#content{margin-left:auto;margin-right:auto;margin-top:80px;}
+#left{width:258px;padding:6px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background:rgba(0,0,7,0.5);float:left;margin-top:60px;}
+#mid{float:left;margin-left:40px;width:365px;margin-top:115px;text-align:center;}
+#mid h3{font-size:20px;font-family:Play;font-weight:100;color:#ffffff;margin-bottom:10px;}
+#mid p{font-size:14px;font-family:Play;color:#5ca6aa;line-height:1.5;}
+#botton{text-align:center;display:block;width:362px;height:58px;line-height:58px;background:url(http://uni4.zyperaxgalaxy.de/media/images/botton.jpg) no-repeat #009e36 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #015329;border-bottom-width:3px;font-size:25px;font-family:Play;color:#ffffff;text-decoration:none;text-shadow:0px 1px 0px rgba(0,0,0,0.25);}
+#botton:hover{background-position:0 -59px;}
+#right{float:right;width:230px;background:rgba(0,0,7,0.5);padding:20px 20px 0 20px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+#right h3{font-size:20px;font-family:Play;font-weight:100;color:#ffffff;margin-bottom:10px;}
+#right p{font-size:14px;font-family:Play;color:#ffffff;line-height:19px;margin-bottom:19px;}
+#footer{margin-top:60px;padding:20px 0 20px 0;margin-left:auto;margin-right:auto;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000008', endColorstr = '#000111');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000008', endColorstr = '#000111')";background-image:-moz-linear-gradient(top, #000008, #000111);background-image:-ms-linear-gradient(top, #000008, #000111);background-image:-o-linear-gradient(top, #000008, #000111);background-image:-webkit-gradient(linear, center top, center bottom, from(#000008), to(#000111));background-image:-webkit-linear-gradient(top, #000008, #000111);background-image:linear-gradient(top, #000008, #000111);}
+#footer .left_part{float:left;width:510px;}
+#footer .left_part .block{float:left;width:150px;margin-right:20px;}
+#footer .left_part .block span{display:block;border-bottom:1px dotted #5ca6aa;color:#5ca6aa;margin-bottom:25px;font-size:14px;}
+#footer .left_part .block a{line-height:22px;color:#5ca6aa;text-decoration:none;}
+#footer .right_part{float:right;color:#5ca6aa;margin-top:-2px;}
+#footer .right_part a{color:#5ca6aa;line-height:25px;}

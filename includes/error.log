@@ -1,0 +1,172 @@
+[14-Jul-2015 12:02:42] USER ERROR: "SQL Error: Out of range value for column 'del_user_automatic' at row 1Query Code: UPDATE uni1_config SET ttf_file = 'styles/resource/fonts/DroidSansMono.ttf', game_name = 'Stellar Wars', mail_active = '0', mail_use = '0', smail_path = '/usr/sbin/sendmail', smtp_host = '', smtp_port = '0', smtp_user = '', smtp_pass = '', smtp_ssl = '', smtp_sendmail = '', ga_active = '0', ga_key = '', capaktiv = '0', cappublic = '', capprivate = '', del_oldstuff = '3', del_user_manually = '7', del_user_automatic = '365', del_user_sendmail = '21', sendmail_inactive = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/admin.php?page=config | Version: V 1.0
+Stack trace:
+#0 /includes/classes/Config.class.php(149): Database-&gt;query('UPDATE uni1_con...')
+#1 /includes/pages/adm/ShowConfigBasicPage.php(117): Config::update(Array, 1)
+#2 /admin.php(64): ShowConfigBasicPage()
+#3 {main}
+[14-Jul-2015 21:02:16 America/Recife] PHP Parse error:  syntax error, unexpected end of file in /home/stell530/public_html/beta7/includes/pages/adm/ShowCreatorPage.php on line 452
+[14-Jul-2015 21:02:20 America/Recife] PHP Parse error:  syntax error, unexpected end of file in /home/stell530/public_html/beta7/includes/pages/adm/ShowCreatorPage.php on line 452
+[14-Jul-2015 21:05:08 America/Recife] PHP Parse error:  syntax error, unexpected end of file in /home/stell530/public_html/beta7/includes/pages/adm/ShowCreatorPage.php on line 452
+[15-Jul-2015 02:00:49 America/Recife] PHP Parse error:  syntax error, unexpected end of file in /home/stell530/public_html/beta7/includes/pages/adm/ShowCreatorPage.php on line 452
+[15-Jul-2015 02:01:15 America/Recife] PHP Parse error:  syntax error, unexpected end of file in /home/stell530/public_html/beta7/includes/pages/adm/ShowCreatorPage.php on line 452
+[15-Jul-2015 06:36:57] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 2, 
+	message_sender = 1, 
+	message_time = 1436953017, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção deverá ser uma planta de energia solar, porque a energia é necessária para a subsequente produção de matérias-primas. Para construí-la, clique no menu à esquerda, \"Edifícios\". Em seguida, procure o quarto edifício a partir do topo.  Lá tem a planta de energia: agora que já a construiu deve começar as minas de matérias-primas. Volte para o menu dos edifícios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construído o hangar. Poderá ver na página das tecnologias o que é necessário para que tenha acesso às varias naves, edifícios, e tecnologias.Se você tiver mais dúvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=1&k=1e87d4bddd1a74b87e2f8b28bd695090 | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(2, 1, 1436953017, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[15-Jul-2015 08:42:39] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 3, 
+	message_sender = 1, 
+	message_time = 1436960559, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção deverá ser uma planta de energia solar, porque a energia é necessária para a subsequente produção de matérias-primas. Para construí-la, clique no menu à esquerda, \"Edifícios\". Em seguida, procure o quarto edifício a partir do topo.  Lá tem a planta de energia: agora que já a construiu deve começar as minas de matérias-primas. Volte para o menu dos edifícios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construído o hangar. Poderá ver na página das tecnologias o que é necessário para que tenha acesso às varias naves, edifícios, e tecnologias.Se você tiver mais dúvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=2&k=19491d96588ec509fc82f6abe55a6501 | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(3, 1, 1436960559, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[15-Jul-2015 17:27:28] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 4, 
+	message_sender = 1, 
+	message_time = 1436992048, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção deverá ser uma planta de energia solar, porque a energia é necessária para a subsequente produção de matérias-primas. Para construí-la, clique no menu à esquerda, \"Edifícios\". Em seguida, procure o quarto edifício a partir do topo.  Lá tem a planta de energia: agora que já a construiu deve começar as minas de matérias-primas. Volte para o menu dos edifícios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construído o hangar. Poderá ver na página das tecnologias o que é necessário para que tenha acesso às varias naves, edifícios, e tecnologias.Se você tiver mais dúvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=3&k=b29f29e4539ec7d844be84fa0a707957 | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(4, 1, 1436992048, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[15-Jul-2015 17:35:25] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 5, 
+	message_sender = 1, 
+	message_time = 1436992525, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção deverá ser uma planta de energia solar, porque a energia é necessária para a subsequente produção de matérias-primas. Para construí-la, clique no menu à esquerda, \"Edifícios\". Em seguida, procure o quarto edifício a partir do topo.  Lá tem a planta de energia: agora que já a construiu deve começar as minas de matérias-primas. Volte para o menu dos edifícios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construído o hangar. Poderá ver na página das tecnologias o que é necessário para que tenha acesso às varias naves, edifícios, e tecnologias.Se você tiver mais dúvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=4&k=eaa1ec3f399bff9ca910616946c52db1 | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(5, 1, 1436992525, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[15-Jul-2015 17:43:34] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 6, 
+	message_sender = 1, 
+	message_time = 1436993014, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção deverá ser uma planta de energia solar, porque a energia é necessária para a subsequente produção de matérias-primas. Para construí-la, clique no menu à esquerda, \"Edifícios\". Em seguida, procure o quarto edifício a partir do topo.  Lá tem a planta de energia: agora que já a construiu deve começar as minas de matérias-primas. Volte para o menu dos edifícios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construído o hangar. Poderá ver na página das tecnologias o que é necessário para que tenha acesso às varias naves, edifícios, e tecnologias.Se você tiver mais dúvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=5&k=d56275ea3ddfe4c12325531d6ade3868 | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(6, 1, 1436993014, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[15-Jul-2015 17:48:13] USER ERROR: "SQL Error: Incorrect string value: '\xE7\xE3o de...' for column 'message_text' at row 1Query Code: INSERT INTO uni1_messages SET 
+	message_owner = 7, 
+	message_sender = 1, 
+	message_time = 1436993293, 
+	message_type = 1, 
+	message_from = 'Administrador', 
+	message_subject = 'Bem-vindo', 
+	message_text = 'Bem-vindo ao Stellar Wars! A primeira construção devera ser uma planta de energia solar, porque a energia e necessaria para a subsequente produção de materias-primas. Para construi-la, clique no menu a esquerda, \"Edificios\". Em seguida, procure o quarto edifício a partir do topo.  La tem a planta de energia: agora que ja a construiu deve começar as minas de materias-primas. Volte para o menu dos edificios e construa uma mina de metal, em seguida, uma mina de cristal. A fim de ser capaz de construir naves, mas para isso precisa de ter construido o hangar. Podera ver na pagina das tecnologias o que e necessário para que tenha acesso as varias naves, edificios, e tecnologias.Se você tiver mais duvidas, pode checar o guia do iniciante, nosso forum ou abrir um ticket no suporte.  A equipa do Stellar Wars deseja-lhe muito divertimento a explorar o universo!!', 
+	message_unread = '1', 
+	message_universe = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/index.php?page=vertify&i=6&k=469bbc4d0a6bc0e6e738fee8b07234cc | Version: V 1.0
+Stack trace:
+#0 /includes/GeneralFunctions.php(471): Database-&gt;query('INSERT INTO uni...')
+#1 /includes/pages/login/ShowVertifyPage.class.php(100): SendSimpleMessage(7, 1, 1436993293, 1, 'Administrador', 'Bem-vindo', 'Bem-vindo ao St...')
+#2 /includes/pages/login/ShowVertifyPage.class.php(110): ShowVertifyPage-&gt;_activeUser()
+#3 /index.php(40): ShowVertifyPage-&gt;show()
+#4 {main}
+[17-Jul-2015 15:46:20] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=research | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '2', '10', '1', '3', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[17-Jul-2015 22:55:09] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '1', '7', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[18-Jul-2015 12:58:30] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '1', '7', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[19-Jul-2015 22:22:28] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '1', '4', '1', '1', 'Colony', false, '3')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[20-Jul-2015 18:11:45] USER ERROR: "SQL Error: Data truncated for column 'deuterium' at row 1Query Code: UPDATE uni1_planets set `metal` = '515', `crystal` = '170', `deuterium` = '' where `id` = '26' ;"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/game.php?page=PTrader | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowPTraderPage.php(64): Database-&gt;query('UPDATE uni1_pla...')
+#1 /game.php(40): ShowPTraderPage-&gt;show()
+#2 {main}

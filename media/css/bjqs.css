@@ -1,0 +1,10 @@
+ul.bjqs{position:relative;list-style:none;padding:0;margin:0;overflow:hidden;display:none;}
+li.bjqs-slide{position:absolute;display:none;}
+ol.bjqs-markers{list-style:none;padding:0;margin:0;width:16px;position:absolute;right:10px;top:15px;}
+ol.bjqs-markers li{display:block;width:16px;height:11px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin-bottom:5px;overflow:hidden;background:rgba(101,43,130,0.6);}
+ol.bjqs-markers li:hover{display:block;width:16px;height:11px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin-bottom:5px;overflow:hidden;background:rgba(101,43,130,0.8);}
+ol.bjqs-markers li.active-marker{background:rgba(0,13,32,0.6);}
+ol.bjqs-markers li a{display:block;font-size:0px;width:16px;height:11px;}
+ol.bjqs-markers li.active-marker a{display:none;}
+#slider .caption{margin:0;padding:5px 37px;position:absolute;bottom:0px;color:#fff;line-height:20px;font-size:14px;text-align:justify;background:rgba(0,0,0,0.6);border-top:1px solid #000;width:514px;}
+#slider .caption h2{font-weight:100;line-height:normal;font-size:20px;margin-bottom:5px;}

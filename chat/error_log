@@ -1,0 +1,54 @@
+[21-Feb-2015 22:34:35 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 707
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[01-Mar-2015 19:19:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 308
+[02-Mar-2015 17:27:58 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[02-Mar-2015 17:27:58 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[02-Mar-2015 17:27:58 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[02-Mar-2015 17:27:58 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[03-Mar-2015 12:06:26 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[03-Mar-2015 12:31:53 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[03-Mar-2015 12:31:53 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 14:53:54 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 14:53:54 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 620
+[04-Mar-2015 14:53:54 UTC] PHP Parse error:  syntax error, unexpected '_', expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 620
+[04-Mar-2015 15:50:57 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 15:50:57 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 15:50:58 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 15:50:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 308
+[04-Mar-2015 15:50:58 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 620
+[04-Mar-2015 17:22:57 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 17:22:57 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 17:22:57 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 17:22:57 UTC] PHP Warning:  Unterminated comment starting line 385 in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 385
+[04-Mar-2015 17:22:57 UTC] PHP Parse error:  syntax error, unexpected 'px' (T_STRING) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 465
+[04-Mar-2015 20:39:41 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 20:39:41 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 309
+[04-Mar-2015 20:39:47 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 21:53:02 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 21:54:33 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 21:54:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 1010
+[04-Mar-2015 22:17:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 625
+[04-Mar-2015 22:17:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 625
+[04-Mar-2015 22:28:33 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 22:28:33 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 22:31:34 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[04-Mar-2015 23:05:45 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 309
+[04-Mar-2015 23:05:45 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 309
+[06-Mar-2015 10:08:41 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[06-Mar-2015 10:08:41 UTC] PHP Fatal error:  Class 'AbstractPage' not found in /home/thisishowwedoit/public_html/includes/pages/game/class.ShowErrorPage.php on line 31
+[06-Mar-2015 10:08:41 UTC] PHP Warning:  Unterminated comment starting line 385 in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 385
+[06-Mar-2015 10:08:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 465
+[17-Mar-2015 19:16:02 UTC] PHP Warning:  require(/home/thisishowwedoit/public_html/chat/lib/custom.php): failed to open stream: No such file or directory in /home/thisishowwedoit/public_html/chat/index.php on line 17
+[17-Mar-2015 19:16:02 UTC] PHP Fatal error:  require(): Failed opening required '/home/thisishowwedoit/public_html/chat/lib/custom.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thisishowwedoit/public_html/chat/index.php on line 17
+[17-Mar-2015 19:16:05 UTC] PHP Warning:  require(/home/thisishowwedoit/public_html/chat/lib/custom.php): failed to open stream: No such file or directory in /home/thisishowwedoit/public_html/chat/index.php on line 17
+[17-Mar-2015 19:16:05 UTC] PHP Fatal error:  require(): Failed opening required '/home/thisishowwedoit/public_html/chat/lib/custom.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thisishowwedoit/public_html/chat/index.php on line 17
+[18-Mar-2015 15:54:38 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/thisishowwedoit/public_html/includes/pages/game/class.AbstractPage.php on line 221

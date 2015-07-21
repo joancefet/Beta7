@@ -1,0 +1,11 @@
+#mask{position:absolute;left:0;top:0;z-index:9000;background-color:rgba(0,0,0,0.8);display:none;}
+#boxes .window{position:absolute;left:0;top:0;display:none;z-index:9999;}
+#boxes #dialog{width:490px;height:315px;overflow:hidden;background-color:#000d20;border:1px solid #000;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.dialog_top{height:60px;-webkit-border-radius:3px 3px 0px 0px;-moz-border-radius:3px 3px 0px 0px;border-radius:3px 3px 0px 0px;border-bottom:1px solid #132f51;border-top:1px solid #2b4666;background:#133155;background:-moz-linear-gradient(top, #133155 0%, #062448 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #133155), color-stop(100%, #062448));background:-webkit-linear-gradient(top, #133155 0%, #062448 100%);background:-o-linear-gradient(top, #133155 0%, #062448 100%);background:-ms-linear-gradient(top, #133155 0%, #062448 100%);background:linear-gradient(top, #133155 0%, #062448 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#133155", endColorstr="#062448", GradientType=0);margin-bottom:20px;}
+.dialog_top span{font-family:'Play', Arial, Helvetica, sans-serif;color:#fff;font-size:20px;display:block;float:left;margin:20px 0 0 30px;}
+#dialog .close{width:33px;height:33px;float:right;margin-top:7px;margin-right:9px;border:1px solid #091832;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;cursor:pointer;background:url(../images/closed.gif) no-repeat;}
+#dialog .close:hover{background:url(../images/closed.gif) no-repeat 0 -33px;}
+#dialog .lable{margin-left:25px;height:28px;width:110px;}
+#dialog input{height:28px;line-height:28px;width:298px;float:right;margin-right:25px;}
+#dialog input.button_mini{width:153px;}
+#dialog a{color:#5ca6aa;font-size:14px;}

@@ -1,0 +1,14 @@
+/*
+ *   Color skin BLUE
+ *   ===============
+ **/
+
+body,
+#content  { background-color: #17316a; }
+
+#main     { background-image: url(http://www.battle-fighter.org/admin/bg-header-login.gif); }
+#logo     { background-image: url(http://www.battle-fighter.org/admin/bg-gradient-login.gif); }
+#content  { background-image: url(http://www.battle-fighter.org/admin/bg-content-login.gif); }
+
+.formBox input.input           { background-image: url(http://www.battle-fighter.org/admin/bg-input-login.gif); }
+.formBox input:focus.input     { background-image: url(http://www.battle-fighter.org/admin/bg-input-login.gif); }

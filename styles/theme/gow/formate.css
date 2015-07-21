@@ -1,0 +1,795 @@
+/** Edit Color here **/
+ * 
+#.ui-widget-header{
+	background-color:#D20000;
+}
+.res_name{
+	color:#D20000;
+}
+
+body {
+	background:url("img/bkd_page.jpg")repeat #0d0d0d;
+}
+
+body,input,select,button,textarea,td,th,tr,table{
+	color:#c9c9c9;
+}
+
+body.mceContentBody,input,select,option,textarea, .ui-widget-content{
+	background: #000;
+}
+input[type="button"],input[type="submit"], button{
+	background:#000c1e;
+}
+
+input[type="radio"] {
+	background:transparent;
+	border:0 none;
+}
+
+#menu li:first-child, #menu li:last-child{
+	background-color:transparent;
+}
+
+a:hover {
+	color:red;
+	text-decoration:none
+}
+
+table,td,th {
+	font-weight:400
+}
+
+table table,img {
+	border:0
+}
+
+input, select, textarea, #userpic, input, button{
+	border:1px solid #001a40;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding:3px;
+}
+
+td, th input, .tip {
+	border:1px solid #000;
+}
+
+td{
+	text-align:center;
+	background: #0D1014;
+	background: rgba(0, 15, 25, 0.9);
+}
+.tip {
+	background:#252525;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+input,button {
+	text-align:center
+}
+
+th, .ui-widget-header  {
+	background-image:url("img/bkd_title.png");
+	color:#FFF;
+	font-weight:700;
+	text-align:left
+}
+
+th a:hover, .ui-widget-header a:hover, #menu a:hover  {
+	color:#FFF;
+}
+
+th a:hover, .ui-widget-header a:hover {
+	text-decoration:underline;
+}
+
+textarea {
+	background:#000;
+}
+
+select {
+
+}
+
+/*Global Messgae */
+
+.mod {
+	color:yellow;
+}
+.ops {
+	color:skyblue;
+}
+
+.messages_body .admin {
+	font-weight:700;
+	color:red;
+}
+.messages_body .mod {
+	font-weight:700;
+	color:yellow;
+}
+.messages_body .ops {
+	font-weight:700;
+	color:skyblue;
+}
+
+.res_max {
+	color:#0F0
+}
+
+.res_name {
+	color:red;
+	font-weight:700
+}
+
+.galaxy-short-noob,
+.galaxy-username-noob{
+	color:#a0ffa0
+}
+
+.galaxy-short-strong,
+.galaxy-username-strong {
+	color:#ffa0a0
+}
+
+.galaxy-short-vacation,
+.galaxy-username-vacation {
+	color:#659ec7
+}
+
+.galaxy-short-inactive,
+.galaxy-username-inactive {
+	color:#ccc
+}
+
+.galaxy-short-longinactive,
+.galaxy-username-longinactive {
+	color:#999
+}
+
+.galaxy-short-banned {
+	text-decoration:line-through
+}
+
+.ownattack {
+	color:#6c3 !important
+}
+
+.owncolony {
+	color:#c1c1c1 !important
+}
+
+.owndeploy {
+	color:#666 !important
+}
+
+.owndestroy {
+	color:#ff9 !important
+}
+
+.ownfederation {
+	color:#c66 !important
+}
+
+.ownharvest {
+	color:#ceff68 !important
+}
+
+.ownhold {
+	color:#80a0c0 !important
+}
+
+.destroy {
+	color:#d4a017 !important
+}
+
+.hold {
+	color:#39c !important
+}
+
+.warning {
+	color:#FF8040 !important
+}
+
+.notice {
+	color:#FF0 !important
+}
+
+.return {
+	color:#444 !important
+}
+
+.allymember,.colony,.deploy,.harvest,.transport,.success {
+	color:lime !important
+}
+
+.owntransport {
+	color:#a0ffa0 !important
+}
+
+.ownespionage,.ownmissile {
+	color:#fc6 !important
+}
+
+.espionage,.missile {
+	color:#f60 !important
+}
+
+.build_submit {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: lime;
+}
+.onlist{
+    color: #DDD  !important;
+}
+
+/** HEADER **/
+
+#header {
+}
+#resourceWrapper{
+	background: #0D1014 !important;
+	background: rgba(13, 16, 20, 0.80) !important;
+	border: 1px solid black !important;
+}
+#resourcesdiv{
+	text-align:center;
+}
+.tooltip_sticky{
+	cursor:pointer;
+}
+/** MENU **/
+
+/* PLANETMENU */
+
+#planet_menu_link{
+	font-weight:700;
+}
+
+#planet_menu_header{
+	text-align:right;
+}
+
+#planet_menu_content li {
+	text-align:center;
+}
+
+
+/* CONTENT */
+
+.tip th{
+	text-align:center
+}
+
+.top {
+	vertical-align:top
+}
+
+.transparent,#header td, .tip td, .tip th {
+	background: transparent;
+	border:none;
+	filter: none !important;
+}
+
+.mes_unread td {
+	font-weight:700;
+}
+
+a {
+	text-decoration:none
+}
+th a,.res_current{
+	color:#FFF
+}
+td.res_bar div{
+	border:#000 1px solid !important;
+	position:relative;
+	padding:0 !important;
+}
+.res_bar_div{
+	background-image: url('./img/res_bar.png');
+	background-repeat:repeat-x;
+	height:8px;
+	border:none !important;
+}
+.res_current_max,.attack,.federation,.error {
+	color:red !important;
+}
+
+#fleetstatustable td{
+	background: transparent;
+	background-image: none;
+	border: 0 none
+}
+
+.ui-progressbar-value {
+	background-image: url(img/processbar.gif);
+	background-position:top left;
+	border-color:#000;
+}
+
+.spyRaportContainerRow {
+	border-bottom:1px solid #DDD;
+}
+
+.ui-autocomplete, .ui-state-hover, .ui-state-default, .ui-tabs-nav, .ui-tabs, .ui-progressbar, .ui-progressbar-value {
+	-webkit-border-radius:0;
+	-khtml-border-radius:0;
+	border-radius:0;
+}
+
+.ui-tabs-nav {
+	padding: 0;
+	height: 30px;
+}
+
+.ui-tabs {
+	border:1px solid #000;
+	background:none;
+}
+#polosa{
+	position:absolute;
+	left:40%;
+	right:50%;
+	margin-left:5px;
+	top:28px;
+	text-align:center;
+	width:420px;
+	height:25px;
+}
+#polosa_{
+	position:relative;
+}
+#polosa_fon{
+	position:absolute;
+	z-index:1;
+	width:366px;
+	height:20px;
+	top:3px;
+	left:27px;
+	background: url(img/polosa_lvl_fon.png) repeat-x;
+}
+#polosa_ramka{
+	width:420px;
+	height:25px;
+	position:absolute;
+	top:0;
+	left:0;
+	background: url(img/polosa_lvl_ramka.png) no-repeat;
+	z-index:4;
+}
+#plosa_pgres{
+	background: url(img/polosa_lvl_progres_fon.png) repeat-x #06F;
+	border: 1px solid #00ffdd;
+	-moz-box-shadow:inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:inset 0px 0px 2px rgba(255,255,255,1);
+		height:10px;
+		top:1px;
+		left:0px;
+		position:absolute;
+		z-index:2;
+}
+#plosa_pgres_{
+	font-weight:bold;
+	position:absolute;
+	width:100%;
+	line-height:12px;
+	z-index:5;
+}
+#plosa_pgres_ span{
+	color:#FC0;
+}
+#poli {
+overflow:visible;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+background: url(img/proc.png) repeat-x #042d39;  
+color:#9F0;
+text-align:left;
+float:left;
+height:13px;
+}
+#poli span{
+	margin-left:5px;
+	float:left;
+	display:block; height:13px; 
+	line-height:13px; width:250px;
+}
+#poli a{
+	cursor:default;
+}
+#reemo_top_nav{
+	min-width:970px !important;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	ACTIVITY REWARDS
+/*-----------------------------------------------------------------------------------*/
+
+#dialogMessage.ActivityRewardsPopup {
+width: 940px;
+margin-left: -490px;
+}
+
+#dialogMessage.ActivityRewardsPopup #dialogBox {
+width: 910px;
+}
+
+#activityRewards_dayHolder {
+height: 240px;
+margin-left: 50px;
+}
+
+#activityRewards_dayHolder .dayCard {
+display: block;
+float: left;
+height: 240px;
+width: 130px;
+background: url('./images/activityRewards_dayCard.png') left top;
+}
+
+#activityRewards_dayHolder .dayCard.active {
+background-position: right top;
+}
+
+#activityRewards_dayHolder .dayCard .boxDayNameBox {
+height: 25px;
+line-height: 25px;
+text-align: center;
+padding-right: 20pz;
+}
+
+#activityRewards_dayHolder .dayCard .boxImage {
+width: 100px;
+height: 90px;
+margin: 5px 10px;
+}
+
+#activityRewards_dayHolder .dayCard .boxImage.income15 {
+background: url('./images/res_one.png'); 
+}
+
+#activityRewards_dayHolder .dayCard .boxImage.income30 {
+background: url('./images/res_two.png');
+}
+
+#activityRewards_dayHolder .dayCard .boxImage.income60 {
+background: url('./images/res_three.png');
+}
+
+#activityRewards_dayHolder .dayCard .boxImage.ozone {
+background: url('./images/ozone.png');
+}
+
+#activityRewards_dayHolder .dayCard .boxImage.premiumAccount {
+background: url('./images/premium.png');
+} 
+
+#activityRewards_dayHolder .dayCard .boxImage.credits {
+background: url('./images/credits.png');
+} 
+
+#activityRewards_dayHolder .dayCard .boxImage.meta {
+background: url('./images/double.png');
+
+} 
+		
+#activityRewards_dayHolder .dayCard .boxDescription {
+height: 62px;
+margin: 10px 18px;
+text-align: left;
+}
+
+#activityRewards_dayHolder input {
+width: 110px;
+height: 35px;
+border: none;
+margin-right: 5px;
+font-weight: bold;
+font-size: 14px;
+-webkit-transition: opacity 0.2s linear;
+   -moz-transition: opacity 0.2s linear;
+	 -o-transition: opacity 0.2s linear;
+		transition: opacity 0.2s linear;
+}
+
+#activityRewards_dayHolder input.active {
+background: url(./images/activityRewards_button.png) no-repeat scroll -3px 0 transparent !important;
+width: 114px;
+cursor: pointer;
+color: #484848!important;
+text-shadow: 0 1px 0 #FFFFFF!important;
+}
+
+#activityRewards_dayHolder input.active:hover {
+opacity: 0.8;
+}
+		
+#activityRewards_dayHolder input {
+background: url('./images/activityRewards_button1.png');
+color: #05425b;
+text-shadow: 0 1px 0 #41bad0;
+}
+
+#activityRewards_dayHolder input.inactive {
+opacity: 0.4;
+}
+
+#activityRewards_closeButton {
+display: block;
+width: 20px;
+height: 20px;
+position: absolute;
+right: 30px;
+top: 25px;
+background: url('./images/close_promos.png') top center ;
+}
+
+#activityRewards_closeButton:hover {
+background-position: bottom center;
+}
+
+#activityRewards_header {
+height: 30px;
+}
+
+#activityRewards_header div {
+float: left;
+margin-right: 20px;
+height: 18px;
+line-height: 20px;
+}
+
+#activityRewards_timerHolder {
+background: url('./images/clock.png') no-repeat center left ;
+padding-left:21px;
+}
+
+#activityRewards_daysCounterHolder {
+background: url('./images/calendar.png') no-repeat center left ;
+padding-left:50px;
+}
+
+.galaxy-short-immunity,
+.galaxy-username-immunity
+{
+	color:yellow
+}
+
+.shopContainer {
+clear: both;
+margin: 0px auto;
+position: relative;
+width: 760px;
+margin-top: 20px;
+_background-color: #f3f3f3;
+_background-image: url('..images/noiz.png');
+_background-image: url('../images/noiz.png'),-webkit-gradient(linear, left bottom, left top, color-stop(1, #f3f3f3), color-stop(0, #f3f3f3));
+_background-image: url('../images/noiz.png'),-webkit-linear-gradient(center bottom, #f3f3f3 0%, #f3f3f3 100%);
+_background-image: url('../images/noiz.png'),-moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 100%);
+_background-image: url('../images/noiz.png'),-o-linear-gradient(top, #f3f3f3 0%, #f3f3f3 100%);
+_background-image: url('../images/noiz.png'),-ms-linear-gradient(top, #f3f3f3 0%, #f3f3f3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3e', endColorstr='#f3f3f3',GradientType=1 );
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#f3f3f3')";
+_background-image: url('../images/noiz.png'),linear-gradient(top, #f3f3f3 0%,#f3f3f3 100%);
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+padding-top: 5px;
+}
+
+.shopContainer .shopContainerSpecialItems {
+clear: both;
+background-color: #f3f3f3;
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, #fafafa), color-stop(0, #f3f3f3));
+background-image: -webkit-linear-gradient(center bottom, #fafafa 0%, #f3f3f3 100%);
+background-image: -moz-linear-gradient(top, #fafafa 0%, #f3f3f3 100%);
+background-image: -o-linear-gradient(top, #fafafa 0%, #f3f3f3 100%);
+background-image: -ms-linear-gradient(top, #fafafa 0%, #f3f3f3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafae', endColorstr='#f3f3f3',GradientType=1 );
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f3f3f3')";
+background-image: linear-gradient(top, #fafafa 0%,#f3f3f3 100%);
+width: 736px;
+height: 68px;
+margin: 7px auto 10px auto;
+box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color:#000;
+}
+.shopContainer .shopContainerSpecialItems h2 {
+color: #4d4d4d;
+font-weight: bold;
+font-size: 18px;
+padding-top: 20px;
+padding-left: 16px;
+}
+.holder {
+width: 100%;
+float: left;
+display: block;
+margin-bottom: 10px;
+}
+.shopContainer .shopMessages {
+margin: 7px auto 0px;
+width: 90%;
+}
+.shopContainer .holder.shopMessages {
+float: none;
+display: inline;
+display: block;
+}
+.info_message {
+width: 100%;
+background-color: #f2fcff;
+background-image: url('http://eris-universe.net/media/images/info.png');
+background-repeat: no-repeat;
+background-position: 7px 6px;
+border: 1px solid #c5e4fe !important;
+display: block;
+clear: both;
+vertical-align: middle;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin: 10px 0;
+position: relative;
+z-index: 0;
+opacity: 0.9;
+-moz-opacity: 0.9;
+-ms-fiter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+filter: alpha(opacity=90);
+border-collapse: separate;
+}
+.info_message {
+border-collapse: separate;
+}
+.info_message tr {
+height: 48px;
+}
+.info_message td {
+vertical-align: middle;
+cursor: default;
+height: 28px;
+padding: 10px 10px 10px 50px !important;
+font-family: Tahoma,Arial,sans;
+border: none !important;
+font-size: 11px;
+color: #333 !important;
+}
+.lp_holder, .gold_holder {
+font-weight: bold;
+}
+
+.enabled {
+color: #1f6d91;
+background-position: 0px -25px;
+}
+.disabled {
+color: #b2b2b2;
+}
+.shopContainer .si_box {
+width: 175px;
+height: 226px;
+float: left;
+display: inline;
+margin-bottom: 12px;
+margin-left: 38px;
+position: relative;
+}
+.shopContainer .si_box.enabled {
+background-image: url('http://eris-universe.net/media/images/special_items_enabled.png');
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+.shopContainer .si_box.disabled {
+background-image: url('http://eris-universe.net/media/images/special_items_disabled.png');
+background-repeat: no-repeat;
+}
+.shopContainer .si_box .new_pack {
+position: absolute;
+right: -2px;
+top: 0;
+}
+.shopContainer .si_box p {
+margin: 0px;
+font-size: 14px;
+font-weight: bold;
+margin-top: 20px;
+text-align: center;
+color: #FFF;
+}
+.shopContainer .si_box.disabled p {
+color: #a9a9a9;
+}
+.shopContainer .si_box .si_icon {
+margin: 20px auto 10px auto;
+width: 100px;
+height: 80px;
+background-position: center center !important;
+}
+.shopContainer .si_box .si_icon.combat_stash {
+background-image: url('http://eris-universe.net/media/images/si_combat_stash.png');
+background-repeat: no-repeat;
+width: 100%;
+margin-top: 31px;
+margin-bottom: 20px;
+margin-left: -10px;
+}
+.shopContainer .si_box table {
+margin: 0 auto;
+width: auto;
+}
+.shopContainer .si_box table td {
+padding: 1px 3px 3px 8px;
+}
+a.fluid_green_big {
+color: #fff;
+height: 36px;
+line-height: 36px;
+font-size: 14px;
+background-image: url('http://eris-universe.net/media/images/fluids.png');
+background-repeat: no-repeat;
+background-position: right -1599px;
+float: left;
+display: inline;
+text-shadow: #258a25 0px 1px 0px;
+position: relative;
+z-index: 100;
+outline: none;
+}
+
+.shopContainer .si_box .fluid_green_big {
+width: 108px;
+}
+a.fluid_green_big span {
+text-shadow: #258a25 0px -1px 0px;
+font-weight: bold;
+}
+
+.shopContainer .si_box .si_icon.energy {
+background-image: url('http://eris-universe.net/media/images/si_energy.png');
+background-repeat: no-repeat;
+}
+.shopContainer .si_box p.si_bonus {
+margin-top: 0px;
+font-size: 11px;
+margin-bottom: 7px;
+}
+
+.shopContainer .si_box.two a:first-child {
+margin-left: 0;
+margin-right: 9px;
+}
+.shopContainer .si_box.two span {
+font-size: 11px;
+padding-left: 8px;
+margin-right: 2px;
+}
+.shopContainer .si_box.two .fluid_green_big {
+width: auto;
+margin-top: 1px;
+margin-left: 9px;
+}
+.si_btn_span{
+color: #fff;
+background: #00b254;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00c95f', endColorstr = '#009c4a');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00c95f', endColorstr = '#009c4a')";
+background-image: -moz-linear-gradient(top, #00c95f, #009c4a);
+background-image: -ms-linear-gradient(top, #00c95f, #009c4a);
+background-image: -o-linear-gradient(top, #00c95f, #009c4a);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#00c95f), to(#009c4a));
+background-image: -webkit-linear-gradient(top, #00c95f, #009c4a);
+background-image: linear-gradient(top, #00c95f, #009c4a);
+-moz-box-shadow: inset 1px 1px #00ffbe, inset -1px -1px #00ffbe;
+-webkit-box-shadow: inset 1px 1px #00ffbe, inset -1px -1px #00ffbe;
+box-shadow: inset 1px 1px rgba #00ffbe, inset -1px -1px #00ffbe;
+text-shadow: 0px 1px 0px rgba(0,0,0,0.9);
+}

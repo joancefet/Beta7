@@ -1,0 +1,11 @@
+#social-media{margin:5px 0px;border:1px solid #d9d9d9;padding:4px 5px 5px 5px;}
+#social-media a.social,
+#social-media span{display:-moz-inline-stack;display:inline-block;background-repeat:no-repeat;background-position:center;width:32px;height:32px;text-indent:-9999px;margin-right:3px;vertical-align:text-bottom;}
+#social-media span{text-indent:0px;vertical-align:bottom;}
+#social-media span.media-txt{width:90px;font-weight:bold;text-align:center;}
+#twitter{background-image:url(../images/twitter.html);}
+#facebook{background-image:url(../images/facebook.html);}
+#livejournal{background-image:url(../images/livejournal.html);}
+#liveinternet{background-image:url(../images/liveinternet.html);}
+#vkontakte{background-image:url(../images/vkontakte.png);}
+#mailru{background-image:url(../images/mailru.html);}

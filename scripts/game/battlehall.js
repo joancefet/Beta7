@@ -1,0 +1,1 @@
+var disqus_shortname="astro-mania";(function(){var e=document.createElement("script");e.async=true;e.type="text/javascript";e.src="http://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)})()

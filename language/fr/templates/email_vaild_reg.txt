@@ -1,0 +1,21 @@
+﻿Bonjour {USERNAME},
+
+Vous avez choisis de fonder votre empire dans l`univers {GAMENAME}
+
+Avec le
+
+mot de passe: {PASSWORD}
+
+toutes les portes de l`univers vous sont ouvertes.
+
+Afin de pouvoir profiter de tous les aspects du jeu, sans restrictions, vous devez confirmer votre mot de passe. Pour ce faire, cliquez ici:
+{VERTIFYURL}
+
+Si vous avez besoin de conseils, ou si vous voulez échanger des idées avec d`autres grands empereurs, vous trouverez tout ce dont vous avez besoin dans le forum DARK-SPACE
+(http://forum.dark-space.org)
+
+Sur http://forum.dark-space.org/index.php?/forum/15-questions-about-the-game/, vous trouverez un aperçu qui vous sera utile lors de vos débuts. 
+
+Que votre empire soit grand et vos ennemis vaincus !
+
+Votre équipe {GAMENAME}

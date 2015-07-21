@@ -1,0 +1,80 @@
+<h2>1. Accounts</h2>
+<p align="justify">Each player is allowed to control a single account. Each account is entitled to be played by a single player at a time, account sitting being the only exception.
+Account sitting entitles a given player to have his account watched over under the following regulations:
+<br />
+<br />- Support must be informed before the sitting takes place, by opening a ticket.
+<br />- No Fleet movements are allowed while the account is being sat unless an attack that may raid or crash the account is incoming, in which case you may save your fleet(s) by deploying or transporting to a planet or to a moon owned by the account being sat. You may not ninja an incoming attack in cases where you would need to move a fleet for it.
+<br />- An account may only be sat for a maximum period of 48 continuous hours (admin permission needs to be obtained in cases where a time extension is needed).
+<br /><br />The sitter may, on the account being sat and while the sitting period lasts:
+
+<br />- Spend Resources on buildings or researches.
+<br />- Fleetsave any ship that imminently endangered by an incoming attacking fleet, only with a deployment or transport mission to one of the accounts own planets.
+<br />- Place an account into vacation mode.
+
+<br /><br />The sitter may not:
+
+<br />- Transport resources, neither between planets/moons of the account being sat, nor to any other planet/moon.
+<br />- Spend Resources on defensive structures or ships.
+<br />- Sit an account if he sat another one within the previous 7 days.
+<br />- Sit an account that was sat within the previous 7 days.
+<br />- Remove an account from vacation mode.</p>
+<p>&nbsp;</p>
+<h2>2. Multi</h2>
+<p align="justify">In one universe, Player is not authorized to have more than one account. If two players share the same Internet connection, they should notify the Administration. No fleet or other kind of action is authorized between both accounts.</p>
+<p>&nbsp;</p>
+<h2>3. Bleeding</h2>
+<p align="justify">Bleeding is prohibited. Prohibited the transfer of resources from downstream to upstream Player ranking player. Exceptions must be approved by the Operator. Lack of authorization could lead to blocking your account. Trade must be completed within 24 hours, otherwise you must agree with the Operator.</p>
+<p>&nbsp;</p>
+<h2>4. bashing</h2>
+<p align="justify">It is not allowed to attack any given planet or moon owned by a player over 6 times in a single 24 hours period.
+Bashing is only allowed when your Alliance is at war with another Alliance. The war must be announced in the forum and both leaders must agree to the terms.
+The bashing rule only applies for active users and excludes misile attacks and espionage missions.</p>
+<p>&nbsp;</p>
+<h2>5. Attack interplanetary missiles</h2>
+<p align="justify">It is forbidden to send more than 30 interplanetary rockets missions on the same planet within 24 hours. The amount of interplanetary missiles send in each attack is not limited
+</p>
+<p>&nbsp;</p>
+<h2>6. Flight Time Fleet</h2>
+<ol>
+<li>Sending more than one spy mission on one planet in less than 3 seconds, provided that this planet is being attack which occurs within 1 minute is forbidden.&nbsp;</li>
+<li>It is prohibited to send fleets on one planet for a period of more than 5 hours in one direction without the consent of the other player
+</ol>
+<p>&nbsp;</p>
+<h2></h2>
+<h2>7. Using bugs</h2>
+<p align="justify"> Using Game errors is forbidden. Found bugs should be submitted as soon as possible to the Administration. support or email support@astro-mania.com.</p>
+<p align="justify">&nbsp;</p>
+<h2></h2>
+<h2></h2>
+<h2>8. <strong class="bbc">Prohibitions and Restrictions</strong></h2>
+<ol>
+<li>
+<p align="justify">Extortion, threats and blackmail in gaming means of communication is prohibited. Penalty - temporary or permanent blocking of your account.</p>
+</li>
+<li>
+<p align="justify">Begging in any form, aimed at both the individual users and users in general, consists in placing requests to transfer real money on the web purse pass play value, as well as requests to transfer to the account of the applicant Game currency. Punishment - temporary account lock.</p>
+</li>
+<li>
+<p align="justify">Insult, use derogatory nicknames and aliases on race, nationality, religion or gender, as well as provoking companion to their use. Penalty - temporary or permanent blocking of your account. Mat, mat and other veiled profanity used in this are the circumstances that lead to the increase of the lock.</p>
+</li>
+<li>
+<p align="justify">Prohibited any kind, purchase / sale of game values ​​not covered by the system.&nbsp;</p>
+</li>
+<li>
+<p align="justify"><span>Forbidden to use automated scripts, programs, clickers, bot programs and / or macros control the keyboard and mouse, as well as other similar schemes manifestation of gaming activity without the participation or passive, "pacifist" involving players.</span></p>
+</li>
+<li>
+<p align="justify">Spam and advertising are prohibited.&nbsp;</p>
+</li>
+<li>
+<p align="justify">Any form of erotic and pornographic material is prohibited.&nbsp;</p>
+</li>
+<li>
+<p align="justify"><span>In all universes official language is English. Personal messages in other languages ​​can lead to the block of your account.</span></p>
+<p align="justify"><span><br></span></p>
+</li>
+</ol>
+<h2></h2>
+<h2></h2>
+<h2>9. Regulations</h2>
+<p align="justify">Terms are subject to change. Each player is obliged to recognize the updated information.</p>

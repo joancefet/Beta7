@@ -1,0 +1,1 @@
+$(function(){window.setInterval(function(){$(".fleets").each(function(){var e=$(this).data("fleet-time")-(serverTime.getTime()-startTime)/1e3;if(e<=0){$(this).text("-")}else{$(this).text(GetRestTimeFormat(e))}})},1e3)})

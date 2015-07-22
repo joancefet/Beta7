@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  *  2Moons
@@ -75,6 +75,7 @@ $LNG['loginWelcome']				= 'Willkommen bei %s';
 $LNG['loginServerDesc']				= '%s ist ein Weltraum-Strategiespiel mit hunderten Spielern die erdumgreifend <strong>gleichzeitig</strong> versuchen der/die Beste zu werden. Alles was ihr zum spielen braucht ist ein Standartwebbrowser.';
 
 // Register
+$LNG['registerRace'] 				= 'Wahl des Rasse:';
 $LNG['registerFacebookAccount']		= 'Facebook-Account';
 $LNG['registerUsername']			= 'Nickname';
 $LNG['registerUsernameDesc']		= 'Der Nickname muss mindestens 3 und darf maximal 25 Zeichen und darf nur aus Zahlen, Buchstaben, Punkte, Binde- und Unterstriche und Leerzeichen bestehen';

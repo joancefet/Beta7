@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 //General
 $LNG['index']				= 'Accueil';
@@ -112,6 +112,7 @@ $LNG['login_info']				= 'En me connectant j\'accepte les <a onclick="ajax(\'?pag
 /* ------------------------------------------------------------------------------------------ */
 
 //reg.php - Registrierung
+$LNG['registerRace'] 				= 'Choisissez votre race:';
 $LNG['register_closed']				= 'Les inscriptions sont closes!';
 $LNG['register_at']					= 'Inscrit &agrave; ';
 $LNG['reg_mail_message_pass']		= 'Un pas de plus pour activer votre nom d\'utilisateur';

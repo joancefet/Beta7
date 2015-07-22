@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  *  2Moons
@@ -267,6 +267,7 @@ $LNG['ov_closed']							= 'Spiel ist zurzeit deaktiviert!';
 $LNG['ov_reflink']							= 'Reflink';
 $LNG['ov_noreflink']						= 'Du hast keine User angeworben.';
 $LNG['ov_chat_online']						= 'User im Chat:';
+$LNG['ov_race'] 							= 'Rasse';
 
 //----------------------------------------------------------------------------//
 //GALAXY

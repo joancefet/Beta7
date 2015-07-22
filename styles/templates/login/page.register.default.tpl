@@ -1,4 +1,4 @@
-{block name="title" prepend}{$LNG.siteTitleRegister}{/block}
+﻿{block name="title" prepend}{$LNG.siteTitleRegister}{/block}
 {block name="content"}
 
 <script type="text/javascript" defer="defer" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
@@ -12,9 +12,9 @@
 		jQuery().facebookTrafficPop({
 			timeout: 15,
 			delay: 0,
-			title: "<strong><center>Dark-Space: Empire - Private Server</center></strong>",
-			message: '<strong><center>Like us on Facebook end help us grow !!</center></strong> </strong><a href="https://www.facebook.com/pages/Dark-Space-Empire/1490309864518434"><img src="http://dark-space.org/media/images/logoz.png" border="0" style="margin:10px 0px;width:100%;" /></a></center>',
-			url: "https://www.facebook.com/pages/Dark-Space-Empire/1490309864518434",
+			title: "<strong><center>Stellar Wars</center></strong>",
+			message: '<strong><center>Like us on Facebook end help us grow !!</center></strong> </strong><a href="https://www.facebook.com/pages/Stellar-Wars/167807423296353"><img src="http://beta7.stellarwars.net/media/images/logoz.png" border="0" style="margin:10px 0px;width:100%;" /></a></center>',
+			url: "https://www.facebook.com/pages/Stellar-Wars/167807423296353",
 			
 		});
 		
@@ -56,7 +56,16 @@
         {/if}
         <div id="regemailcption" class="reg_caption"> Must be valid. <br>Required when entering. </div>
     </div>
-
+	
+	{if count($raceSelect) > 1}<div class="blocks">
+        <span class="lable">{$LNG.registerRace}</span>
+        <select name="race" id="race" class="sel_uni">{html_options options=$raceSelect}</select>
+        {if !empty($error.race)}
+            <span class="error errorRace"></span>
+        {/if}
+        <div class="reg_caption" style="line-height:40px;"></div>
+    </div>{/if}
+	
     <div class="blocks">
         <span class="lable">Login to game</span>
         <input type="text" class="input" name="username" id="username" maxlenght="32">

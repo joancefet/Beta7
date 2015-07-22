@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // Translated into English by QwataKayean . All rights reversed (C) 2012
 // 2Moons - Copyright (C) 2010-2012 Slaver
@@ -219,6 +219,7 @@ $LNG['ov_closed']							= 'The universe is currently disabled';
 $LNG['ov_reflink']							= 'Recruits';
 $LNG['ov_noreflink']						= 'At the moment, you did not recruited any player.';
 $LNG['ov_chat_online']						= 'Players in chat:';
+$LNG['ov_race'] 							= 'Race';
 
 //----------------------------------------------------------------------------//
 // Galáxia

@@ -54,3 +54,5 @@ define('VOTE'				, DB_PREFIX.'votesystem_log');
 
 
 // MOD-TABLES
+
+define('RACES'		 		, DB_PREFIX.'races');

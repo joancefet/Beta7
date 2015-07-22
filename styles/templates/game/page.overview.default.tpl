@@ -1,4 +1,4 @@
-{block name="title" prepend}{$LNG.lm_overview}{/block}
+﻿{block name="title" prepend}{$LNG.lm_overview}{/block}
 {block name="script" append}{/block}
 {block name="content"}
 {if $manual_step_4 == 0}
@@ -113,6 +113,7 @@ Immunity is active for {if !empty($planet_protections)} <b><span style="color:re
 <div class="separator"></div>
 <div id="news_ower">{$news}</div>
 {/if}
+{if $race}	<tr>	 <td>{$LNG.ov_race}: </td><td colspan="2">{$race}</td>	</tr>	{/if}
 <div class="ref_system">
 {$LNG.InviteRefa}
 <a href="game.php?page=Refystem" style="float:right;">{$LNG.ReadMore}</a>

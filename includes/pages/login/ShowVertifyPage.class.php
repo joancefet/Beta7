@@ -51,7 +51,7 @@ class ShowVertifyPage extends AbstractPage
 		
 		$GLOBALS['DATABASE']->query("DELETE FROM ".USERS_VALID." WHERE validationID = ".$validationID.";");
 		
-		list($userID, $planetID) = PlayerUtil::createPlayer($userData['universe'], $userData['userName'], $userData['password'], $userData['email'], $userData['language']);
+		list($userID, $planetID) = PlayerUtil::createPlayer($userData['universe'], $userData['userName'], $userData['password'], $userData['email'], $userData['race'], $userData['language']);
 		
 		if(Config::get('mail_active', $userData['universe']) == 1) {
 			require('includes/classes/Mail.class.php');

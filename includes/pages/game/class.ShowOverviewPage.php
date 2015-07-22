@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  *  2Moons
@@ -519,6 +519,7 @@ Alle inaktiven Monde sind voll mit Resourcen</span>';
 			'planet'					=> $PLANET['planet'],
 			'planet_type'				=> $PLANET['planet_type'],
 			'username'					=> $USER['username'],
+			'race'	 					=> $USER['race_name'],
 			'training'					=> $manual_start,
 			'userid'					=> $USER['id'],
 			'buildInfo'					=> $buildInfo,

@@ -2,6 +2,7 @@
             <tr>
 	<th colspan="2">{$LNG.st_position}</th>
 	<th>{$LNG.st_player}</th>
+	<th>{$LNG.ov_race}</th>
 	<th>&nbsp;</th>
 	<th>{$LNG.st_alliance}</th>
 	<th>{$LNG.st_points}</th>
@@ -31,8 +32,9 @@
 		{if $RangeInfo.isVac == 0}
                 (<span class="galaxy-short-vacation">v</span>) {/if} 
 				{if $RangeInfo.isInac == 0}
-                (<span class="galaxy-short-inactive">i</span>) {/if} 
+                (<span class="galaxy-short-inactive">i</span>) {/if}
 				</td>
+				<td><img src='../../../../styles/theme/gow/interface/race/{$RangeInfo.race}.png'></td>
 	<td>{if $RangeInfo.id != $CUser_id}<a href="#" onclick="return Dialog.PM({$RangeInfo.id});"><img src="./styles/images/iconav/mesages.png" title="private Message" alt="private Message"></a>{/if}</td>
 	<td>{if $RangeInfo.allyid != 0}<a href="game.php?page=alliance&amp;mode=info&amp;id={$RangeInfo.allyid}">{if $RangeInfo.allyid == $CUser_ally}<span style="color:#33CCFF">{$RangeInfo.allyname}</a>{if $RangeInfo.fraction2 != 0}<a class="tooltip" data-tooltip-content="Level {$RangeInfo.level}">{$RangeInfo.fraction}{/if}</span>{else}{$RangeInfo.allyname}{/if}</a>{if $RangeInfo.fraction2 != 0}<a class="tooltip" data-tooltip-content="Level {$RangeInfo.level}">{$RangeInfo.fraction}{/if}{else}-{/if}</td>
 	<td>{$RangeInfo.points}</td>

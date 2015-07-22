@@ -128,7 +128,7 @@ class BuildFunctions
 	
 	public static function isTechnologieAccessible($USER, $PLANET, $Element)
 	{
-		global $requeriments, $resource;
+		global $requeriments, $resource, $pricelist;
 		
 		if(!isset($requeriments[$Element]))
 			return true;		
@@ -141,6 +141,7 @@ class BuildFunctions
 			) {
 				return false;
 			}
+			if (isset($pricelist[$Element]['raceSpecific']) != '0' AND isset($pricelist[$Element]['raceSpecific']) != $USER['race']) { return false; }
 		}
 		return true;
 	}
@@ -195,12 +196,14 @@ class BuildFunctions
 		$alliance_research_speed = $allyInfo['alliance_research_speed'];
 		$alliance_build_speed = $allyInfo['alliance_build_speed'];
 		}		$premium_reward_speed = 0;		if($USER['premium_reward_speed'] > 0 && $USER['premium_reward_speed_days'] > TIMESTAMP){		$premium_reward_speed = $USER['premium_reward_speed'];		}		$premium_reward_speed	                = $premium_reward_speed;				
+		$raceBonus = $GLOBALS['DATABASE']->getFirstRow("SELECT * FROM ".RACES." WHERE race_id = '".$USER['race']."';");
 		if	   (in_array($Element, $reslist['build'])) {			
 		
-		$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[14]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['BuildTime']);$time	-= $time / 100 * $premium_reward_speed ;		} elseif (in_array($Element, $reslist['fleet'])) {			$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[21]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['ShipTime']);			
+		$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[14]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['BuildTime']) * $raceBonus['race_building_construction_time'];
+		$time	-= $time / 100 * $premium_reward_speed ;		} elseif (in_array($Element, $reslist['fleet'])) {			$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[21]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['ShipTime']) * $raceBonus['race_fleet_construction_time'];			
 		} elseif (in_array($Element, $reslist['defense'])) {
 
-		$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[21]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['DefensiveTime']);		
+		$time	= $elementCost / (Config::get('game_speed') * (1 + $PLANET[$resource[21]])) * pow(0.5, $PLANET[$resource[15]]) * (1 + $USER['factor']['DefensiveTime']) * $raceBonus['race_defence_construction_time'];		
 		}elseif (in_array($Element, $reslist['tech'])) {	
 		if(is_numeric($PLANET[$resource[31].'_inter']))			{
 			$Level	= $PLANET[$resource[31]];			
@@ -211,7 +214,7 @@ class BuildFunctions
 			$Level += $Levels;				
 		}			}						
 		
-		$time	= $elementCost / (1000 * (1 + $Level)) / (Config::get('game_speed') / 2500) * pow(1 - Config::get('factor_university') / 100, $PLANET[$resource[6]]) * (1 + $USER['factor']['ResearchTime']);			
+		$time	= $elementCost / (1000 * (1 + $Level)) / (Config::get('game_speed') / 2500) * pow(1 - Config::get('factor_university') / 100, $PLANET[$resource[6]]) * (1 + $USER['factor']['ResearchTime']) * $raceBonus['race_research_construction_time'];			
 		
 		$time	-= ($time / 100 * $premium_reward_speed) + ($time / 100 * $USER['experience_peace_level']) + ($time / 100 * getbonusOneBis(1203,$USER['academy_1203']));					}
 	

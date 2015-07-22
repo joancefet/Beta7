@@ -103,7 +103,7 @@ class ShowStatisticsPage extends AbstractPage
 
                 $start = max(floor(($range - 1) / 100) * 100, 0);
 
-                $stats_sql	=	'SELECT DISTINCT s.*, u.id, u.username,u.urlaubs_modus, u.ally_id,u.bana,u.banaday,u.onlinetime,a.fraction,a.FraLevel, a.ally_name FROM '.STATPOINTS.' as s
+                $stats_sql	=	'SELECT DISTINCT s.*, u.id, u.race, u.username,u.urlaubs_modus, u.ally_id,u.bana,u.banaday,u.onlinetime,a.fraction,a.FraLevel, a.ally_name FROM '.STATPOINTS.' as s
                 INNER JOIN '.USERS.' as u ON u.id = s.id_owner
                 LEFT JOIN '.ALLIANCE.' as a ON a.id = s.id_ally
                 WHERE s.`universe` = '.$UNI.' AND s.`stat_type` = 1 '.((Config::get('stat') == 2)?'AND u.`authlevel` < '.Config::get('stat_level').' ':'').'
@@ -137,6 +137,7 @@ class ShowStatisticsPage extends AbstractPage
                     $RangeList[]	= array(
                         'id'		=> $StatRow['id'],
                         'name'		=> $StatRow['username'],
+						'race'		=> $StatRow['race'],
                         'points'	=> pretty_number($StatRow[$Points]),
 						'fraction2'	=> $fraction,
                         'allyid'	=> $StatRow['ally_id'],

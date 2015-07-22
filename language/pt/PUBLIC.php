@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // Translated into English by QwataKayean . All rights reversed (C) 2012
 // 2Moons - Copyright (C) 2010-2012 Jän Kropke
 // Site Title
@@ -45,6 +45,7 @@ $LNG['loginInfo']					= 'Com o Login, eu aceito os %s.';
 $LNG['loginWelcome']				= 'Bem-vindo ao %s';
 $LNG['loginServerDesc']				= '%s é um jogo de estratégia espacial com centenas de jogadores jogando juntos<strong>ao mesmo tempo</strong> tentanto ser o melhor. Tudo que você precisa para jogar é d eum navegador qualquer.';
 // Register
+$LNG['registerRace'] 				= 'Escolha sua raça:';
 $LNG['registerFacebookAccount']		= 'Conta do Facebook';
 $LNG['registerUsername']			= 'Usuário';
 $LNG['registerUsernameDesc']		= 'O nome de usuário deve ter no mínimo 3 e no máximo 25 caracteres e pontos, e deve consistir de números, letras, sublinhados e espaços';

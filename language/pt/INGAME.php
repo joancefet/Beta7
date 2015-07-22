@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // Translated into English by QwataKayean . All rights reversed (C) 2012
 // 2Moons - Copyright (C) 2010-2012 Slaver
@@ -222,6 +222,7 @@ $LNG['ov_reflink']							= 'Recrutas';
 
 $LNG['ov_noreflink']						= 'De momento, não recrutaste algum jogador.';
 $LNG['ov_chat_online']						= 'Jogadores no chat:';
+$LNG['ov_race'] 							= 'Raça';
 
 //----------------------------------------------------------------------------//
 // Galáxia

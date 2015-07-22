@@ -37,7 +37,8 @@ class ShowRegisterPage extends AbstractPage
 	
 	function show()
 	{
-		$universeSelect	= array();	
+		$universeSelect	= array();
+		$raceSelect = array();$raceAllConfig  = $GLOBALS['DATABASE']->query('SELECT race_id, race_name FROM ' . RACES);
 		$referralData	= array('id' => 0, 'name' => '');
 		$accountName	= "";
 		
@@ -49,6 +50,11 @@ class ShowRegisterPage extends AbstractPage
 		foreach($uniAllConfig as $uniID => $uniConfig)
 		{
 			$universeSelect[$uniID]	= $uniConfig['uni_name'].($uniConfig['game_disable'] == 0 || $uniConfig['reg_closed'] == 1 ? t('uni_closed') : '');
+		}
+		
+		while ($raceWhile = $GLOBALS['DATABASE']->FetchArray($raceAllConfig))
+		{
+			$raceSelect[$raceWhile['race_id']] = $raceWhile['race_name'];
 		}
 		
 		if(!isset($externalAuth['account'], $externalAuth['method']))
@@ -94,6 +100,7 @@ class ShowRegisterPage extends AbstractPage
 			'accountName'		=> $accountName,
 			'externalAuth'		=> $externalAuth,
 			'universeSelect'	=> $universeSelect,
+			'raceSelect'		=> $raceSelect,
 			'registerRulesDesc'	=> t('registerRulesDesc', '<a href="index.php?page=rules">'.t('menu_rules').'</a>')
 		));
 		
@@ -106,6 +113,7 @@ class ShowRegisterPage extends AbstractPage
 		$password 		= HTTP::_GP('password', '', true);
 		$mailAddress 	= HTTP::_GP('email', '');
 		$language 		= HTTP::_GP('lang', '');
+		$race			= HTTP::_GP('race', '');
 		$universum 		= HTTP::_GP('uni', 1);
 		
 		$referralID 	= HTTP::_GP('referralID', 0);
@@ -250,6 +258,7 @@ class ShowRegisterPage extends AbstractPage
 				`date` = '".TIMESTAMP."',
 				`ip` = '".$_SERVER['REMOTE_ADDR']."',
 				`language` = '".$GLOBALS['DATABASE']->escape($language)."',
+				`race` = '".$GLOBALS['DATABASE']->escape($race)."',
 				`universe` = ".$GLOBALS['UNI'].",
 				`referralID` = ".$referralID.",
 				`externalAuthUID` = '".$GLOBALS['DATABASE']->escape($externalAuthUID)."',

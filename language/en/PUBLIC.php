@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 // Translated into English by QwataKayean . All rights reversed (C) 2012
 // 2Moons - Copyright (C) 2010-2012 Jän Kropke
@@ -53,6 +53,7 @@ $LNG['loginWelcome']				= 'Welcome to %s';
 $LNG['loginServerDesc']				= '%s is a space strategy game with hundreds of players playing together <strong>at the same time</strong> trying to be the best. Everything what you need to the play is a Standard Browser.';
 
 // Register
+$LNG['registerRace'] 				= 'Choose your race:';
 $LNG['registerFacebookAccount']		= 'Facebook Account';
 $LNG['registerUsername']			= 'Username';
 $LNG['registerUsernameDesc']		= 'The Username must be at least 3 and maximum of 25 characters and points, and may consist of numbers, letters, underscores and spaces';

@@ -2,7 +2,7 @@
 
 /**
  *  2Moons
- *  Copyright (C) 2012 Jan KrÃ¶pke
+ *  Copyright (C) 2012 Jan Kröpke
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,8 +18,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package 2Moons
- * @author Jan KrÃ¶pke <info@2moons.cc>
- * @copyright 2012 Jan KrÃ¶pke <info@2moons.cc>
+ * @author Jan Kröpke <info@2moons.cc>
+ * @copyright 2012 Jan Kröpke <info@2moons.cc>
  * @license http://www.gnu.org/licenses/gpl.html GNU GPLv3 License
  * @version 1.7.3 (2013-05-19)
  * @info $Id: common.php 2647 2013-03-26 19:10:46Z slaver7 $
@@ -126,16 +126,18 @@ if (MODE === 'INGAME' || MODE === 'ADMIN' || MODE === 'CHAT')
 		require('includes/FleetHandler.php');
 	}
 		
-	$USER	= $GLOBALS['DATABASE']->getFirstRow("SELECT 
+	$USER	= $GLOBALS['DATABASE']->getFirstRow("SELECT	 
 	user.*, 
 	stat.total_points, 
 	stat.total_rank,
-	COUNT(message.message_id) as messages
+	COUNT(message.message_id) as messages,
+	races.race_name,	
+	races.race_id
 	FROM ".USERS." as user 
 	LEFT JOIN ".STATPOINTS." as stat ON stat.id_owner = user.id AND stat.stat_type = '1' 
 	LEFT JOIN ".MESSAGES." as message ON message.message_owner = user.id AND message.message_unread = '1'
-	WHERE user.id = ".$_SESSION['id']."
-	GROUP BY message.message_owner;");
+	LEFT JOIN ".RACES." as races ON races.race_id = user.race
+	WHERE user.id = ".$_SESSION['id']."	GROUP BY message.message_owner;");
 	
 	if(empty($USER)) {
 		exit(header('Location: index.php'));

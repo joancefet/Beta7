@@ -86,7 +86,7 @@ setInterval(function() { AJAX() }, 6000)
                             <button type="submit" class="btn_build">{$LNG.of_recruit}: {$LNG.tech.921} {foreach $Element.costRessources as $RessID => $RessAmount}<span style="color:{if $Element.costOverflow[$RessID] == 0}lime{else}red{/if}">{$RessAmount|number}</span>{/foreach}</button>
                         </form>
 						{else}
-						<span class="btn_build red">{$LNG.of_recruit}</span>
+						<span class="btn_build red">{$LNG.of_recruit}: {$LNG.tech.921} {foreach $Element.costRessources as $RessID => $RessAmount} {$RessAmount|number}{/foreach}</span>
 						{/if}
 					                </div>
 									{/if} 

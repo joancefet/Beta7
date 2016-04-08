@@ -150,7 +150,7 @@ $config['requestMessagesPriorChannelEnterList'] = null;
 // Max time difference in hours for messages to display on each request:
 $config['requestMessagesTimeDiff'] = 24;
 // Max number of messages to display on each request:
-$config['requestMessagesLimit'] = 10;
+$config['requestMessagesLimit'] = 50;
 
 // Max users in chat (does not affect moderators or admins):
 $config['maxUsersLoggedIn'] = 100;
@@ -168,7 +168,7 @@ $config['defaultBanTime'] = 5;
 $config['logoutData'] = './?logout=true';
 
 // If true, checks if the user IP is the same when logged in:
-$config['ipCheck'] = true;
+$config['ipCheck'] = false;
 
 // Defines the max time difference in hours for logs when no period or search condition is given:
 $config['logsRequestMessagesTimeDiff'] = 1;
@@ -184,7 +184,7 @@ $config['logsPurgeLogs'] = false;
 $config['logsPurgeTimeDiff'] = 365;
 
 // Defines if registered users (including moderators) have access to the logs (admins are always granted access):
-$config['logsUserAccess'] = false;
+$config['logsUserAccess'] = true;
 // Defines a list of channels (e.g. array(0, 1)) to limit the logs access for registered users, includes all channels the user has access to if set to null:
 $config['logsUserAccessChannelList'] = null;
 

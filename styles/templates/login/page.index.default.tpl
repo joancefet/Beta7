@@ -15,7 +15,7 @@
 					<a href="http://www.google.com/intl/en/chrome/browser/">
 					<img src="./media/images/hrom.png" width="26px" height="27px"/>
 					</a>
-					<div style="float: right;">we recommend:</div>
+					<div style="float: right;">Nós recomendamos:</div>
 				</div>
 		</div>
 

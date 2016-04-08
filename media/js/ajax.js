@@ -9,7 +9,7 @@ $(document).ready(function()
 		//alert(user_name);
         
         $.ajax({
-            url: 'http://xterium.ru/ajax',
+            url: 'http://beta7.stellarwars.net/ajax',
             type: 'POST',
             dataType: 'JSON',
 			data : '&value=' + value + '&email=' + user_email + '&ajax=universe' ,

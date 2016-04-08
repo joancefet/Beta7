@@ -218,7 +218,7 @@
             }
             var innerSpanElement = aElement.children(":first-child");
             aElement.attr("id", selectedId);
-            aElement.text("Escolher Linguagem");
+            aElement.text("Linguagem:");
             aElement.append(innerSpanElement);
         }
 

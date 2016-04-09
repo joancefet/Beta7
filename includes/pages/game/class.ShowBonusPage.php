@@ -9,27 +9,27 @@ function gift1(){
 global $USER, $PLANET, $LNG, $UNI, $CONF;
 if($USER['frisbee'] >= 1){
 $GLOBALS['DATABASE']->query("Update ".USERS." SET `frisbee` = `frisbee` - '1', `antimatter` = `antimatter` + '50' WHERE `id` = ".$USER['id'].";");
-$this->printMessage("You got <br> 50 Antimatter", true, array('game.php?page=overview', 2));
+$this->printMessage("Você obteve <br> 50 Anti Matéria", true, array('game.php?page=overview', 2));
 }else{
-$this->printMessage("No frisbee avaible!", true, array('game.php?page=overview', 2));
+$this->printMessage("Nenhum UFO disponível!", true, array('game.php?page=overview', 2));
 }
 }
 function gift2(){
 global $USER, $PLANET, $LNG, $UNI, $CONF;
 if($USER['alien'] >= 1){
 $GLOBALS['DATABASE']->query("Update ".USERS." SET `alien` = `alien` - '1', `antimatter` = `antimatter` + '50' WHERE `id` = ".$USER['id'].";");
-$this->printMessage("You got <br> 50 Antimatter", true, array('game.php?page=overview', 2));
+$this->printMessage("Você obteve <br> 50 Anti Matéria", true, array('game.php?page=overview', 2));
 }else{
-$this->printMessage("No alien avaible!", true, array('game.php?page=overview', 2));
+$this->printMessage("Nenhum Alien disponível!", true, array('game.php?page=overview', 2));
 }
 }
 function gift3(){
 global $USER, $PLANET, $LNG, $UNI, $CONF;
 if($USER['rocket'] >= 1){
 $GLOBALS['DATABASE']->query("Update ".USERS." SET `rocket` = `rocket` - '1', `antimatter` = `antimatter` + '50' WHERE `id` = ".$USER['id'].";");
-$this->printMessage("You got <br> 50 Antimatter", true, array('game.php?page=overview', 2));
+$this->printMessage("Você obteve <br> 50 Anti Matéria", true, array('game.php?page=overview', 2));
 }else{
-$this->printMessage("No rocket avaible!", true, array('game.php?page=overview', 2));
+$this->printMessage("Nenhum foguete disponível!", true, array('game.php?page=overview', 2));
 }
 }
 function gift4(){
@@ -39,36 +39,36 @@ $get_extra_false = mt_rand(1,100);
 if($get_extra > $get_extra_false){
 $FindSize = mt_rand(0, 100);
 if(90 < $FindSize && 100 >= $FindSize) {
-$Message	= "<br> 200 Antimatter bonus";
+$Message	= "<br> 200 Anti Matéria bonus";
 $varis = "antimatter";
 $valuee = 200;
 } elseif(70 < $FindSize && 90 >= $FindSize) {
 $varis = "experience_peace";
 $valuee = mt_rand(150,3500);
-$Message	= "<br> ".$valuee." Peace Experience";
+$Message	= "<br> ".$valuee." Experiência de Paz";
 } elseif(50 < $FindSize && 70 >= $FindSize) {
 $varis = 'academy_p';
 $valuee = mt_rand(1,25);
-$Message	= "<br> ".$valuee." Academy Points";
+$Message	= "<br> ".$valuee." Pontos de Academia";
 } elseif(30 < $FindSize && 50 >= $FindSize) {
 $varis = 'frisbee';
 $valuee = 1;
-$Message	= "<br> ".$valuee." frisbee bonus";
+$Message	= "<br> ".$valuee." UFO bonus";
 } elseif(10 < $FindSize && 30 >= $FindSize) {
 $valuee = 1;
 $varis = 'alien';
-$Message	= "<br> ".$valuee." alien bonus";
+$Message	= "<br> ".$valuee." Alien bonus";
 } elseif(0 < $FindSize && 10 >= $FindSize) {
 $valuee = 1;
 $varis = 'rocket';
-$Message	= "<br> '".$valuee."' rocket bonus";
+$Message	= "<br> '".$valuee."' Foguete bonus";
 }
 $GLOBALS['DATABASE']->query("Update ".USERS." SET `antimatter` = `antimatter` + '300', `frisbee` = `frisbee` - '1', `alien` = `alien` - '1', `rocket` = `rocket` - '1' WHERE `id` = ".$USER['id'].";");
 $GLOBALS['DATABASE']->query("Update ".USERS." SET ".$varis." = ".$varis." + ".$valuee." WHERE `id` = ".$USER['id'].";");
-$this->printMessage("You got <br> 300 Antimatter ".$Message."", true, array('game.php?page=overview', 2));
+$this->printMessage("Você obteve <br> 300 Anti Matéria ".$Message."", true, array('game.php?page=overview', 2));
 }else{
 $GLOBALS['DATABASE']->query("Update ".USERS." SET `antimatter` = `antimatter` + '300', `frisbee` = `frisbee` - '1', `alien` = `alien` - '1', `rocket` = `rocket` - '1' WHERE `id` = ".$USER['id'].";");
-$this->printMessage("You got <br> 300 Antimatter", true, array('game.php?page=overview', 2));
+$this->printMessage("Você obteve <br> 300 Anti Matéria", true, array('game.php?page=overview', 2));
 }
 }
 function show(){

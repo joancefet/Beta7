@@ -23,7 +23,7 @@ class ShowGmratePage extends AbstractPage
 		
 		$GLOBALS['DATABASE']->query("INSERT INTO `uni1_inquery_feedback` VALUES ('".$GLOBALS['DATABASE']->GetInsertID()."', '".$inquery."', '".$recommend."', '".$impact."', '".$total."', '".$answer."', '".$gmrate."', '".$comment."', '1') ;");
 		
-		$this->printMessage("Thanks for your feedback!", true, array('game.php?page=overview', 2));
+		$this->printMessage("Obrigado por seu feedback!", true, array('game.php?page=overview', 2));
 		$this->tplObj->assign_vars(
 				array(
 		
@@ -45,10 +45,10 @@ class ShowGmratePage extends AbstractPage
 		$error = 0;
 		$code = 1;
 		if($USER['id'] != $allowed['ownerID']){
-		$error = "You are not authorized to post on some one else ticket";
+		$error = "Você não está autorizado a postar em um ticket de outra pessoa.";
 		$code = 0;
 	    }elseif($GLOBALS['DATABASE']->numRows($COUNT) > 0){
-		$error = "You already gived a feedback for this ticket";
+		$error = "Você já deu um feedback para este ticket.";
 		$code = 0;
 	    }else{
 		$GLOBALS['DATABASE']->query("INSERT INTO `uni1_inquery_feedback` VALUES ('".$GLOBALS['DATABASE']->GetInsertID()."', '".$inquery."', '".$recommend."', '1') ;");

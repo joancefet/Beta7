@@ -18,10 +18,10 @@ class ShowDbonusPage extends AbstractPage {
 		
 		if($USER['sdays_time'] < TIMESTAMP - 48 * 60 * 60 ){
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 1, `sdays_time` = ".(TIMESTAMP - 60 * 60 *24)." WHERE `id` = ".$USER['id']." ;");
-		$this->printMessage("You didnt Claim you're bonus for yesterday... You restart from Day 1", true, array('game.php?page=dbonus', 2));
+		$this->printMessage("Você não retirou seu bônus ontem... A contagem irá reiniciar a partir do dia 1.", true, array('game.php?page=dbonus', 2));
 		}
 		if($USER['sdays_time']  > TIMESTAMP - 60 * 60 * 24){
-        $this->printMessage("Not Allowed!", true, array('game.php?page=overview', 2));
+        $this->printMessage("Não permitido!", true, array('game.php?page=overview', 2));
         die();
         }
 		else{
@@ -48,7 +48,7 @@ class ShowDbonusPage extends AbstractPage {
 		
 		
 		if($mode != $USER['sdays_b'] && $USER['sdays_b'] != 7 ){
-		$this->printMessage("Dont try stupid things, admin got warned", true, array('game.php?page=dbonus', 2));
+		$this->printMessage("Não tente coisas estúpidas, o admin foi avisado.", true, array('game.php?page=dbonus', 2));
 		die();
 		}
 		
@@ -63,7 +63,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 2 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #1", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #1", true, array('game.php?page=overview', 2));
         die();
         break;
 		
@@ -76,7 +76,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 3 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #2", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #2", true, array('game.php?page=overview', 2));
         die();
         break;
 	
@@ -88,7 +88,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 4 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #3", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #3", true, array('game.php?page=overview', 2));
         die();
         break;
 		
@@ -101,7 +101,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 5 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #4", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #4", true, array('game.php?page=overview', 2));
         die();
         break;
 		
@@ -113,7 +113,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 6 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #5", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #5", true, array('game.php?page=overview', 2));
         die();
         break;
 		
@@ -126,7 +126,7 @@ class ShowDbonusPage extends AbstractPage {
 		}else{
 		$GLOBALS['DATABASE']->query("Update ".USERS." SET `sdays_b` = 7 WHERE `id` = ".$USER['id']." ;");
 		}
-		$this->printMessage("Bought Package Day #6", true, array('game.php?page=overview', 2));
+		$this->printMessage("Retirou o pacote do dia #6", true, array('game.php?page=overview', 2));
         die();
         break;
 

@@ -49,7 +49,7 @@ $( "#build_1" ).show();
 $( "#build_2" ).show();
 $( "#build_3" ).show();
 $( "#build_4" ).show();
-qtips('#fildes_band', 'Excellent! Now has enough energy for all mines.<br/><br/> <b>You get 650 points peaceful experience.</b>', 'leftMiddle', 'topRight')
+qtips('#fildes_band', 'Excelente! Agora temos energia suficiente para todas as minas!<br/><br/> <b>Você ganhou 650 pontos de experiência em pacifismo.</b>', 'leftMiddle', 'topRight')
 setTimeout(function() { location.reload(); }, 5000);
 setInterval(function() { AJAX() }, 6000)
 	});
@@ -288,7 +288,7 @@ setInterval(function() { AJAX() }, 6000)
     <input type="hidden" value="insert" name="cmd"></input>
     <input type="hidden" value="{$ID}" name="building"></input>
 	<input type="hidden" value="{$Element.level}" name="lvlup1"></input>
-    <input id="b_input_{$ID}" class="build_number" type="number" value="{$Element.levelToBuild + 1}" min="{$Element.levelToBuild + 1}" maxlength="3" size="3" name="lvlup" onchange="counting('{$ID}');"></input>
+    <input id="b_input_{$ID}" class="build_number" type="hidden" value="{$Element.levelToBuild + 1}" min="{$Element.levelToBuild + 1}" maxlength="3" size="3" name="lvlup" onchange="counting('{$ID}');"></input>
     <button class="btn_build_part_left" type="submit">
 
     {$LNG.btnl}

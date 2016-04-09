@@ -401,7 +401,7 @@ class ShowBuildingsPage extends AbstractPage
 				
 
 				$allyInfo = $GLOBALS['DATABASE']->query("SELECT alliance_prod FROM `uni1_alliance` WHERE id = ".$USER['ally_id'].";");
-			$allyInfo  = $GLOBALS['DATABASE']->fetch_array($allyInfo);
+				$allyInfo  = $GLOBALS['DATABASE']->fetch_array($allyInfo);
 			
 				$alliance_prod = 0;
 				if($allyInfo['alliance_prod'] > 0){
@@ -445,8 +445,8 @@ class ShowBuildingsPage extends AbstractPage
 				'destroyOverflow'	=> $destroyOverflow,
 				'buyable'			=> $buyable,
 				'levelToBuild'		=> $levelToBuild,
-				'AllTech'		=> $AllTech,
-				'techacc' => BuildFunctions::isTechnologieAccessible($USER, $PLANET, $Element),
+				'AllTech'			=> $AllTech,
+				'techacc' 			=> BuildFunctions::isTechnologieAccessible($USER, $PLANET, $Element),
 			);
 		}
 
@@ -476,7 +476,7 @@ class ShowBuildingsPage extends AbstractPage
 		
 		
 		$rawfleetarray			= array(210 => 5);
-	$fleetRessource	= array(
+		$fleetRessource	= array(
 			901	=> 0,
 			902	=> 0,
 			903	=> 0,

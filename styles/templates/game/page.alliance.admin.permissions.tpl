@@ -35,6 +35,7 @@
 		<td colspan="15">No existing ranks.</td>
 	</tr>
 	{/foreach}
+	
 		
 	
 	
@@ -54,6 +55,12 @@
 		<td colspan="15"><input type="submit" value="{$LNG.al_save}"></td>
 	</tr>
 	
+	<tr>
+	<td colspan="15" class="gray_stripe" style="padding-right:0; text-align:left;">Legenda</td>
+		{foreach $avalibleRanks as $index => $rankName}
+		<tr><td><img src="styles/resource/images/alliance/{$rankName}.png" alt="{$rankName}" title="{$rankName}" width="16" height="16"></td><td colspan="14">{$ranksDesc[$index]}</td></tr>
+		{/foreach}
+	</tr>
 	</table>
 
 </form>
@@ -72,12 +79,7 @@
 			<tr>
 				<th colspan="{$countRank + 2}">&nbsp;</th>
 			</tr>
-	{foreach $avalibleRanks as $rankName}
-	<tr>
-				<td><img src="styles/resource/images/alliance/{$rankName}.png" alt="{$rankName}" width="16" height="16">&nbsp;{$LNG.al_rank_desc[$rankName]}</td>
-				<td><input type="checkbox" name="newrank[{$rankName}]" value="1" title="{$LNG.al_rank_desc[$rankName]}"></td>
-	</tr>
-	{/foreach}
+	
 	<tr>
 				<td colspan="{$countRank + 2}"><input type="submit" value="{$LNG.al_create}"></td>
 	</tr>

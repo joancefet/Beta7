@@ -48,7 +48,23 @@ class ShowAlliancePage extends AbstractPage
 		'MANAGEUSERS',
 		'EVENTS',
 		'PLANETS',
-		'BANK'
+		'BANK',
+	);
+	public $ranksDesc	= array(
+		'Pode ver a lista de membros.',
+		'Pode ver se os membros estão online.',
+		'Pode fazer transferências.',
+		'Pode ver os pedidos de entrada.',
+		'Pode gerir os pedidos de entrada.',
+		'Pode mandar mensagens aos membros.',
+		'Administrador.',
+		'Pode expulsar membros.',
+		'Pode gerir a diplomacia da aliança.',
+		'Pode ver o ranking da aliança.',
+		'Pode gerir os membros da aliança.',
+		'Pode criar eventos da aliança.',
+		'Pode ver os planetas dos membros da aliança.',
+		'Pode gerir o banco da aliança.',
 	);
 	
 	function __construct() 
@@ -497,9 +513,9 @@ class ShowAlliancePage extends AbstractPage
 			'dercrystal'				=> pretty_number($StatsData['kbcrystal']),
 			'isOwner'					=> $this->allianceData['ally_owner'] == $USER['id'],
 			'ally_events'				=> $ally_events,
-			'fraction'				=> $this->allianceData['fraction'],
-			'points'				=> $this->allianceData['alliance_points'],
-			'Durchschnitt'			=> $this->allianceData['alliance_points'] / $this->allianceData['ally_members'],
+			'fraction'					=> $this->allianceData['fraction'],
+			'points'					=> $this->allianceData['alliance_points'],
+			'Durchschnitt'				=> $this->allianceData['alliance_points'] / $this->allianceData['ally_members'],
 		));
 		
 		$this->display('page.alliance.home.tpl');
@@ -1512,6 +1528,7 @@ class ShowAlliancePage extends AbstractPage
 			'rankList'		=> $rankList,
 			'ownRights'		=> $this->rights,
 			'avalibleRanks'	=> $this->avalibleRanks,
+			'ranksDesc'		=> $this->ranksDesc,
 		));	
 
 		$this->display('page.alliance.admin.permissions.tpl');

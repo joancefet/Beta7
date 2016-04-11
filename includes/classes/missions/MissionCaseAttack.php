@@ -153,6 +153,18 @@ HTML;
 		$defIntoDebris		= $GLOBALS['CONFIG'][$this->_fleet['fleet_universe']]['Defs_Cdr'];
 		
 		$combatResult 		= calculateAttack($fleetAttack, $fleetDefend, $fleetIntoDebris, $defIntoDebris);
+		/*ob_start();
+		print_r($fleetAttack);
+		print_r($fleetDefend);
+		print_r($fleetIntoDebris);
+		print_r($defIntoDebris);
+
+		$content = ob_get_contents();
+		ob_end_clean();
+
+		$f = fopen("file.txt", "w");
+		fwrite($f, $content);
+		fclose($f);*/
 		
 		$sqlQuery			= "";
 		

@@ -154,7 +154,7 @@ function ShowQuickEditorPage()
 				$SpecifyItemsPQ	.= "`".$resource[$ID]."`,";
 			}
 			$UserData	= $GLOBALS['DATABASE']->getFirstRow("SELECT ".$SpecifyItemsPQ." `username`, `authlevel`, `galaxy`, `system`, `planet`, `id_planet`, `darkmatter`, `authattack`, `authlevel` FROM ".USERS." WHERE `id` = '".$id."';");
-			$ChangePW	= $USER['id'] == ROOT_USER || ($id != ROOT_USER && $USER['authlevel'] > $UserData['authlevel']);
+			//$ChangePW	= $USER['id'] == ROOT_USER || ($id != ROOT_USER && $USER['authlevel'] > $UserData['authlevel']);
 		
 			if($action == 'send'){
 				$SQL	= "UPDATE ".USERS." SET ";
@@ -163,8 +163,8 @@ function ShowQuickEditorPage()
 					$SQL	.= "`".$resource[$ID]."` = ".min(abs(HTTP::_GP($resource[$ID], 0)), 255).", ";
 				}
 				$SQL	.= "`darkmatter` = '".max(HTTP::_GP('darkmatter', 0), 0)."', ";
-				if(!empty($_POST['password']) && $ChangePW)
-					$SQL	.= "`password` = '".cryptPassword(HTTP::_GP('password', '', true))."', ";
+				/*if(!empty($_POST['password']) && $ChangePW)
+					$SQL	.= "`password` = '".cryptPassword(HTTP::_GP('password', '', true))."', ";*/
 				$SQL	.= "`username` = '".$GLOBALS['DATABASE']->sql_escape(HTTP::_GP('name', '', UTF8_SUPPORT))."', ";
 				$SQL	.= "`authattack` = '".($UserData['authlevel'] != AUTH_USR && HTTP::_GP('authattack', '') == 'on' ? $UserData['authlevel'] : 0)."' ";
 				$SQL	.= "WHERE `id` = '".$id."' AND `universe` = '1';";

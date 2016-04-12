@@ -80,7 +80,7 @@ $( "#build_1" ).show();
 $( "#build_2" ).show();
 $( "#build_3" ).show();
 $( "#build_4" ).show();
-qtips('#fildes_band', 'You can build mines in the world, to increase the production of resources.<br/> But remember that each mine for its work requires energy.<br /><br /> <b><span style="margin:0 0 7px 0;display: block;color:#002211;">Build:</span><span style=" margin-left: 9px;display: block;">Solar Power Planet lvl. 1</span>', 'leftMiddle', 'topRight')
+qtips('#fildes_band', 'Você pode construir minas no planeta para aumentar a produção de recursos..<br/> Mas lembre-se que para as minas trabalharem, elas precisam de energia..<br /><br /> <b><span style="margin:0 0 7px 0;display: block;color:#002211;">Construir:</span><span style=" margin-left: 9px;display: block;">Planta de Energia Solar lvl. 1</span>', 'leftMiddle', 'topRight')
 setInterval(function() { AJAX() }, 6000)
 	});
 	</script>
@@ -195,7 +195,9 @@ setInterval(function() { AJAX() }, 6000)
         <div class="fildes_band_text">
         	campos construídos: <span>{$field_used}</span> de <span>{$field_max}</span>&emsp;&emsp;
         	free: <span>{$field_left}</span>
-        </div>           
+			<a class="bd_dm_buy" style="padding-right: 30px;" href="game.php?page=dmbuild">Comprar edifícios com MN</a>
+        </div>    
+		
     </div>   
     <div id="build_elements">
 	{foreach $BuildInfoList as $ID => $Element}
@@ -320,10 +322,7 @@ setInterval(function() { AJAX() }, 6000)
 			
                 <div class="clear"></div>
             
-              
-    <div class="build_band" style="padding-right:0;">
-       	<a class="bd_dm_buy" href="game.php?page=dmbuild">Comprar edifícios com MN</a>
-    </div>    
+                  
            
 </div><!--/build-->
 </div>

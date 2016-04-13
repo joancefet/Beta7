@@ -119,11 +119,11 @@ function calculateAttack(&$attackers, &$defenders, $FleetTF, $DefTF)
 			foreach ($attacker['unit'] as $element => $amount) {
 			
 				$thisAtt	= $amount * ($CombatCaps[$element]['attack'] * $attTech); //attaque
-				$thisShield	= $amount * ($CombatCaps[$element]['shield'] * $shieldTech); // прощет щитов
+				$thisShield	= $amount * ($CombatCaps[$element]['shield'] * $shieldTech); // escudo
 				$structure = $pricelist[$element]['cost'][902];					
-				$thisDef	= $amount * $structure ; //прощет брони
+				$thisDef	= $amount * $structure ; //estrutura
 				
-				//------Крит атаки и щитов
+				//------Ataques criticos e escudo
 			$DK		= 1;
 			$SK		= 1;
 			

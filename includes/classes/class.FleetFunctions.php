@@ -407,7 +407,7 @@ class FleetFunctions
 		return $Count >= BASH_COUNT;
 	}
 	
-	public static function sendFleet($fleetArray, $fleetMission, $fleetStartOwner, $fleetStartPlanetID, $fleetStartPlanetGalaxy, $fleetStartPlanetSystem, $fleetStartPlanetPlanet, $fleetStartPlanetType, $fleetTargetOwner, $fleetTargetPlanetID, $fleetTargetPlanetGalaxy, $fleetTargetPlanetSystem, $fleetTargetPlanetPlanet, $fleetTargetPlanetType, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $fleetGroup = 0, $missleTarget = 0)
+	public static function sendFleet($fleetArray, $fleetMission, $fleetStartOwner, $fleetStartPlanetID, $fleetStartPlanetGalaxy, $fleetStartPlanetSystem, $fleetStartPlanetPlanet, $fleetStartPlanetType, $fleetTargetOwner, $fleetTargetPlanetID, $fleetTargetPlanetGalaxy, $fleetTargetPlanetSystem, $fleetTargetPlanetPlanet, $fleetTargetPlanetType, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $fleetGroup = 0, $tickinicial, $tickfinal, $missleTarget = 0)
 	{
 		global $resource, $UNI;
 		$fleetShipCount	= array_sum($fleetArray);
@@ -417,6 +417,7 @@ class FleetFunctions
 			$fleetData[]	= $ShipID.','.floattostring($ShipCount);
 			$planetQuery[]	= $resource[$ShipID]." = ".$resource[$ShipID]." - ".floattostring($ShipCount);
 		}
+		$tickretorno = $tickfinal - $tickinicial + $tickfinal;
 		
 		$SQL	= "LOCK TABLE uni1_fleets_alarm WRITE, ".LOG_FLEETS." WRITE, ".FLEETS_EVENT." WRITE, ".FLEETS." WRITE, ".PLANETS." WRITE;
 				   UPDATE ".PLANETS." SET ".implode(", ", $planetQuery)." WHERE id = ".$fleetStartPlanetID.";
@@ -445,6 +446,9 @@ class FleetFunctions
 				   fleet_resource_deuterium = ".$fleetRessource[903].",
 				   fleet_group              = ".$fleetGroup.",
 				   fleet_target_obj         = ".$missleTarget.",
+				   tickinicial				= ".$tickinicial.",
+				   tickfinal				= ".$tickfinal.",
+				   tickretorno				= ".$tickretorno.",
 				   start_time               = ".TIMESTAMP.";
 				   SET @fleetID = LAST_INSERT_ID();
 				   INSERT INTO uni1_fleets_alarm SET
@@ -472,7 +476,10 @@ class FleetFunctions
 				   fleet_resource_deuterium = ".$fleetRessource[903].",
 				   fleet_group              = ".$fleetGroup.",
 				   fleet_target_obj         = ".$missleTarget.",
-				   called         = '0',
+				   called         			= '0',
+				   tickinicial				= ".$tickinicial.",
+				   tickfinal				= ".$tickfinal.",
+				   tickretorno				= ".$tickretorno.",
 				   start_time               = ".TIMESTAMP.";
 
 				   
@@ -505,6 +512,9 @@ class FleetFunctions
 				   fleet_resource_deuterium = ".$fleetRessource[903].",
 				   fleet_group              = ".$fleetGroup.",
 				   fleet_target_obj         = ".$missleTarget.",
+				   tickinicial				= ".$tickinicial.",
+				   tickfinal				= ".$tickfinal.",
+				   tickretorno				= ".$tickretorno.",
 				   start_time               = ".TIMESTAMP.";
 				   UNLOCK TABLES;";
 				   

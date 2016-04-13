@@ -36,6 +36,10 @@ class ShowFleetStep3Page extends AbstractPage
 	public function show()
 	{
 		global $USER, $PLANET, $resource, $pricelist, $reslist, $CONF, $LNG, $UNI;
+		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickinicial = $tickinicial['tick'];
 			
 		if (IsVacationMode($USER)) {
 			FleetFunctions::GotoFleetPage(0);
@@ -339,7 +343,13 @@ class ShowFleetStep3Page extends AbstractPage
 		$fleetStayTime		= $fleetStartTime + $StayDuration;
 		$fleetEndTime		= $fleetStayTime + $duration;
 		
-		FleetFunctions::sendFleet($fleetArray, $targetMission, $USER['id'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $targetPlanetData['id_owner'], $targetPlanetData['id'], $targetGalaxy, $targetSystem, $targetPlanet, $targetType, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $fleetGroup);
+		if ($PLANET['system'] == $targetSystem){
+			$tickfinal = $tickinicial + 9;
+			} else {
+				$tickfinal = $tickinicial + 11;
+			}
+		
+		FleetFunctions::sendFleet($fleetArray, $targetMission, $USER['id'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $targetPlanetData['id_owner'], $targetPlanetData['id'], $targetGalaxy, $targetSystem, $targetPlanet, $targetType, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $fleetGroup, $tickinicial, $tickfinal);
 		
 		foreach ($fleetArray as $Ship => $Count)
 		{

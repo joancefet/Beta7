@@ -133,6 +133,10 @@ class ShowOverviewPage extends AbstractPage
 	{
 		global $CONF, $LNG, $PLANET, $USER, $resource, $UNI;
 		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickatual = $tickatual['tick'];
+		
 	if($CONF['treasure_event'] < TIMESTAMP && $CONF['treasure_config'] == 1) {
 	$cautare = $GLOBALS['DATABASE']->query("SELECT * FROM ".PLANETS." p INNER JOIN ".USERS." u ON p.id_owner = u.id WHERE p.universe = ".$UNI." AND u.universe = ".$UNI." AND u.onlinetime < ".(TIMESTAMP - 60*60*24*7)." AND u.urlaubs_modus = 0 AND p.planet_type = 1 ORDER BY RAND() LIMIT 20;");
 	while($xys = $GLOBALS['DATABASE']->fetch_array($cautare)){
@@ -539,6 +543,7 @@ Alle inaktiven Monde sind voll mit Resourcen</span>';
 			'RefLinks'					=> $RefLinks,
 			'chatOnline'				=> $chatOnline,
 			'servertime'				=> _date("M D d H:i:s", TIMESTAMP, $USER['timezone']),
+			'tickatual'					=> $tickatual,
 			'path'						=> HTTP_PATH,
 			'online_users'              => $balken,		'balken',
 		));

@@ -53,7 +53,7 @@ function buildTimeTicker(){ var e=buildEndTime-(serverTime.getTime()-startTime)/
 {/foreach}
 </div>
 <div id="online_user">
-{$LNG.over_online}: <span>{$online_users}</span>
+{$LNG.over_online}: <span>{$online_users}</span> Tick: <span>{$tickatual}</span>
 </div>
 <div id="gm_linck">
 <a title="" href="game.php?page=ticket&mode=create" class="tooltip" data-tooltip-content="{$LNG.over_question_one}">{$LNG.over_question_two}</a>  

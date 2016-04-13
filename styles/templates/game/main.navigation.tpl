@@ -29,7 +29,7 @@ $( this ).dialog( "close" );
 <div id="espionage" class="{$spying} indicator tooltip" data-tooltip-content="{if $spying == 'active_indicator' }{$LNG.YEINBS_on}{else}{$LNG.YEINBS}{/if}" href="game.php?page=overview"><div class="icoi"></div></div>
 <div id="rocket" class="{$rocket} indicator tooltip" data-tooltip-content="{if $rocket == 'active_indicator' }{$LNG.NIR_on}{else}{$LNG.NIR}{/if}"><div class="icoi"></div></div>
 </div>     
-<div class="servertime">{$servertime}</div>
+<div class="servertime">{$servertime} Tick: {$tickatual}</div>
 <div class="separator"></div>
 {if $bonus_timer < $TIME}     <a title="Bonus" class="big_btn red btn_menu btn_menu_big" href="game.php?page=bonus">
 {if $bonte_button !=0}x{$bonte_button}|{/if}<span>{$LNG.alm_bonus}</span></a>{/if}
@@ -47,7 +47,7 @@ $( this ).dialog( "close" );
 <a class="btn_menu" href="game.php?page=academy">Academia {if $academy_reduce != 0}<span style="color:#FC0;">-{$academy_reduce}%</span>{/if}</a>	
 <a class="btn_menu" href="game.php?page=Immunity">{$LNG.alm_immunity}</a>
 <a class="btn_menu" href="game.php?page=Planetcloak">{$LNG.alm_planetcloak}</a>
-<a class="btn_menu"  href="game.php?page=Planeta">Leilões do P.</a>
+<a class="btn_menu" href="game.php?page=Planeta">Leilões do P.</a>
 <a class="btn_menu" href="game.php?page=Reward2">Resgate</a>
 <a class="btn_menu" href="game.php?page=FleetDealer">Merc. de Frotas</a>
 {*<a title="Get back some of your lsot fleets" class="btn_menu" href="game.php?page=FleetDealer">{$LNG.alm_fleetdealer}</a>*}

@@ -96,6 +96,10 @@ abstract class AbstractPage
     {
 		global $PLANET, $LNG, $USER, $THEME, $resource, $reslist;
 		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickatual = $tickatual['tick'];
+		
 		if($PLANET[$resource[43]] > 0) {
 			$this->tplObj->loadscript("gate.js");
 		}
@@ -190,6 +194,7 @@ abstract class AbstractPage
 			'hasBoard'			=> filter_var(Config::get('forum_url'), FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED),
 			'hasAdminAccess'	=> isset($_SESSION['admin_login']),
 			'servertime'				=> _date("M D d H:i:s", TIMESTAMP, $USER['timezone']),
+			'tickatual'					=> $tickatual,
 			'AUPLANETS'				=> $PLANET['name'],
 			'AUGAL'				=> $PLANET['galaxy'],
 			'AUST'				=> $PLANET['system'],

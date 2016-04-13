@@ -274,9 +274,11 @@ class FleetFunctions
 	
 	public static function SendFleetBack($USER, $FleetID)
 	{
-			
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickatual = $tickatual['tick'];
 
-		$FleetRow = $GLOBALS['DATABASE']->getFirstRow("SELECT start_time, fleet_mission, fleet_group, fleet_owner, fleet_mess FROM ".FLEETS." WHERE fleet_id = '". $FleetID ."';");
+		$FleetRow = $GLOBALS['DATABASE']->getFirstRow("SELECT start_time, fleet_mission, fleet_group, fleet_owner, fleet_mess, tickinicial, tickfinal, tickretorno FROM ".FLEETS." WHERE fleet_id = '". $FleetID ."';");
 		if ($FleetRow['fleet_owner'] != $USER['id'] || $FleetRow['fleet_mess'] == 1)
 			return;
 			
@@ -295,13 +297,17 @@ class FleetFunctions
 				$sqlWhere	= 'fleet_group';
 			}
 		}
+		$tickretorno = $tickatual - $FleetRow['tickinicial'] + $tickatual;
+		$tickfinal = $tickatual;
 		
 		$fleetEndTime	= (TIMESTAMP - $FleetRow['start_time']) + TIMESTAMP;
 		
 		$GLOBALS['DATABASE']->multi_query("UPDATE ".FLEETS.", ".FLEETS_EVENT." SET 
 						  fleet_group = 0,
 						  fleet_end_stay = ".TIMESTAMP.",
-						  fleet_end_time = ".$fleetEndTime.", 
+						  fleet_end_time = ".$fleetEndTime.",
+						  tickfinal = ".$tickfinal.",
+						  tickretorno = ".$tickretorno.",
 						  fleet_mess = 1,
 						  hasCanceled = 1,
 						  time = ".$fleetEndTime."
@@ -309,6 +315,8 @@ class FleetFunctions
 						  UPDATE ".LOG_FLEETS." SET
 						  fleet_end_stay = ".TIMESTAMP.",
 						  fleet_end_time = ".$fleetEndTime.",
+						  tickfinal = ".$tickfinal.",
+						  tickretorno = ".$tickretorno.",
 						  fleet_mess = 1,
 						  fleet_state = 2
 						  WHERE ".$sqlWhere." = ".$FleetID.";");

@@ -35,16 +35,17 @@
                                              	
 					
 
-<a id="a_mesage" href="game.php?page=messages" title="{$LNG.hnav_message}">
+						<a id="a_mesage" href="game.php?page=messages" title="{$LNG.hnav_message}">
 
-    <span class="mesages"></span>
-    <span id="new_email" class="new_email" {if $new_message == 0}style="display:none;"{/if}>
+							<span class="mesages"></span>
+							<span id="new_email" class="new_email" {if $new_message == 0}style="display:none;"{/if}>
 
-        {$new_message}
+								{$new_message}
 
-    </span>
+							</span>
 
-</a>						
+						</a>						
+						
                     </div>                    
                 
                 	<div class="mini_planet_navigation">

@@ -36,19 +36,28 @@ class TickerCronJob
 	
 	function updateTicker()
 	{
-		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick, tick_last_time FROM ".CONFIG."");
+		$horainicio = 1460653200;
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick, tick_last_time FROM ".CONFIG.";");
 		$ticklasttime = $GLOBALS['DATABASE']->fetch_array($buscarTick);
 		$tickatual = $ticklasttime['tick'];
 		$tick_last_time = $ticklasttime['tick_last_time'];
 		
-		if (($tickatual != 0) and (TIMESTAMP - $tick_last_time > 600) ){
+		ob_start();
+		print_r($horainicio);
+		print_r($tick_last_time);
+		print_r(TIMESTAMP);
+
+		$content = ob_get_contents();
+		ob_end_clean();
+
+		$f = fopen("tickercronjob.txt", "w");
+		fwrite($f, $content);
+		fclose($f);
 		
-			$GLOBALS['DATABASE']->query("UPDATE ".CONFIG." SET `tick` = `tick` + 1, `tick_last_time` = ".TIMESTAMP.";");
+		if ((TIMESTAMP >= $horainicio) and (TIMESTAMP - $tick_last_time > 3599) ){
 		
-		}
+			$GLOBALS['DATABASE']->query("UPDATE ".CONFIG." SET `tick` = `tick` + 1, `tick_last_time` = `tick_last_time` + 3600;");
 		
-		if ($tickatual == 0){
-			$GLOBALS['DATABASE']->query("UPDATE ".CONFIG." SET `tick` = `tick` + 1, `tick_last_time` = ".TIMESTAMP.";");
 		}
 	}
 }

@@ -103,7 +103,7 @@ input[type=checkbox]{
 }
 #top_nav .mini_planet_navigation{
 	float:left;
-	margin-left:22px;
+	margin-left:7px;
 	height:32px;
 	width:68px;
 	background:url(../images/mini_list.png) no-repeat center;
@@ -274,7 +274,7 @@ input[type=checkbox]{
 }
 #top_nav_part_left{
 	float:left;
-	width:300px;
+	width:285px;
 	margin-left:12px;
 }
 #top_nav_part_right a, #top_nav_part_left a{

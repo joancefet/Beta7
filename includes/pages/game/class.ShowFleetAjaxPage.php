@@ -51,6 +51,10 @@ class ShowFleetAjaxPage extends AbstractPage
 	{
 		global $USER, $PLANET, $resource, $LNG, $CONF, $pricelist;
 		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickinicial = $tickinicial['tick'];
+		
 		$UserDeuterium  = $PLANET['deuterium'];
 		
 		$planetID 		= HTTP::_GP('planetID', 0);
@@ -200,8 +204,14 @@ class ShowFleetAjaxPage extends AbstractPage
 		
 		$shipID				= array_keys($fleetArray);
 		
+		if ($PLANET['system'] == $targetData['system']){
+			$tickfinal = $tickinicial + 9;
+			} else {
+				$tickfinal = $tickinicial + 11;
+			}
+		
 		FleetFunctions::sendFleet($fleetArray, $targetMission, $USER['id'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'],
-		$targetData['id_owner'], $planetID, $targetData['galaxy'], $targetData['system'], $targetData['planet'], $targetData['planet_type'], $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime);
+		$targetData['id_owner'], $planetID, $targetData['galaxy'], $targetData['system'], $targetData['planet'], $targetData['planet_type'], $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $tickinicial, $tickfinal);
 		$this->sendData(600, $LNG['fa_sending']." ".array_sum($fleetArray)." ". $LNG['tech'][$shipID[0]] ." ".$LNG['gl_to']." ".$targetData['galaxy'].":".$targetData['system'].":".$targetData['planet']." ...");
 	}
 }

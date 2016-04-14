@@ -170,3 +170,1736 @@ Stack trace:
 #0 /includes/pages/game/class.ShowPTraderPage.php(64): Database-&gt;query('UPDATE uni1_pla...')
 #1 /game.php(40): ShowPTraderPage-&gt;show()
 #2 {main}
+[21-Jul-2015 15:07:15] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '10', '9', '1', '11', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[22-Jul-2015 00:20:59] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:09] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:35] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:37] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:38] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:21:43] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:22:33] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:22:38] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:22:40] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:01] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:05] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:07] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:09] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:09] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:23:11] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:24:04] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:24:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:24:12] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:24:26] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:24:33] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:25:06] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:25:08] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:25:10] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:27:31] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:42] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /index.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:46] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:47] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php?page=ticket | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:49] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php?page=ticket | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:52] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:53] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /game.php(10): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:28:59] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:29:53] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:30:24] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/common.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 00:30:58] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/PlayerUtil.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('P3P: CP=&quot;IDC DS...')
+#2 /includes/common.php(83): HTTP::sendHeader('P3P', 'CP=&quot;IDC DSP COR...')
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 02:31:27] WARNING: "session_start(): Cannot send session cache limiter - headers already sent (output started at /home/stell530/public_html/beta7/includes/dbtables.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Session.php | Line: 107
+URL: http://beta7.stellarwars.net/admin.php | Version: V 1.0
+Stack trace:
+#0 [internal function]: errorHandler(2, 'session_start()...', '/home/stell530/...', 107, Array)
+#1 /includes/classes/class.Session.php(107): session_start()
+#2 /includes/common.php(115): Session-&gt;isActiveSession()
+#3 /admin.php(8): require('/home/stell530/...')
+#4 {main}
+[22-Jul-2015 02:31:51] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/classes/class.BuildFunctions.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/admin.php | Version: V 1.0
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('Location: http:...')
+#2 /includes/classes/HTTP.class.php(39): HTTP::sendHeader('Location', 'http://beta7.st...')
+#3 /includes/pages/adm/ShowLoginPage.php(44): HTTP::redirectTo('admin.php')
+#4 /admin.php(16): ShowLoginPage()
+#5 {main}
+[22-Jul-2015 03:23:42] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=buildings | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '10', '6', '1', '11', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[22-Jul-2015 03:44:09] WARNING: "Cannot modify header information - headers already sent by (output started at /home/stell530/public_html/beta7/includes/pages/login/ShowRegisterPage.class.php:1)"
+File: /home/stell530/public_html/beta7/includes/classes/HTTP.class.php | Line: 46
+URL: http://beta7.stellarwars.net/index.php?page=register | Version: V 1.0
+Stack trace:
+#0 [internal function]: errorHandler(2, 'Cannot modify h...', '/home/stell530/...', 46, Array)
+#1 /includes/classes/HTTP.class.php(46): header('Location: http:...')
+#2 /includes/classes/HTTP.class.php(39): HTTP::sendHeader('Location', 'http://beta7.st...')
+#3 /includes/pages/login/AbstractPage.class.php(180): HTTP::redirectTo('index.php?page=...')
+#4 /includes/pages/login/ShowRegisterPage.class.php(274): AbstractPage-&gt;redirectTo('index.php?page=...')
+#5 /index.php(40): ShowRegisterPage-&gt;send()
+#6 {main}
+[22-Jul-2015 03:45:59 America/Recife] PHP Parse error:  syntax error, unexpected ')', expecting ';' or '{' in /home/stell530/public_html/beta7/includes/pages/login/ShowRegisterPage.class.php on line 38
+[23-Jul-2015 18:36:30] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[23-Jul-2015 18:37:17] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[24-Jul-2015 08:36:41] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[24-Jul-2015 08:56:46] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=ticket&mode=send | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '10', '6', '1', '11', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[24-Jul-2015 21:15:27] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[27-Jul-2015 14:19:15] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[27-Jul-2015 15:07:35] NOTICE: "Undefined index: RessAmount"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1109
+URL: http://beta7.stellarwars.net/game.php?page=officier | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1109): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1109, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowOfficierPage.php(183): AbstractPage-&gt;display('page.officier.d...')
+#6 /game.php(40): ShowOfficierPage-&gt;show()
+#7 {main}
+[27-Jul-2015 15:08:24] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.officier.default.tpl&quot;  on line 91 &quot;{/if}&quot; unclosed {foreach} tag"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=officier | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_compilebase.php(166): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unclosed {forea...')
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_compile_if.php(197): Smarty_Internal_CompileBase-&gt;closeTag(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(473): Smarty_Internal_Compile_Ifclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('ifclose', Array, Array)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('ifclose', Array)
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t/t/t/t/t         ...')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#18 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#19 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#20 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#21 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#22 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#23 /includes/pages/game/class.ShowOfficierPage.php(183): AbstractPage-&gt;display('page.officier.d...')
+#24 /game.php(40): ShowOfficierPage-&gt;show()
+#25 {main}
+[30-Jul-2015 13:22:56] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '9', '8', '1', '10', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[31-Jul-2015 19:49:26] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[05-Aug-2015 16:01:18] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[14-Aug-2015 08:29:42] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '1', '14', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[15-Aug-2015 12:47:15] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '3', '2', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[21-Aug-2015 20:06:39] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '3', '2', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[09-Sep-2015 16:16:03] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '3', '5', '1', '2', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[29-Sep-2015 22:19:01] NOTICE: "Undefined variable: PlanetData"
+File: /home/stell530/public_html/beta7/includes/functions/CreateOnePlanetRecord.php | Line: 53
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: V 1.0
+Stack trace:
+#0 /includes/functions/CreateOnePlanetRecord.php(53): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 53, Array)
+#1 /includes/classes/missions/MissionCaseColonisation.php(66): CreateOnePlanetRecord('1', '10', '2', '1', '11', 'Colony', false, '0')
+#2 /includes/classes/class.FlyingFleetHandler.php(82): MissionCaseColonisation-&gt;TargetEvent()
+#3 /includes/FleetHandler.php(16): FlyingFleetHandler-&gt;run()
+#4 /includes/common.php(126): require('/home/stell530/...')
+#5 /game.php(10): require('/home/stell530/...')
+#6 {main}
+[28-Oct-2015 22:44:02] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php?page=buildings | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:44:51] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:44:54] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:44:57] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:45:14] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /index.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:45:24] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:45:34] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /index.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:46:55] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/ | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /index.php(10): require('/home/stell530/...')
+#2 {main}
+[28-Oct-2015 22:47:20] USER ERROR: "Connection to database failed: Access denied for user 'stell530_stellar'@'localhost' (using password: YES)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php?page=ticket | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[23-Jan-2016 07:42:42] USER ERROR: "SMTP Error: Could not connect to SMTP host."
+File: /home/stell530/public_html/beta7/includes/libs/phpmailer/class.phpmailer.php | Line: 1093
+URL: http://beta7.stellarwars.net/index.php?page=lostPassword | Version: V 1.0
+Stack trace:
+#0 /includes/libs/phpmailer/class.phpmailer.php(971): PHPMailer-&gt;SmtpConnect()
+#1 /includes/libs/phpmailer/class.phpmailer.php(845): PHPMailer-&gt;SmtpSend('Date: Sat, 23 J...', 'Hello Emperor f...')
+#2 /includes/libs/phpmailer/class.phpmailer.php(763): PHPMailer-&gt;PostSend()
+#3 /includes/classes/Mail.class.php(46): PHPMailer-&gt;Send()
+#4 /includes/pages/login/ShowLostPasswordPage.class.php(172): Mail::send('flexaza@gmail.c...', 'flexaza@gmail.c...', 'Esqueci minha s...', 'Hello Emperor f...')
+#5 /index.php(40): ShowLostPasswordPage-&gt;send()
+#6 {main}
+[23-Jan-2016 07:43:38] USER ERROR: "SMTP Error: Could not connect to SMTP host."
+File: /home/stell530/public_html/beta7/includes/libs/phpmailer/class.phpmailer.php | Line: 1093
+URL: http://beta7.stellarwars.net/index.php?page=lostPassword | Version: V 1.0
+Stack trace:
+#0 /includes/libs/phpmailer/class.phpmailer.php(971): PHPMailer-&gt;SmtpConnect()
+#1 /includes/libs/phpmailer/class.phpmailer.php(845): PHPMailer-&gt;SmtpSend('Date: Sat, 23 J...', 'Hello Emperor f...')
+#2 /includes/libs/phpmailer/class.phpmailer.php(763): PHPMailer-&gt;PostSend()
+#3 /includes/classes/Mail.class.php(46): PHPMailer-&gt;Send()
+#4 /includes/pages/login/ShowLostPasswordPage.class.php(172): Mail::send('flexaza@gmail.c...', 'flexaza@gmail.c...', 'Esqueci minha s...', 'Hello Emperor f...')
+#5 /index.php(40): ShowLostPasswordPage-&gt;send()
+#6 {main}
+[23-Jan-2016 15:26:34] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[14-Mar-2016 14:36:45] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[08-Apr-2016 15:59:10] USER ERROR: "SQL Error: Out of range value for column 'del_user_automatic' at row 1Query Code: UPDATE uni1_config SET ttf_file = 'styles/resource/fonts/DroidSansMono.ttf', game_name = 'Stellar Wars', mail_active = '1', mail_use = '2', smail_path = '/usr/sbin/sendmail', smtp_host = 'smtp.stellarwars.net', smtp_port = '25', smtp_user = 'stellar@stellarwars.net', smtp_pass = 'joan18957', smtp_ssl = '', smtp_sendmail = 'stellar@stellarwars.net', ga_active = '1', ga_key = 'UA-9760551-3', capaktiv = '0', cappublic = '', capprivate = '', del_oldstuff = '3', del_user_manually = '7', del_user_automatic = '500', del_user_sendmail = '21', sendmail_inactive = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/admin.php?page=config | Version: V 1.0
+Stack trace:
+#0 /includes/classes/Config.class.php(149): Database-&gt;query('UPDATE uni1_con...')
+#1 /includes/pages/adm/ShowConfigBasicPage.php(117): Config::update(Array, 1)
+#2 /admin.php(64): ShowConfigBasicPage()
+#3 {main}
+[08-Apr-2016 16:06:36] USER ERROR: "SMTP Error: Could not connect to SMTP host."
+File: /home/stell530/public_html/beta7/includes/libs/phpmailer/class.phpmailer.php | Line: 1093
+URL: http://beta7.stellarwars.net/admin.php?page=globalmessage&action=send&ajax=1 | Version: V 1.0
+Stack trace:
+#0 /includes/libs/phpmailer/class.phpmailer.php(971): PHPMailer-&gt;SmtpConnect()
+#1 /includes/libs/phpmailer/class.phpmailer.php(845): PHPMailer-&gt;SmtpSend('Date: Fri, 8 Ap...', '--b1_78819a4454...')
+#2 /includes/libs/phpmailer/class.phpmailer.php(763): PHPMailer-&gt;PostSend()
+#3 /includes/classes/Mail.class.php(66): PHPMailer-&gt;Send()
+#4 /includes/pages/adm/ShowSendMessagesPage.php(85): Mail::multiSend(Array, 'Global News')
+#5 /admin.php(124): ShowSendMessagesPage()
+#6 {main}
+[08-Apr-2016 16:08:22] USER ERROR: "SQL Error: Out of range value for column 'del_user_automatic' at row 1Query Code: UPDATE uni1_config SET ttf_file = 'styles/resource/fonts/DroidSansMono.ttf', game_name = 'Stellar Wars', mail_active = '1', mail_use = '2', smail_path = '/usr/sbin/sendmail', smtp_host = 'smtp.stellarwars.net', smtp_port = '25', smtp_user = 'stellar@stellarwars.net', smtp_pass = 'joan18957', smtp_ssl = '', smtp_sendmail = 'stellar@stellarwars.net', ga_active = '1', ga_key = 'UA-9760551-3', capaktiv = '0', cappublic = '', capprivate = '', del_oldstuff = '3', del_user_manually = '7', del_user_automatic = '365', del_user_sendmail = '21', sendmail_inactive = '1';"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/admin.php?page=config | Version: V 1.0
+Stack trace:
+#0 /includes/classes/Config.class.php(149): Database-&gt;query('UPDATE uni1_con...')
+#1 /includes/pages/adm/ShowConfigBasicPage.php(117): Config::update(Array, 1)
+#2 /admin.php(64): ShowConfigBasicPage()
+#3 {main}
+[09-Apr-2016 09:38:39] NOTICE: "Undefined index: lvlup"
+File: /home/stell530/public_html/beta7/includes/pages/game/class.ShowBuildingsPage.php | Line: 142
+URL: http://beta7.stellarwars.net/game.php?page=buildings | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowBuildingsPage.php(142): errorHandler(8, 'Undefined index...', '/home/stell530/...', 142, Array)
+#1 /includes/pages/game/class.ShowBuildingsPage.php(299): ShowBuildingsPage-&gt;AddBuildingToQueue(2, 21, true)
+#2 /game.php(40): ShowBuildingsPage-&gt;show()
+#3 {main}
+[09-Apr-2016 09:43:05] NOTICE: "Undefined index: lvlup"
+File: /home/stell530/public_html/beta7/includes/pages/game/class.ShowBuildingsPage.php | Line: 142
+URL: http://beta7.stellarwars.net/game.php?page=buildings | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowBuildingsPage.php(142): errorHandler(8, 'Undefined index...', '/home/stell530/...', 142, Array)
+#1 /includes/pages/game/class.ShowBuildingsPage.php(299): ShowBuildingsPage-&gt;AddBuildingToQueue(2, 21, true)
+#2 /game.php(40): ShowBuildingsPage-&gt;show()
+#3 {main}
+[09-Apr-2016 11:24:11 America/Recife] PHP Parse error:  syntax error, unexpected 'javascript' (T_STRING), expecting ',' or ';' in /home/stell530/public_html/beta7/includes/pages/game/class.ShowEnnemiesListPage.php on line 76
+[10-Apr-2016 13:35:51] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 13:47:15] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 13:53:03] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1518): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 13:57:09] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:09:25] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:13:14] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:16:24] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:18:46] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:19:35] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1518): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:20:18] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1518): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:21:30] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:22:04] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 14:25:06] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 15:22:17] NOTICE: "Undefined index: rankList"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 998
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(998): errorHandler(8, 'Undefined index...', '/home/stell530/...', 998, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 15:28:04 America/Recife] PHP Fatal error:  Class 'ShowAlliancePage' not found in /home/stell530/public_html/beta7/game.php on line 24
+[10-Apr-2016 15:28:17 America/Recife] PHP Fatal error:  Class 'ShowAlliancePage' not found in /home/stell530/public_html/beta7/game.php on line 24
+[10-Apr-2016 15:29:14] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1518): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 17:54:25] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 17:56:20] NOTICE: "Undefined index: BANK"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1516): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1023): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 17:57:29] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 17:59:02] NOTICE: "Undefined index: avalibleRanks"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 973
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(973): errorHandler(8, 'Undefined index...', '/home/stell530/...', 973, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:00:03] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1516): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1023): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:00:23] NOTICE: "Undefined index: BANK"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1516): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1023): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:14:45] NOTICE: "Undefined index: planets"
+File: /home/stell530/public_html/beta7/includes/pages/game/class.ShowAlliancePage.php | Line: 1515
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowAlliancePage.php(1515): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1515, Array)
+#1 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#2 /game.php(40): ShowAlliancePage-&gt;admin()
+#3 {main}
+[10-Apr-2016 18:15:33] NOTICE: "Undefined index: planets"
+File: /home/stell530/public_html/beta7/includes/pages/game/class.ShowAlliancePage.php | Line: 1515
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowAlliancePage.php(1515): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1515, Array)
+#1 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#2 /game.php(40): ShowAlliancePage-&gt;admin()
+#3 {main}
+[10-Apr-2016 18:15:48] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 985
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(985): errorHandler(8, 'Undefined index...', '/home/stell530/...', 985, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:16:17] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 985
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(985): errorHandler(8, 'Undefined index...', '/home/stell530/...', 985, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:16:35] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php | Line: 113
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php(113): errorHandler(8, 'Undefined index...', '/home/stell530/...', 113, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(180): content_570abd82591386_92593963(Object(Smarty_Internal_Template))
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:17:14] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php | Line: 112
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php(112): errorHandler(8, 'Undefined index...', '/home/stell530/...', 112, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(180): content_570ac2dacbf5f8_11962045(Object(Smarty_Internal_Template))
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:18:40] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php | Line: 112
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php(112): errorHandler(8, 'Undefined index...', '/home/stell530/...', 112, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(180): content_570ac2dacbf5f8_11962045(Object(Smarty_Internal_Template))
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:19:00] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.alliance.admin.permissions.tpl&quot;  on line 17 &quot;&amp;lt;td&amp;gt;{$LNG.al_rank_name}&amp;lt;/td&amp;gt;{PLANETS}&quot; unknown tag &quot;PLANETS&quot;"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(451): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unknown tag &quot;PL...', 17)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('PLANETS', Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r37()
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(37)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t/t')
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#18 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#19 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#20 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#21 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#22 /game.php(40): ShowAlliancePage-&gt;admin()
+#23 {main}
+[10-Apr-2016 18:19:26] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.alliance.admin.permissions.tpl&quot;  on line 20 &quot;{/foreach}&quot; unexpected closing tag"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_compilebase.php(170): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unexpected clos...', 20)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_compile_foreach.php(224): Smarty_Internal_CompileBase-&gt;closeTag(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Foreachclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('foreachclose', Array, Array)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('foreachclose', Array)
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t&lt;/tr&gt;/n/t/n/t')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#18 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#19 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(155): Smarty_Internal_Template-&gt;compileTemplateSource()
+#20 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#21 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#22 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#23 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#24 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#25 /game.php(40): ShowAlliancePage-&gt;admin()
+#26 {main}
+[10-Apr-2016 18:20:08] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1066
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1066): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1066, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:20:39] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.alliance.admin.permissions.tpl&quot;  on line 25 &quot;{foreachelse}&quot; unexpected closing tag"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_compilebase.php(170): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unexpected clos...', 25)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_compile_foreach.php(191): Smarty_Internal_CompileBase-&gt;closeTag(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Foreachelse-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('foreachelse', Array, Array)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('foreachelse', Array)
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r37()
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(37)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t&lt;tr&gt;/n/t/t&lt;td co...')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#18 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#19 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#20 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#21 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#22 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#23 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#24 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#25 /game.php(40): ShowAlliancePage-&gt;admin()
+#26 {main}
+[10-Apr-2016 18:20:43] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.alliance.admin.permissions.tpl&quot;  on line 25 &quot;{foreachelse}&quot; unexpected closing tag"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_compilebase.php(170): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unexpected clos...', 25)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_compile_foreach.php(191): Smarty_Internal_CompileBase-&gt;closeTag(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Foreachelse-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('foreachelse', Array, Array)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('foreachelse', Array)
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r37()
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(37)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t&lt;tr&gt;/n/t/t&lt;td co...')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#18 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#19 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#20 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#21 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#22 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#23 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#24 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#25 /game.php(40): ShowAlliancePage-&gt;admin()
+#26 {main}
+[10-Apr-2016 18:20:57] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1043
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1043): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1043, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:23:07] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1073
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1073): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1073, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:23:26] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1075
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1075): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1075, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:24:24] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1072
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1072): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1072, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:27:00] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1074
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1074): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1074, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:27:27] NOTICE: "Undefined index: PLANETS"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1074
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1074): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1074, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:27:41] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.alliance.admin.permissions.tpl&quot;  on line 74 &quot;&amp;lt;!--{/*foreach $avalibleRanks as $rankName}&quot;  - Unexpected &quot;*&quot;, expected one of: &quot;identifier&quot;"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3144): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error()
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3209): Smarty_Internal_Templateparser-&gt;yy_syntax_error(40, '*')
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(40, '*')
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n&lt;div id=&quot;page&quot;...')
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#16 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#17 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#18 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#19 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#20 /game.php(40): ShowAlliancePage-&gt;admin()
+#21 {main}
+[10-Apr-2016 18:29:18] NOTICE: "Undefined index: rankName"
+File: /home/stell530/public_html/beta7/cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php | Line: 218
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /cache/pt^66bd9acb3e9b6d3d73897004bb9196d5a80273b0.extends.page.alliance.admin.permissions.tpl.cache.php(218): errorHandler(8, 'Undefined index...', '/home/stell530/...', 218, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(180): content_570ac3890cef14_71779807(Object(Smarty_Internal_Template))
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1517): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1024): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:57:38] NOTICE: "Undefined index: rankDesc"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1061
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1061): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1061, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1534): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1040): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[10-Apr-2016 18:59:23] NOTICE: "Undefined index: rankDesc"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code | Line: 1061
+URL: http://beta7.stellarwars.net/game.php?page=alliance&mode=admin&action=permissions | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252) : eval()'d code(1061): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1061, Array)
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(252): eval()
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#3 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#4 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.ShowAlliancePage.php(1534): AbstractPage-&gt;display('page.alliance.a...')
+#6 /includes/pages/game/class.ShowAlliancePage.php(1040): ShowAlliancePage-&gt;adminPermissions()
+#7 /game.php(40): ShowAlliancePage-&gt;admin()
+#8 {main}
+[12-Apr-2016 14:13:00] USER ERROR: "Syntax Error in template &quot;/home/stell530/public_html/beta7/styles/templates/game/page.buildings.default.tpl&quot;  on line 311 &quot;&amp;lt;span class=&amp;quot;btn_build red&amp;quot;&amp;gt;{$LNG.bd_no_more_fields}&amp;lt;/span&amp;gt;&quot; unclosed {else} tag"
+File: /home/stell530/public_html/beta7/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php | Line: 665
+URL: http://beta7.stellarwars.net/game.php?page=buildings | Version: V 1.0
+Stack trace:
+#0 /includes/libs/Smarty/sysplugins/smarty_internal_compilebase.php(166): Smarty_Internal_TemplateCompilerBase-&gt;trigger_template_error('unclosed {else}...')
+#1 /includes/libs/Smarty/sysplugins/smarty_internal_compile_if.php(85): Smarty_Internal_CompileBase-&gt;closeTag(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(473): Smarty_Internal_Compile_Else-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('else', Array, Array)
+#4 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('else', Array)
+#5 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r37()
+#6 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(37)
+#7 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n/t/t/t/t/t/t&lt;div cla...')
+#8 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('/n{if $manual_st...')
+#9 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(202): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#10 /includes/libs/Smarty/sysplugins/smarty_internal_compile_block.php(260): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#11 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(483): Smarty_Internal_Compile_Blockclose-&gt;compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#12 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(257): Smarty_Internal_TemplateCompilerBase-&gt;callTagCompiler('blockclose', Array, Array)
+#13 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(2493): Smarty_Internal_TemplateCompilerBase-&gt;compileTag('blockclose', Array)
+#14 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser-&gt;yy_r58()
+#15 /includes/libs/Smarty/sysplugins/smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser-&gt;yy_reduce(58)
+#16 /includes/libs/Smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser-&gt;doParse(10, '/n')
+#17 /includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php(200): Smarty_Internal_SmartyTemplateCompiler-&gt;doCompile('{include file=&quot;...')
+#18 /includes/libs/Smarty/sysplugins/smarty_internal_template.php(187): Smarty_Internal_TemplateCompilerBase-&gt;compileTemplate(Object(Smarty_Internal_Template))
+#19 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#20 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#21 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#22 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#23 /includes/pages/game/class.ShowBuildingsPage.php(528): AbstractPage-&gt;display('page.buildings....')
+#24 /game.php(40): ShowBuildingsPage-&gt;show()
+#25 {main}
+[13-Apr-2016 00:13:12] NOTICE: "Object of class mysqli_result could not be converted to int"
+File: /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetStep3Page.php | Line: 347
+URL: http://beta7.stellarwars.net/game.php?page=fleetStep3 | Version: V 1.0
+Stack trace:
+#0 /includes/pages/game/class.ShowFleetStep3Page.php(347): errorHandler(8, 'Object of class...', '/home/stell530/...', 347, Array)
+#1 /game.php(40): ShowFleetStep3Page-&gt;show()
+#2 {main}
+[13-Apr-2016 00:16:48 America/Recife] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetStep3Page.php on line 41
+[13-Apr-2016 00:17:51 America/Recife] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetStep3Page.php on line 41
+[13-Apr-2016 00:17:54 America/Recife] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetStep3Page.php on line 41
+[13-Apr-2016 00:18:13 America/Recife] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetStep3Page.php on line 41
+[13-Apr-2016 01:05:17] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '75', '1', '2', '6', '3', '2', 14, '1', '1', '8', '1', Array, 1460523053.99, 1460523053.99, 1460525790.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 01:05:23] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '75', '1', '2', '6', '3', '2', 14, '1', '1', '8', '1', Array, 1460523059.99, 1460523059.99, 1460525796.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 07:06:17] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460545032.14, 1460545032.14, 1460548087.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 07:06:25] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=6&planetID=23 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 6, '11', '26', '1', '10', '8', '1', '2', 23, '1', '1', '7', '1', Array, 1460542036.6, 1460542036.6, 1460542088.2)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 07:06:33] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=6&planetID=23 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 6, '11', '26', '1', '10', '8', '1', '2', 23, '1', '1', '7', '1', Array, 1460542044.6, 1460542044.6, 1460542096.2)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 07:08:11] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460545146.14, 1460545146.14, 1460548201.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 10:22:23] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460556798.14, 1460556798.14, 1460559853.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 10:22:56] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460556831.14, 1460556831.14, 1460559886.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 10:22:57] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460556832.14, 1460556832.14, 1460559887.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:32:52] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564308.99, 1460564308.99, 1460567045.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:32:58] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564314.99, 1460564314.99, 1460567051.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:33:04] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564320.99, 1460564320.99, 1460567057.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:33:21] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564337.99, 1460564337.99, 1460567074.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:35:31] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564467.99, 1460564467.99, 1460567204.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:36:04] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '75', '1', '2', '6', '3', '2', 14, '1', '1', '8', '1', Array, 1460569747.45, 1460569747.45, 1460577730.9)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:36:52] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '3', '5', '1', '2', '6', '1', '2', 14, '1', '1', '8', '1', Array, 1460564548.99, 1460564548.99, 1460567285.98)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:40:48] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=8&planetID=14 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 8, '11', '26', '1', '10', '8', '1', '2', 14, '1', '1', '8', '1', Array, 1460565103.14, 1460565103.14, 1460568158.28)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 12:51:51] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 410
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=6&planetID=24 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(410): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 410, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 6, '3', '5', '1', '2', '6', '1', '10', 24, '1', '9', '5', '1', Array, 1460562761.45, 1460562761.45, 1460562811.91)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}
+[13-Apr-2016 14:09:51] NOTICE: "Undefined variable: tickinicial"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 300
+URL: http://beta7.stellarwars.net/game.php?page=fleetTable&action=sendfleetback | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(300): errorHandler(8, 'Undefined varia...', '/home/stell530/...', 300, Array)
+#1 /includes/pages/game/class.ShowFleetTablePage.php(172): FleetFunctions::SendFleetBack(Array, 2385)
+#2 /game.php(40): ShowFleetTablePage-&gt;show()
+#3 {main}
+[13-Apr-2016 14:11:51] NOTICE: "Undefined index: $tickinicial"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 300
+URL: http://beta7.stellarwars.net/game.php?page=fleetTable&action=sendfleetback | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(300): errorHandler(8, 'Undefined index...', '/home/stell530/...', 300, Array)
+#1 /includes/pages/game/class.ShowFleetTablePage.php(172): FleetFunctions::SendFleetBack(Array, 2386)
+#2 /game.php(40): ShowFleetTablePage-&gt;show()
+#3 {main}
+[13-Apr-2016 14:28:53] NOTICE: "Undefined index: tickatual"
+File: /home/stell530/public_html/beta7/cache/pt^59f654982e18f0f8cf2017e1801c5406894fc3fe.extends.page.research.default.tpl.cache.php | Line: 1616
+URL: http://beta7.stellarwars.net/game.php?page=research | Version: V 1.0
+Stack trace:
+#0 /cache/pt^59f654982e18f0f8cf2017e1801c5406894fc3fe.extends.page.research.default.tpl.cache.php(1616): errorHandler(8, 'Undefined index...', '/home/stell530/...', 1616, Array)
+#1 /cache/pt^59f654982e18f0f8cf2017e1801c5406894fc3fe.extends.page.research.default.tpl.cache.php(91): content_570e81d607e2b1_97309830(Object(Smarty_Internal_Template))
+#2 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(180): content_570e4c0ad00be5_05049542(Object(Smarty_Internal_Template))
+#3 /includes/libs/Smarty/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('extends:layout....', NULL, NULL, NULL, true)
+#4 /includes/classes/class.template.php(142): Smarty_Internal_TemplateBase-&gt;display('extends:layout....')
+#5 /includes/pages/game/class.AbstractPage.php(1110): template-&gt;display('extends:layout....')
+#6 /includes/pages/game/class.ShowResearchPage.php(489): AbstractPage-&gt;display('page.research.d...')
+#7 /game.php(40): ShowResearchPage-&gt;show()
+#8 {main}
+[13-Apr-2016 16:02:05] USER ERROR: "SQL Error: Unknown column 'TIMESTAMP' in 'field list'Query Code: UPDATE uni1_config SET `tick` = `tick` + 1, `tick_last_time` = TIMESTAMP;"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 80
+URL: http://beta7.stellarwars.net/cronjob.php?cronjobID=17 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/cronjob/TickerCronjob.class.php(46): Database-&gt;query('UPDATE uni1_con...')
+#1 /includes/classes/cronjob/TickerCronjob.class.php(34): TickerCronJob-&gt;updateTicker()
+#2 /includes/classes/Cronjob.class.php(53): TickerCronJob-&gt;run()
+#3 /cronjob.php(36): Cronjob::execute(17)
+#4 {main}
+[13-Apr-2016 15:29:27] USER ERROR: "Connection to database failed: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[13-Apr-2016 15:29:36] USER ERROR: "Connection to database failed: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php?page=overview | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[13-Apr-2016 15:29:38] USER ERROR: "Connection to database failed: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/game.php?page=bonus | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /game.php(10): require('/home/stell530/...')
+#2 {main}
+[13-Apr-2016 15:29:45] USER ERROR: "Connection to database failed: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)"
+File: /home/stell530/public_html/beta7/includes/classes/class.Database.php | Line: 57
+URL: http://beta7.stellarwars.net/index.php?page=login | Version: 1.0.0 (FILE)
+Stack trace:
+#0 /includes/common.php(102): Database-&gt;__construct()
+#1 /index.php(10): require('/home/stell530/...')
+#2 {main}
+[13-Apr-2016 20:41:04] WARNING: "Missing argument 20 for FleetFunctions::sendFleet(), called in /home/stell530/public_html/beta7/includes/pages/game/class.ShowFleetAjaxPage.php on line 204 and defined"
+File: /home/stell530/public_html/beta7/includes/classes/class.FleetFunctions.php | Line: 418
+URL: http://beta7.stellarwars.net/game.php?page=fleetAjax&ajax=1&mission=6&planetID=24 | Version: V 1.0
+Stack trace:
+#0 /includes/classes/class.FleetFunctions.php(418): errorHandler(2, 'Missing argumen...', '/home/stell530/...', 418, Array)
+#1 /includes/pages/game/class.ShowFleetAjaxPage.php(204): FleetFunctions::sendFleet(Array, 6, '3', '5', '1', '2', '6', '1', '10', 24, '1', '9', '5', '1', Array, 1460590914.45, 1460590914.45, 1460590964.91)
+#2 /game.php(40): ShowFleetAjaxPage-&gt;show()
+#3 {main}

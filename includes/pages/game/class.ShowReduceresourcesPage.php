@@ -38,6 +38,11 @@ class ShowReduceresourcesPage extends AbstractPage
 	function reduce()
 	{
 	global $USER, $PLANET, $LNG, $UNI;
+	
+	$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickinicial = $tickinicial['tick'];
+		
 	if (!isset($_POST['palanets']))
 	$this->redirectTo('game.php?page=reduceresources');
 	if(!isset($_POST['palanets']))
@@ -145,8 +150,14 @@ class ShowReduceresourcesPage extends AbstractPage
 	}
 	$fleetStayTime		= $fleetStartTime + $StayDuration;
 	$fleetEndTime		= $fleetStayTime + $duration;	
+	
+	if ($sur['system'] == $system]){
+			$tickfinal = $tickinicial + 9;
+			} else {
+				$tickfinal = $tickinicial + 11;
+			}
 				
-	FleetFunctions::sendFleet($FleetArray, $mission, $sur['id_owner'], $sur['id'], $sur['galaxy'], $sur['system'], $sur['planet'], 1, $PLANET['id_owner'], $PLANET['id'], $galaxy, $system, $planet, $planettype, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $fleet_group);
+	FleetFunctions::sendFleet($FleetArray, $mission, $sur['id_owner'], $sur['id'], $sur['galaxy'], $sur['system'], $sur['planet'], 1, $PLANET['id_owner'], $PLANET['id'], $galaxy, $system, $planet, $planettype, $fleetRessource, $fleetStartTime, $fleetStayTime, $fleetEndTime, $tickinicial, $tickfinal, $fleet_group);
 	}			
 	$this->printMessage('Fleets Succesfully Send', true, array('game.php?page=reduceresources', 4));
 	}

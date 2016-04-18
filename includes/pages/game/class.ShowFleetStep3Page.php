@@ -37,9 +37,7 @@ class ShowFleetStep3Page extends AbstractPage
 	{
 		global $USER, $PLANET, $resource, $pricelist, $reslist, $CONF, $LNG, $UNI;
 		
-		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
-		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-		$tickinicial = $tickinicial['tick'];
+		$tickinicial = buscarTick();
 			
 		if (IsVacationMode($USER)) {
 			FleetFunctions::GotoFleetPage(0);

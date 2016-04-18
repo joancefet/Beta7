@@ -899,3 +899,11 @@ if (!function_exists('array_replace_recursive'))
         return $array;
     }
 }
+function buscarTick()
+{
+	$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG.";");
+	$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+	$tickatual = $tickatual['tick'];
+	
+	return $tickatual;
+}

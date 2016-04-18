@@ -39,9 +39,7 @@ class ShowReduceresourcesPage extends AbstractPage
 	{
 	global $USER, $PLANET, $LNG, $UNI;
 	
-	$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
-		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-		$tickinicial = $tickinicial['tick'];
+	$tickinicial = buscarTick();
 		
 	if (!isset($_POST['palanets']))
 	$this->redirectTo('game.php?page=reduceresources');

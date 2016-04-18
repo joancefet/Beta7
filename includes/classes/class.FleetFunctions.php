@@ -274,9 +274,7 @@ class FleetFunctions
 	
 	public static function SendFleetBack($USER, $FleetID)
 	{
-		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG.";");
-		$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-		$tickatual = $tickatual['tick'];
+		$tickatual = buscarTick();
 
 		$FleetRow = $GLOBALS['DATABASE']->getFirstRow("SELECT start_time, fleet_mission, fleet_group, fleet_owner, fleet_mess, tickinicial, tickfinal, tickretorno FROM ".FLEETS." WHERE fleet_id = '". $FleetID ."';");
 		if ($FleetRow['fleet_owner'] != $USER['id'] || $FleetRow['fleet_mess'] == 1)

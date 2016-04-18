@@ -4,9 +4,7 @@
  
 #$GLOBALS['DATABASE']->query("LOCK TABLE ".AKS." WRITE, ".RW." WRITE, ".MESSAGES." WRITE, ".CONFIG." WRITE, ".FLEETS_EVENT." WRITE, ".FLEETS." WRITE, ".PLANETS." WRITE, ".PLANETS." as p WRITE, ".TOPKB." WRITE, ".USERS." WRITE, ".USERS." as u WRITE, ".STATPOINTS." WRITE;");	
 
-$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG.";");
-$tickatual = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-$tickatual = $tickatual['tick'];
+$tickinicial = buscarTick();
 
 $token			= getRandomString();
 

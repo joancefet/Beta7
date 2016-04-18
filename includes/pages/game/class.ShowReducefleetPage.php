@@ -39,9 +39,7 @@ class ShowReducefleetPage extends AbstractPage
 	{
 	global $USER, $PLANET, $LNG, $UNI;
 	
-	$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
-		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-		$tickinicial = $tickinicial['tick'];
+	$tickinicial = buscarTick();
 		
 	if (!isset($_POST['palanets']))
 	$this->redirectTo('game.php?page=Reducefleet');
@@ -126,7 +124,7 @@ class ShowReducefleetPage extends AbstractPage
 	$fleetStayTime		= $fleetStartTime + $StayDuration;
 	$fleetEndTime		= $fleetStayTime + $duration;	
 	
-	if ($sur['system'] == $system]){
+	if ($sur['system'] == $system){
 			$tickfinal = $tickinicial + 9;
 			} else {
 				$tickfinal = $tickinicial + 11;

@@ -51,9 +51,7 @@ class ShowFleetAjaxPage extends AbstractPage
 	{
 		global $USER, $PLANET, $resource, $LNG, $CONF, $pricelist;
 		
-		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
-		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
-		$tickinicial = $tickinicial['tick'];
+		$tickinicial = buscarTick();
 		
 		$UserDeuterium  = $PLANET['deuterium'];
 		

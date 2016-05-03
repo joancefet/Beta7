@@ -149,7 +149,7 @@ class ShowReduceresourcesPage extends AbstractPage
 	$fleetStayTime		= $fleetStartTime + $StayDuration;
 	$fleetEndTime		= $fleetStayTime + $duration;	
 	
-	if ($sur['system'] == $system]){
+	if ($sur['system'] == $system){
 			$tickfinal = $tickinicial + 9;
 			} else {
 				$tickfinal = $tickinicial + 11;

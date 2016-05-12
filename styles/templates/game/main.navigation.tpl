@@ -54,6 +54,7 @@ $( this ).dialog( "close" );
 <div class="clear"></div>        
 <div class="separator"></div>
 <a class="btn_menu" href="game.php?page=galaxy" id="munu_galaxy" {if $manual_17_step == 0}onclick="starttraining9()"{/if}>{$LNG.alm_galaxy}</a>
+{if $authlevel > 0} <a class="btn_menu" href="game.php?page=galaxy2" id="munu_galaxy" {if $manual_17_step == 0}onclick="starttraining9()"{/if}>{$LNG.alm_galaxy}2</a>{/if}
 <a class="btn_menu" href="game.php?page=alliance">{$LNG.alm_ally}</a>  		
 <a class="btn_menu" href="game.php?page=battleSimulator">{$LNG.alm_battlesim}</a>
 {if $uni_value == 1}    <a class="btn_menu" {if $manual_26_step == 0}onclick="starttraining15()"{/if} href="game.php?page=Achievements" id="achievements_name">{$LNG.alm_achievement}</a> {/if}

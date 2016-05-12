@@ -23,4 +23,4 @@ $(function() {
 			return '<input type="button"  value="->" onclick="$(\'#planetSelector > :selected\').next().attr(\'selected\', \'selected\');$(\'#planetSelector\').trigger(\'change\')">';
 		}
 	});
-})();
+});

@@ -1,9 +1,8 @@
 {block name="title" prepend}{$LNG.lm_galaxy}{/block}
 {block name="content"}
 <div id="page">
-<div id="content">
+<div id="content">	
 
-	
 <div id="galactic_block_1">
  <div id="galactic_header" style="position:relative;">
     	<a href="#" style="left:5px; right:auto;" onclick="return Dialog.manualinfo(5)" class="interrogation manual">?</a>

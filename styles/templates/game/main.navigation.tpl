@@ -40,7 +40,13 @@ $( this ).dialog( "close" );
 <img class="right" src="./styles/theme/gow/images/ico-account-premium.png" alt="Premium Account" />
 </a>
 <div class="separator"></div>
-<a class="btn_menu" href="game.php?page=research" id="munu_research" {if $manual_step_4 == 0}onclick="starttraining4()"{/if}>{$LNG.alm_reseach}</a>		        	<a class="btn_menu" href="game.php?page=buildings" id="munu_build" {if $manual_step_1 == 0}onclick="starttraining2()"{/if}>{$LNG.alm_buildings}</a>		        	<a class="btn_menu" href="game.php?page=shipyard&amp;mode=fleet" id="munu_shipyard_fleet" {if $manual_15_step == 0}onclick="starttraining8()"{/if}>{$LNG.alm_shipyard}</a>		        	<a class="btn_menu" href="game.php?page=shipyard&amp;mode=defense" id="munu_shipyard_defense" {if $manual_8_step == 0}onclick="starttraining5()"{/if}>{$LNG.alm_defense}</a>		        	<a class="btn_menu" href="game.php?page=fleetTable">{$LNG.alm_fleets}</a>		        	        	<a class="btn_menu" href="game.php?page=resources" id="munu_resources">{$LNG.alm_resource}</a>        
+<a class="btn_menu" href="game.php?page=research" id="munu_research" {if $manual_step_4 == 0}onclick="starttraining4()"{/if}>{$LNG.alm_reseach}</a>		        	
+<a class="btn_menu" href="game.php?page=buildings" id="munu_build" {if $manual_step_1 == 0}onclick="starttraining2()"{/if}>{$LNG.alm_buildings}</a>		        	
+<a class="btn_menu" href="game.php?page=shipyard&amp;mode=fleet" id="munu_shipyard_fleet" {if $manual_15_step == 0}onclick="starttraining8()"{/if}>{$LNG.alm_shipyard}</a>		        	
+<a class="btn_menu" href="game.php?page=shipyard&amp;mode=defense" id="munu_shipyard_defense" {if $manual_8_step == 0}onclick="starttraining5()"{/if}>{$LNG.alm_defense}</a>		        	
+<a class="btn_menu" href="game.php?page=fleetTable">{$LNG.alm_fleets}</a>		        	        	
+{if $authlevel > 0}<a class="btn_menu" href="game.php?page=ship">Nave</a>{/if}
+<a class="btn_menu" href="game.php?page=resources" id="munu_resources">{$LNG.alm_resource}</a>        
 <a class="btn_menu" href="game.php?page=officier" id="munu_senat" {if $manual_21_step == 0}onclick="starttraining12()"{/if}>{$LNG.alm_senat}</a>
 <a class="btn_menu" href="game.php?page=port">{$LNG.alm_port}</a>   
 <a class="btn_menu" href="game.php?page=trader">{$LNG.alm_adv_trader}</a>

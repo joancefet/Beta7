@@ -1,0 +1,59 @@
+-- Info --
+Es handelt sich um eine angepasste Version des Bots von Jan
+http://2moons.cc/b49-entwickler-ecke/b51-coding-technik/t6624-veraltet-bot-mod-f%C3%BCr-2moons-v1-5/
+
+Es können weiterhin Probleme auftreten,
+deswegen sollte diese Mod vielleicht erstmal
+in einer Testinstallation ausprobiert werden
+
+Allianzen gründen und saven kann der Bot bisher immernoch nicht
+
+Schwierigkeit: Nicht für Anfänger geeignet
+
+--
+
+1. Kopiere die Dateien in das 2Moons Verzeichnis (Die Ordnerstruktur muss beibehalten werden)
+    botnames.txt
+    botadd.php
+    includes/classes/class.bot.php
+    includes/classes/cronjob/BotCronjob.class.php
+    
+2. 2Moons Dateien anpassen
+    includes/classes/class.BuildFunctions.php
+    
+    Die beigefügte Datei entspricht Revision 2616 + Anpassungen
+    Es sind neue Funktionen hinzugefügt worden
+        addBuildingToQueue
+        addShipsToQueue
+        CheckLabSettingsInQueue
+        addResearchToQueue
+    
+3. SQL ausführen (prefix beachten)
+
+    CREATE TABLE IF NOT EXISTS `prefix_bots` (
+      `id` bigint(11) NOT NULL AUTO_INCREMENT,
+      `player` bigint(11) NOT NULL,
+      `last_time` int(11) NOT NULL,
+      `every_time` int(11) NOT NULL,
+      `last_planet` bigint(11) NOT NULL,
+      `type` int(11) NOT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
+    
+    INSERT INTO `prefix_cronjobs` (`cronjobID`, `name`, `isActive`, `min`, `hours`, `dom`, `month`, `dow`, `class`, `nextTime`, `lock`) VALUES (NULL, 'bot', '1', '*/5', '*', '*', '*', '*', 'BotCronjob', '0', NULL);
+    
+4. Cache leeren
+
+5. botadd.php anpassen
+    Am Anfang der Datei kann man über die Variable
+    AmountOfBots
+    festlegen, wieviele Bots erstellt werden sollen
+    
+    Beachte:
+    Mehr Bots = mehr Arbeit
+    
+6. botadd.php aufrufen
+    Dadurch werden die Bots erstellt und in die Datenbank eingetragen
+    
+7. Administrationsbereich aufrufen
+    Öfters mal unter Cronjobs schauen ob der BotCronjob unter 'Locked' noch 'Nein' stehen hat

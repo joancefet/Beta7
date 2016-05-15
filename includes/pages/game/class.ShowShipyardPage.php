@@ -199,6 +199,10 @@ class ShowShipyardPage extends AbstractPage
 	{
 		global $USER, $PLANET, $LNG, $resource, $dpath, $reslist, $requeriments, $CONF;
 		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+		$tickinicial = $tickinicial['tick'];
+		
 		
 		
 		
@@ -568,7 +572,14 @@ class ShowShipyardPage extends AbstractPage
 			902	=> 0,
 			903	=> 0,
 		);
-		FleetFunctions::sendFleet($rawfleetarray, '1', 1, 1, 1, 1, 1, 1, $PLANET['id_owner'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $fleetRessource, TIMESTAMP +58, TIMESTAMP+58, (TIMESTAMP + 116), 0);
+		
+		if (1 == $PLANET['system']]){
+			$tickfinal = $tickinicial + 9;
+			} else {
+				$tickfinal = $tickinicial + 11;
+			}
+		
+		FleetFunctions::sendFleet($rawfleetarray, '1', 1, 1, 1, 1, 1, 1, $PLANET['id_owner'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $fleetRessource, TIMESTAMP +58, TIMESTAMP+58, (TIMESTAMP + 116), $tickinicial, $tickfinal, 0);
 		}
 	
 		

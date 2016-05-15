@@ -573,7 +573,7 @@ class ShowShipyardPage extends AbstractPage
 			903	=> 0,
 		);
 		
-		if (1 == $PLANET['system']]){
+		if (1 == $PLANET['system']){
 			$tickfinal = $tickinicial + 9;
 			} else {
 				$tickfinal = $tickinicial + 11;

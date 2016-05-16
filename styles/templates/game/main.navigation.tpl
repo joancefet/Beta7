@@ -47,10 +47,10 @@ $( this ).dialog( "close" );
 <a class="btn_menu" href="game.php?page=fleetTable">{$LNG.alm_fleets}</a>		        	        	
 {if $authlevel > 0}<a class="btn_menu" href="game.php?page=ship">Nave</a>{/if}
 <a class="btn_menu" href="game.php?page=resources" id="munu_resources">{$LNG.alm_resource}</a>        
-<a class="btn_menu" href="game.php?page=officier" id="munu_senat" {if $manual_21_step == 0}onclick="starttraining12()"{/if}>{$LNG.alm_senat}</a>
+<a class="btn_menu" href="game.php?page=senat" id="munu_senat" {if $manual_21_step == 0}onclick="starttraining12()"{/if}>{$LNG.alm_senat}</a>
 <a class="btn_menu" href="game.php?page=port">{$LNG.alm_port}</a>   
 <a class="btn_menu" href="game.php?page=trader">{$LNG.alm_adv_trader}</a>
-<a class="btn_menu" href="game.php?page=academy">Academia {if $academy_reduce != 0}<span style="color:#FC0;">-{$academy_reduce}%</span>{/if}</a>	
+<a class="btn_menu" href="game.php?page=academy"id="munu_academy" {if $manual_24_step == 0}onclick="starttraining14()"{/if}>Academia {if $academy_reduce != 0}<span style="color:#FC0;">-{$academy_reduce}%</span>{/if}</a>
 <a class="btn_menu" href="game.php?page=Immunity">{$LNG.alm_immunity}</a>
 <a class="btn_menu" href="game.php?page=Planetcloak">{$LNG.alm_planetcloak}</a>
 <a class="btn_menu" href="game.php?page=Planeta">Leilões do P.</a>

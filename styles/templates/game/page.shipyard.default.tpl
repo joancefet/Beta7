@@ -8,7 +8,7 @@ $( ".build_box" ).hide();
 $( ".build_band_conveyors" ).hide();
 $( "#s_209" ).show();
 $( "#s_middle" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -18,7 +18,7 @@ setInterval(function() { AJAX() }, 6000)
 	$(function() {
 		qtips('#attack', 'Attention to your planet flies attacking fleet', 'bottomMiddle', 'topLeft');
 setTimeout(function() { qtips('.over', 'Go to the review, to view the attackers fleet', 'bottomMiddle', 'topLeft') }, 4000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -36,7 +36,7 @@ $( "#s_401" ).show();
 $( "#s_402" ).show();
 $( "#s_light" ).show();
 qtips('#s_light', 'Enemy probed you and preparing an attack. To protect the planet, build defenses. <br/><br/><b><span style="margin:0 0 7px 0;display: block;color:#002211;">Build:</span><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>25 missiles launchers <br /> <span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>10 light lasers</b>', 'bottomMiddle', 'bottomMiddle')
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -51,7 +51,7 @@ $( "#s_402" ).show();
 $( "#s_light" ).show();
 qtips('#fildes_band', 'Excellent! Now your planet is protected from attacks. After the destruction of defense exists 10-30% chance to restore it.<br/><br/> <b>You get 650 points peaceful experience.</b>', 'leftMiddle', 'topRight')
 setTimeout(function() { location.reload(); }, 5000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}

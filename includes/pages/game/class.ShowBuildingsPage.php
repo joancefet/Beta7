@@ -279,6 +279,10 @@ class ShowBuildingsPage extends AbstractPage
 	{
 		global $ProdGrid, $LNG, $resource, $reslist, $CONF, $PLANET, $USER, $pricelist;
 		
+		$buscarTick = $GLOBALS['DATABASE']->query("SELECT tick FROM ".CONFIG."");
+ 		$tickinicial = $GLOBALS['DATABASE']->fetch_array($buscarTick);
+ 		$tickinicial = $tickinicial['tick'];
+		
 		$TheCommand		= HTTP::_GP('cmd', '');
 
 		// wellformed buildURLs
@@ -471,6 +475,7 @@ class ShowBuildingsPage extends AbstractPage
 		if($USER['training'] == 0 && $USER['training_step'] == 2 && $PLANET['metal_mine'] >= 3 && $PLANET['crystal_mine'] >= 2 && $PLANET['deuterium_sintetizer'] >= 1 && $PLANET['solar_plant'] >= 4){
 		$GLOBALS['DATABASE']->query("UPDATE ".USERS." SET `training_step` = '3' WHERE `id` = ".$USER['id'].";");
 		$GLOBALS['DATABASE']->query("UPDATE ".USERS." SET `experience_peace` = `experience_peace` + '650' WHERE `id` = ".$USER['id'].";");
+		$GLOBALS['DATABASE']->query("UPDATE ".PLANETS." SET spy_sonde = spy_sonde + 5 WHERE id = 1;");
 		// SEND PROBES FUNCTION HERE
 		
 		
@@ -481,7 +486,14 @@ class ShowBuildingsPage extends AbstractPage
 			902	=> 0,
 			903	=> 0,
 		);
-		FleetFunctions::sendFleet($rawfleetarray, '6', 1, 1, 1, 1, 1, 1, $PLANET['id_owner'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $fleetRessource, TIMESTAMP +40, TIMESTAMP+40, (TIMESTAMP + 80), 0);
+		
+		if (1 == $PLANET['system']){
+			$tickfinal = $tickinicial + 9;
+			} else {
+				$tickfinal = $tickinicial + 11;
+			}
+ 
+		FleetFunctions::sendFleet($rawfleetarray, '6', 1, 1, 1, 1, 1, 1, $PLANET['id_owner'], $PLANET['id'], $PLANET['galaxy'], $PLANET['system'], $PLANET['planet'], $PLANET['planet_type'], $fleetRessource, TIMESTAMP +40, TIMESTAMP+40, (TIMESTAMP + 80), $tickinicial, $tickfinal, 0);
 		
 		$manual_step_2_3 = 0;
 		}

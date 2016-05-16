@@ -9,7 +9,7 @@ $( "#research_113" ).show();
 $( "#research_120" ).show();
 $( "#research_110" ).show();
 $( "#research_115" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -21,7 +21,7 @@ setInterval(function() { AJAX() }, 6000)
 		$( ".build_box" ).hide();
 $( "#research_113" ).show();
 $( "#research_120" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -34,7 +34,7 @@ setInterval(function() { AJAX() }, 6000)
 $( "#research_106" ).show();
 qtips('#fildes_band', 'excellent! Now your empire protected from espionage, but do not forget to continue to increase as the technology that will allow you to hide information and from more serious opponents.<br/><br/> <b>You get 650 points peaceful experience.</b>', 'leftMiddle', 'topRight');
 setTimeout(function() { location.reload(); }, 10000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 {/if}
@@ -45,7 +45,7 @@ setInterval(function() { AJAX() }, 6000)
 $( "#research_106" ).show();
 setTimeout(function() { qtips('.price:first', 'To unlock the study &laquo;Spy technology&raquo;, you need to go on the build page and upgrade &laquo;research laboratory&raquo; <br/>Third level.', 'topMiddle', 'bottomLeft') }, 4000);
 qtips('#fildes_band', 'To protect your data, you need to explore &laquo;Spy Technology&raquo; lvl 3.', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -56,7 +56,7 @@ setInterval(function() { AJAX() }, 6000)
 		$( ".build_box" ).hide();
 $( "#research_106" ).show();
 qtips('#fildes_band', 'To protect your data, you need to explore &laquo;espionage&raquo; level 3.', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -67,7 +67,7 @@ setInterval(function() { AJAX() }, 6000)
 		$( ".build_box" ).hide();
 $( "#research_106" ).show();
 qtips('#fildes_band', 'To protect your data, you need to explore &laquo;espionage&raquo; level 3.', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}

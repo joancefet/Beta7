@@ -7,7 +7,7 @@
 	$(function() {
 		qtips('#span_point', 'You have accumulated experience points, through awareness. The higher the level, the more points you get for his achievement.', 'topMiddle', 'bottomLeft');
 qtips('.gray_stripe', 'Here you can find a lot of skills that you can upgrade for academy points that you get for achieving Peace and Combat level. <br /><br /><b><span style="margin:0 0 7px 0;display: block;color:#002211;">Upgrade one of the skills:<b></span> <b><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>armament <br /><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>production rate <br /><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>defensive strategy</b>', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -17,7 +17,7 @@ setInterval(function() { AJAX() }, 6000)
 	$(function() {
 		qtips('.gray_stripe', 'Excellent! You pumped his first skill academy.<br/><br/> <b>You get 650 points peaceful experience.</b>', 'leftMiddle', 'topRight');
 setTimeout(function() { location.reload(); }, 10000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}

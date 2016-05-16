@@ -6,7 +6,7 @@
 $(function() {
 qtips('.fleet_log ', 'Here will be displayed all fleets movement from and to your empire, as the location, amount and mission used.', 'bottomMiddle', 'topMiddle');
 setTimeout(function() { qtips('#munu_research', 'Click here, to know what would protect you against enemies probes.', 'rightMiddle', 'leftMiddle') }, 4000);
-setInterval(function() { AJAX() }, 6000)
+
 });
 </script>
 {/if}
@@ -18,7 +18,7 @@ setInterval(function() { AJAX() }, 6000)
 $(function() {
 qtips('#owerwiv ', 'Excellent! Your fleet has been sent for processing debris is one way of obtaining resources, you can fly all over the universe and recycle debris around other planets.<br/><br/> <b>You get 650 points peaceful experience.</b>', 'lefttMiddle', 'topRight');
 setTimeout(function() { location.reload(); }, 13000);
-setInterval(function() { AJAX() }, 6000)
+
 });
 </script>
 {/if}
@@ -28,7 +28,7 @@ $(function() {
 qtips('a.attack:first ', 'Place your mouse on the word "fleet" to view its composition', 'topMiddle', 'bottomMiddle');
 setTimeout(function() { qtips('#big_panet', 'There is enough defense to protect your planet. Let the battle go. you will be redirected', 'leftTop', 'rightMiddle') }, 4000);
 setTimeout(function() { location.reload(); }, 59000);
-setInterval(function() { AJAX() }, 6000)
+
 });
 </script>
 {/if}

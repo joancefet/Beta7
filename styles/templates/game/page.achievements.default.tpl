@@ -6,7 +6,7 @@
 <script type="text/javascript">
 	$(function() {
 		qtips('.ach_head', 'During the game you can do differents achievements. Pick any favorite achievement and begin completing it. As reward, you get  {$LNG.ach_points} and antimatter, how higher the succesfull achievement, how higher the reward.', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 {/if}

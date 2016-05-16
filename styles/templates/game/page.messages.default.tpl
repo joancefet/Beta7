@@ -5,7 +5,7 @@
 	$(function() {
 		qtips('#mes_3 ', 'Go to the "Battle" and view the combat report by clicking on it.', 'topMiddle', 'bottomMiddle');
 setTimeout(function() { location.reload(); }, 20000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}

@@ -12,7 +12,7 @@ $( "#build_4" ).show();
 $( "#build_31" ).show();
 $( "#build_14" ).show();
 $( "#build_21" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 
@@ -30,7 +30,7 @@ $( "#build_4" ).show();
 $( "#build_31" ).show();
 $( "#build_14" ).show();
 $( "#build_21" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -51,7 +51,7 @@ $( "#build_3" ).show();
 $( "#build_4" ).show();
 qtips('#fildes_band', 'Excelente! Agora temos energia suficiente para todas as minas!<br/><br/> <b>Você ganhou 650 pontos de experiência em pacifismo.</b>', 'leftMiddle', 'topRight')
 setTimeout(function() { location.reload(); }, 5000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -64,7 +64,7 @@ $( "#build_2" ).show();
 $( "#build_3" ).show();
 $( "#build_4" ).show();
 $( "#build_31" ).show();
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -81,7 +81,7 @@ $( "#build_2" ).show();
 $( "#build_3" ).show();
 $( "#build_4" ).show();
 qtips('#fildes_band', 'Você pode construir minas no planeta para aumentar a produção de recursos..<br/> Mas lembre-se que para as minas trabalharem, elas precisam de energia..<br /><br /> <b><span style="margin:0 0 7px 0;display: block;color:#002211;">Construir:</span><span style=" margin-left: 9px;display: block;">Planta de Energia Solar lvl. 1</span>', 'leftMiddle', 'topRight')
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 
@@ -96,7 +96,7 @@ $( "#build_2" ).show();
 $( "#build_3" ).show();
 $( "#build_4" ).show();
 qtips('#fildes_band', 'Now you have a little bit of energy that would provide job Mines.<br /><br /> <b><span style="margin:0 0 7px 0;display: block;color:#002211;">Build:</span><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>Metal Mine Level 3. <br /><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>Crystal Mine Level 2. <br /><span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>Deuterium Mine Level 1.</b>', 'leftMiddle', 'topRight')
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -111,7 +111,7 @@ $( "#build_3" ).show();
 $( "#build_4" ).show();
 qtips('#res_block_energy .stock_text ', 'You do not have enough energy.', 'bottomMiddle', 'topLeft');
 qtips('#fildes_band', 'Due to lack of energy, The production of mines is reduced. It is necessary to provide energy for all mines.<br /><br /><b><span style="margin:0 0 7px 0;display: block;color:#002211;">Build:</span> <span style=" margin-left: 9px;display: block;">Solar Power Planet lvl 4.</span></b>', 'leftMiddle', 'topRight')
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}

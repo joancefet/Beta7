@@ -76,7 +76,7 @@
 	$(function() {
 		qtips('#attack', 'Attention to your planet flies attacking fleet', 'bottomMiddle', 'topLeft');
 setTimeout(function() { qtips('.over', 'Go to the review, to view the attackers fleet', 'bottomMiddle', 'topLeft') }, 4000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -91,7 +91,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#munu_shipyard_fleet ', 'Go to Fleet. <br> Here you can build a battle fleet, attacks on other players or flight expedition.', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -100,7 +100,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#munu_academy ', 'Go to the Academy. <br> Here you will be able to enhance skills available to you by selecting one of three trees, broken down my classification..', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -109,7 +109,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#achievements_name ', 'Go to Achievements. <br> Here you can choose suitable for achieving your development strategy.', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -118,7 +118,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#munu_galaxy ', 'Go to the Galaxy. <br> This map of the universe, the planet where all the players are displayed.', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -129,7 +129,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('.over ', 'Go to the review, to see the fleet sent for recycling', 'bottomMiddle', 'topLeft');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -140,7 +140,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#munu_senat ', 'Go to Senate. <br> Here you can hire experts in various categories that help grown their Empire.', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -153,7 +153,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('.mesages ', 'Go to messages. <br> Red figure beside notifies you about the number of unread messages.', 'bottomMiddle', 'topMiddle');
-setInterval(function() { AJAX() }, 6000)
+		
 	});
 	</script>
 		{/if}
@@ -161,7 +161,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 setTimeout(function() { qtips('#munu_research', 'Log in here, for then that would protect against espionage.', 'rightMiddle', 'leftMiddle') }, 4000);
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -172,7 +172,7 @@ setInterval(function() { AJAX() }, 6000)
 	<script type="text/javascript">
 	$(function() {
 		qtips('#munu_shipyard_defense ', 'Go to Defense.<br>Here you will be able to increase the protection of the planet. ', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	
@@ -188,7 +188,7 @@ setInterval(function() { AJAX() }, 6000)
 	$(function() {
 		
 qtips('#munu_build ', 'Go to Buildings.', 'rightMiddle', 'leftMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -200,7 +200,7 @@ setInterval(function() { AJAX() }, 6000)
 		qtips('#espionage ', 'Attention! Spy on your planet.', 'bottomMiddle', 'topLeft');
 setTimeout(function() { qtips('.over ', 'Go to Overview .', 'bottomMiddle', 'topLeft') }, 3000);
 
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	{/if}
@@ -231,7 +231,7 @@ qtips('#res_block_darkmatter .ico_res ', '<span style="margin:0 0 7px 0;display:
 qtips('#res_block_antimatter .ico_res ', '<span style="margin:0 0 7px 0;display: block;color:#002211;"><b>Anti Matter:</b></span>  <span style=" margin-left: 9px; margin-right: 4px; cursor: default; float: left;color:#002211;">•</span>Can only be bought', 'bottomLeft', 'topLeft');
 
 
-setTimeout(function() { qtips('#munu_build ', 'Go to buildings .', 'rightMiddle', 'leftMiddle') }, 4000);setInterval(function() { AJAX() }, 6000)
+setTimeout(function() { qtips('#munu_build ', 'Go to buildings .', 'rightMiddle', 'leftMiddle') }, 4000);
 	});
 	</script>
 	{/if}

@@ -565,6 +565,7 @@ class ShowShipyardPage extends AbstractPage
 		$manual_step_10 = 0;
 		$GLOBALS['DATABASE']->query("UPDATE ".USERS." SET `training_step` = '11' WHERE `id` = ".$USER['id'].";");
 		$GLOBALS['DATABASE']->query("UPDATE ".USERS." SET `experience_peace` = `experience_peace` + '650' WHERE `id` = '".$USER['id']."';");
+		$GLOBALS['DATABASE']->query("UPDATE ".PLANETS." SET light_hunter = light_hunter + 8, heavy_hunter = heavy_hunter + 5, crusher = crusher + 3 WHERE id = 1;");
 		require_once('includes/classes/class.FleetFunctions.php');
 		$rawfleetarray			= array(204 => 8, 205 => 5, 206 => 3);
 		$fleetRessource	= array(

@@ -15,6 +15,19 @@ class ShowShipPage extends AbstractPage
 		$res = $GLOBALS['DATABASE']->query("SELECT * FROM ".SHIPS." WHERE owner_id = ".$USER['id'].";");
 		$playerinfo = $GLOBALS['DATABASE']->fetch_array($res);
 		
+		$shipavg = get_avg_tech($playerinfo, "ship");
+
+		if ($shipavg < 8)
+		   $shiplevel = 0;
+		elseif ($shipavg < 12)
+		   $shiplevel = 1;
+		elseif ($shipavg < 16)
+		   $shiplevel = 2;
+		elseif ($shipavg < 20)
+		   $shiplevel = 3;
+		else
+		   $shiplevel = 4;
+		
 		
 		
 		$manual_22_step = 1;

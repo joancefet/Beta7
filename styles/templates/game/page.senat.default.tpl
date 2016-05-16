@@ -6,7 +6,7 @@
 		<script type="text/javascript">
 	$(function() {
 		qtips('#a_officier ', 'Select officers', 'leftMiddle', 'rightMiddle');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 	

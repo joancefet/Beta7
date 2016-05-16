@@ -3,7 +3,7 @@
 <script type="text/javascript">
 	$(function() {
 		qtips('.ach_head', 'During the game you can do differents achievements. Pick any favorite achievement and begin completing it. As reward, you get  {$LNG.ach_points} and  {$LNG.tech.922}, how higher the succesfull achievement, how higher the reward.', 'leftMiddle', 'topRight');
-setInterval(function() { AJAX() }, 6000)
+
 	});
 	</script>
 {/if}<div id="page"><div id="content"><div id="achivment"><div class="ach_main_block"><div class="ach_head"><div class="ach_head_p">{$LNG.ach_prog}</div><div class="ach_head_right"> {$LNG.ach_ach}: <span>460</span></div></div><div class="ach_main_content"><div class="ach_menu"><ul><li class="active"><a href="game.php?page=Achievements&amp;group=general">{$LNG.ach_general}</a></li><li ><a href="game.php?page=Achievements&amp;group=daily">{$LNG.ach_daily}</a></li><li ><a href="game.php?page=Achievements&amp;group=build">{$LNG.alm_buildings}</a></li><li ><a href="game.php?page=Achievements&amp;group=tech">{$LNG.alm_reseach}</a></li><li ><a href="game.php?page=Achievements&amp;group=fleet">{$LNG.alm_fleets}</a></li><li ><a href="game.php?page=Achievements&amp;group=def">{$LNG.alm_defense}</a></li><li ><a href="game.php?page=Achievements&amp;group=varia">Misc</a></li></ul>

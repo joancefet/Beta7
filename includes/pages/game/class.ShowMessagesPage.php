@@ -354,6 +354,12 @@ class ShowMessagesPage extends AbstractPage
 			);
 		}
 		
+		$manual_13_step = 1;
+			if($USER['training'] == 0 && $USER['training_step'] == 13){
+			$manual_13_step = 0;
+			$GLOBALS['DATABASE']->query("UPDATE ".USERS." SET training_step = '14' WHERE id = ".$USER['id'].";");
+			}
+		
 		$manual_14_step = 1;
 		if($USER['training'] == 0 && $USER['training_step'] == 14){
 		$manual_14_step = 0;

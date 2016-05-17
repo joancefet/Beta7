@@ -12,7 +12,6 @@ $( this ).dialog( "close" );
 </script>{/if}
 <div style="display: none;" id="scroller">
 <a class="scroller_mesages" href="game.php?page=messages" onclick="document.location.href = 'game.php?page=messages'">
-<span class="mesages" {if $new_message == 0}style="display:none;"{/if}></span>
 <span class="new_email" {if $new_message == 0}style="display:none;"{/if}>
 {$new_message}
 </span>
@@ -72,27 +71,28 @@ $( this ).dialog( "close" );
 {$LNG.alm_promote}</a>{/if} 
 {if $authlevel > 0} <a  href="admin.php" class="big_btn green btn_menu btn_menu_big">Administração</a>{/if}
 <div class="clear"></div>
-{if $cosmonaute_day == 1}
+
 <div id="bottom_cosmonautics">
 <div class="bottom_gift_bg">
-<a {if $gift1 > 0}href="?page=bonus&mode=gift1"{/if} class="gift_bloc gift_1 {if $gift1 == 0}gift_opacity{/if} tooltip" data-tooltip-content="When activated you get <b>50</b> antimatter<br>
-(Flying Saucer will be lost when)">{$gift1}</a>
-<a {if $gift2 > 0}href="?page=bonus&mode=gift2"{/if} class="gift_bloc gift_2 {if $gift2 == 0}gift_opacity{/if} tooltip" data-tooltip-content="When activate, you get <b>50</b> antimatter<br>
-(The alien will then be lost)">{$gift2}</a>
-<a {if $gift3 > 0}href="?page=bonus&mode=gift3"{/if} class="gift_bloc gift_3 {if $gift3 == 0}gift_opacity{/if} tooltip" data-tooltip-content="When activated you get <b>50</b> antimatter<br>
-(Rocket will be lost when)">{$gift3}</a>
-<a {if $gift4 > 0}href="?page=bonus&mode=gift4"{/if} class="gift_bloc gift_4 {if $gift4_1 == 0}gift_opacity{/if} tooltip" data-tooltip-content="When you activated Cosmonaut, 
-<br>You will receive 300 Antimatter<br>
-And as you have a 50% chance:
+<a {if $gift1 > 0}href="?page=bonus&mode=gift1"{/if} class="gift_bloc gift_1 {if $gift1 == 0}gift_opacity{/if} tooltip" data-tooltip-content="Quando ativado, você obtém <b>50+</b> de Anti Matéria<br>
+(O UFO será perdido)">{$gift1}</a>
+<a {if $gift2 > 0}href="?page=bonus&mode=gift2"{/if} class="gift_bloc gift_2 {if $gift2 == 0}gift_opacity{/if} tooltip" data-tooltip-content="Quando ativado, você obtém <b>50+</b> de Anti Matéria<br>
+(O Alien será perdido)">{$gift2}</a>
+<a {if $gift3 > 0}href="?page=bonus&mode=gift3"{/if} class="gift_bloc gift_3 {if $gift3 == 0}gift_opacity{/if} tooltip" data-tooltip-content="Quando ativado, você obtém <b>50+</b> de Anti Matéria<br>
+(O Foguete será perdido)">{$gift3}</a>
+<a {if $gift4 > 0}href="?page=bonus&mode=gift4"{/if} class="gift_bloc gift_4 {if $gift4_1 == 0}gift_opacity{/if} tooltip" data-tooltip-content="Quando ativado o Cosmonauta, 
+<br>Você irá receber 300+ de Anti Matéria<br>
+E você tem 50% de chance de ganhar:
 <br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>pontos de Academia <b>1-25</b>
 <br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>experiência de pascifismo <b>150-3500</b>
 <br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>bonus de anti matéria <b>200</b>
-<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Get <b>frisbee</b>
-<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Get <b>alien</b> 
-<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Get <b>space rocket</b> ">{$gift4}</a>
+<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Obter <b>UFO</b>
+<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Obter <b>Alien</b> 
+<br><span style=' margin-left: 9px; margin-right: 4px; cursor: default; float: left;'>•</span>Obter <b>Foguete</b> 
+<br>(UFO, Alien, Foguete e Cosmonauta serão perdidos)">{$gift4}</a>
 </div>
 </div>
-{/if}
+
 {if $new_year == 1}
 <div id="bottom_new_year">
 <div class="bottom_gift_bg">

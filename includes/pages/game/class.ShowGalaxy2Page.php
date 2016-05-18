@@ -41,11 +41,7 @@ class ShowGalaxy2Page extends AbstractPage
 	public function show()
 	{
 		global $USER, $PLANET, $resource, $LNG, $reslist, $CONF;
-		$this->tplObj->loadscript("three.js");
-		$this->tplObj->loadscript("Projector.js");
-		$this->tplObj->loadscript("CanvasRenderer.js");
-		$this->tplObj->loadscript("stats.min.js");
-		$this->tplObj->loadscript("threex.planets.js");
+		
 		$this->tplObj->loadscript("jquery.countdown.js");
 		$action 		= HTTP::_GP('action', '');
 		$galaxyLeft		= HTTP::_GP('galaxyLeft', '');

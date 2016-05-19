@@ -176,7 +176,7 @@ function DestroyMissiles() {
 
 function handleErr(errMessage, url, line) 
 { 
-	error = "There is an error at this page.\n";
+	/*error = "There is an error at this page.\n";
 	error += "Error: " + errMessage+ "\n";
 	error += "URL: " + url + "\n";
 	error += "Line: " + line + "\n\n";
@@ -185,7 +185,7 @@ function handleErr(errMessage, url, line)
 	if(typeof console == "object")
 		console.log(error);
  
-	return true; 
+	return true;*/ 
 }
 
 function msgArchive(MessID, MessType)

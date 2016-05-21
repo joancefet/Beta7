@@ -57,4 +57,7 @@ CREATE TABLE IF NOT EXISTS `uni1_ships` (
   `trade_energy` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
   `cleared_defences` tinytext COLLATE utf8_unicode_ci,
   `dev_lssd` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM AUTO_INCREMENT=87720425 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+ALTER TABLE `uni1_ships` MODIFY `ship_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;

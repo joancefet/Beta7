@@ -136,22 +136,22 @@ class ShowBuildingsPage extends AbstractPage
 
 	
 	private function AddBuildingToQueue($Element, $lvlup, $lvlup1, $AddMode = true)
- {
-  if($this->bOnInsert==FALSE)
-  {
-   $this->build_anz=(int)$_POST['lvlup'] - $_POST['lvlup1'];
-   if($this->build_anz>=1 )
-   {
-    $this->bOnInsert=TRUE;
-    while($this->build_anz>0)
-    {
-     $this->DoAddBuildingToQueue($Element, $AddMode);
-     $this->build_anz=$this->build_anz-1;
-    }
-    $this->bOnInsert=FALSE;
-   }
-  }
- }
+	{
+		if($this->bOnInsert==FALSE)
+		{
+			$this->build_anz=(int)$_POST['lvlup'] - $_POST['lvlup1'];
+			if($this->build_anz>=1 )
+			{
+				$this->bOnInsert=TRUE;
+				//while($this->build_anz>0)
+				//{
+					$this->DoAddBuildingToQueue($Element, $AddMode);
+					$this->build_anz=$this->build_anz-1;
+				//}
+				$this->bOnInsert=FALSE;
+			}
+		}
+	}
 	private function DoAddBuildingToQueue($Element, $AddMode = true)	{
 		global $PLANET, $USER, $resource, $CONF, $reslist, $pricelist;
 		

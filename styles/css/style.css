@@ -5411,3 +5411,151 @@ div.shortcut-edit{
 .bottom_band_submit_answer:hover{
 	border-color:#0FF;
 }
+
+/* Ship Report Page */
+.ship-container {
+	width:983px;
+	padding-left:5px;
+	margin-top:25px;
+	display:inline-block;
+	padding-bottom:20px;
+	/*background-color: rgba(0,0,0,0.60);*/
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+}
+.ship-component-container {
+	width: 450px;
+	display:inline-block;
+
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	float:left;
+	
+}
+.ship-user-container {
+	width: 965px;
+	display:inline-block;
+
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:10px;
+	padding-bottom:2px;
+	float:left;
+}
+.ship-component-component {
+	display:block;
+	position:relative;
+	clear:both;
+}
+.ship-stats-container {
+	width: 450px;
+	display:inline-block;
+	
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	float:right;
+	margin-right:20px;
+}
+.ship-group-title {
+	width:100%;
+	text-align:right;
+	font-weight:bold;
+	padding-bottom:7px;
+}
+.ship-stats-component {
+	display:block;
+	position:relative;
+	clear:both;
+}
+.ship-stats-user {
+	display:block;
+	position:relative;
+	clear:both;
+	width:400px;
+}
+.ship-progress{
+	position:relative;
+	width:300px;
+	border:1px double #FFF;
+	position:relative;
+	padding:3px;
+}
+.ship-bar{
+	height:8px;
+	margin-left: 0px;
+}
+.ship-component-warning{
+	position:absolute;
+	display:inline-block;
+	top:1px;
+	left:5%;
+	color:#F00;
+	font-weight:bold;
+	font-size:10px;
+	text-align:right;
+}
+.ship-component-warning-span{
+	top:1px;
+	color:#900;
+	
+	font-style:italic;
+	font-size:10px;
+	margin-right:10px;
+}
+.ship-component-name {
+	display:inline-block;
+	text-align:right;
+	float: left;
+	margin-top:2px;
+	font-weight:bold;
+	width:140px;
+}
+.ship-component-bars {
+	display:inline-block;
+	text-align:right;
+	float:right;
+}
+.ship-storage-quantity {
+	display:inline-block;
+	text-align:right;
+	float:right;
+}
+.ship-0 {
+	background-color:#0C9;
+}
+.ship-1 {
+	background-color:#9F0;
+}
+.ship-2 {
+	background-color:#FF0;
+}
+.ship-3 {
+	background-color:#F60;
+}
+.ship-4 {
+	background-color:#C00;
+}
+.ship-lvl {
+	font-size:9px;
+	font-style:italic;
+	color:#CCC;
+}
+.ship-divider-top {
+	padding-top:8px;
+}
+.ship-divider-bottom {
+	padding-bottom:8px;
+}
+.ship-graphic {
+	left:500px;
+	position:absolute;
+	top:50px;
+	z-index:5;
+	float:right;
+	
+}

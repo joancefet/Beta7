@@ -57,3 +57,4 @@ define('VOTE'				, DB_PREFIX.'votesystem_log');
 
 define('RACES'		 		, DB_PREFIX.'races');
 define('SHIPS'				, DB_PREFIX.'ships');
+define('BOTS'				, DB_PREFIX.'bots');

@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS `uni1_ships` (
-  `ship_id` int(10) unsigned NOT NULL,
+  `ship_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `ship_name` char(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ship_destroyed` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
   `owner_id`int(10) unsigned NOT NULL,
@@ -57,7 +57,4 @@ CREATE TABLE IF NOT EXISTS `uni1_ships` (
   `trade_energy` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
   `cleared_defences` tinytext COLLATE utf8_unicode_ci,
   `dev_lssd` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-
-ALTER TABLE `uni1_ships` MODIFY `ship_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

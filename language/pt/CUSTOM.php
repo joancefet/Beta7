@@ -449,3 +449,20 @@ $LNG['NIR_on']								= 'Nenhum missíl a caminho';
 $LNG['RMoon']							= 'Requerido para a criação';
 $LNG['CostCrMoon']						= 'Custo para cria uma Lua:';
 $LNG['DebrisM']							= 'Destroços:';
+
+//Asteroid Event
+$LNG['sys_asteroid_1']			= '<span>O evento de Asteroids começou</span>';
+$LNG['sys_asteroid_2']			= 'informação do evento';
+$LNG['sys_asteroid_3']			= '<span style="color:blue">Durante uma visita a um planeta no horizonte do universo, uma equipe de exploração espacial desconhecida descobriu uma nova maneira de criar recursos através de uma falha na física do universo, eles trabalharam horas para ver como tudo começou, no entanto, depois de algumas horas, algo de muito estranho aconteceu...</span>';
+$LNG['sys_asteroid_4']			= '<span style="color:blue">Nossos sensores detectaram um portal desconhecido que se abriu na galáxia e criou 50 grandes campos de destroços, deveríamos recolhe-los para receber recursos adicionais.</span>';
+
+//Fleet Colo 
+$LNG['ls_fts_colo_1']						= 'The center space operations just mentioned that your fleet arrived in orbit of the planet to the following coordinates [%s:%s] to perform its missionn «&nbsp;<span class="jaune">%s</span>&nbsp;». However, this mission was canceled by Admiral in charge of the fleet.';
+$LNG['ls_fts_colo_2']						= 'A « spatial » mission may be canceled for written reasons below';
+$LNG['ls_fts_colo_3']						= 'If your mission was to « colonize the planet », then it is possible that the destination planet was colonized before the arrival of your fleet.';
+$LNG['ls_fts_colo_4']						= 'If your mission was to « colonize the planet », then you may have reached the maximum number of colony meantime.';
+$LNG['ls_fts_colo_5']						= 'If your mission was to « negotiate a pact », then it is possible that the mission was canceled because you have proposed and signed a pact with the player in question in the meantime.';
+$LNG['ls_fts_colo_6']						= 'If your mission was to « attack », then it is possible that the mission was canceled because you have signed a pact with the player in question between.';
+$LNG['ls_fts_colo_7']						= 'The destination planet is not inhabited or she is inhabited by the same player.';
+$LNG['ls_fts_colo_8']						= 'The mission you want to perform does not exist.';
+$LNG['ls_fts_colo_9']						= 'Você pode solicitar uma explicação sobre o evento através da página de suporte.';

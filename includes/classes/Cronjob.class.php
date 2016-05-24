@@ -42,7 +42,7 @@ class Cronjob
 			throw new Exception("Unkown cronjob ".$cronjobID." or is deactived");
 		}
 		
-		$GLOBALS['DATABASE']->query("UPDATE ".CRONJOBS." SET `lock` = '".md5(TIMESTAMP)."' WHERE cronjobID = ".$cronjobID.";");
+		//$GLOBALS['DATABASE']->query("UPDATE ".CRONJOBS." SET `lock` = '".md5(TIMESTAMP)."' WHERE cronjobID = ".$cronjobID.";");
 		
 		$cronjobsPath		= 'includes/classes/cronjob/'.$cronjobsClassName.'.class.php';
 		

@@ -229,7 +229,7 @@ class statbuilder
 			$this->setRecords($USER['id'], $Defense, $USER[$resource[$Defense]]);
 		}
 		
-		return array('count' => $DefenseCounts, 'points' => ($DefensePoints / 10000000));
+		return array('count' => $DefenseCounts, 'points' => ($DefensePoints / Config::get('stat_settings')));
 	}
 
 	private function GetFleetPoints($USER) 
@@ -248,7 +248,7 @@ class statbuilder
 			$this->setRecords($USER['id'], $Fleet, $USER[$resource[$Fleet]]);
 		}
 		
-		return array('count' => $FleetCounts, 'points' => ($FleetPoints / 10000000));
+		return array('count' => $FleetCounts, 'points' => ($FleetPoints / Config::get('stat_settings')));
 	}
 	
 	private function SetNewRanks()
@@ -441,7 +441,7 @@ class statbuilder
 			$TechnoPoints		= $this->GetTechnoPoints($UserData);
 			$FleetPoints		= $this->GetFleetPoints($UserData);
 			$DefensePoints		= $this->GetDefensePoints($UserData);
-			$AchPoints		= $this->GetAchPoints($UserData);
+			$AchPoints			= $this->GetAchPoints($UserData);
 			
 			$UserPoints[$UserData['id']]['fleet']['count'] 		= $FleetPoints['count'];
 			$UserPoints[$UserData['id']]['fleet']['points'] 	= $FleetPoints['points'];

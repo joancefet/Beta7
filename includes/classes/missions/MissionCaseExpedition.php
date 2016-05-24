@@ -80,13 +80,13 @@ class MissionCaseExpedition extends MissionFunctions
 
 		$fleetCapacity  -= $this->_fleet['fleet_resource_metal'] + $this->_fleet['fleet_resource_crystal'] + $this->_fleet['fleet_resource_deuterium'] + $this->_fleet['fleet_resource_darkmatter'];
 
-		if($GLOBALS['CONFIG'][$this->_fleet['fleet_universe']]['purchase_bonus_timer'] > TIMESTAMP || $GLOBALS['CONFIG'][$this->_fleet['fleet_universe']]['cosmonaute'] == 1){
+		/*if($GLOBALS['CONFIG'][$this->_fleet['fleet_universe']]['purchase_bonus_timer'] > TIMESTAMP || $GLOBALS['CONFIG'][$this->_fleet['fleet_universe']]['cosmonaute'] == 1){
 		$GetEvent       = mt_rand(1,7);
 		}else{
 		$GetEvent       = mt_rand(1,6);
-		} 
+		} */
 		
-		$GetEvent       = mt_rand(1,6);
+		$GetEvent       = mt_rand(1,7);
 		$combat_bonus	= $GLOBALS['DATABASE']->getFirstRow("SELECT * FROM ".USERS." WHERE id = ".$this->_fleet['fleet_owner'].";");
         $Message        = $LNG['sys_expe_nothing_'.mt_rand(1,8)];
 		$chancetogetstar = mt_rand(0,100);

@@ -412,7 +412,7 @@ CREATE TABLE IF NOT EXISTS `%PREFIX%config` (
   `bonus_button` int(11) unsigned NOT NULL DEFAULT '0',
   `premium` int(11) unsigned NOT NULL DEFAULT '0',
   `end_game` int(11) NOT NULL DEFAULT '1414782000',
-  `cosmonaute` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `cosmonaute` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `asteroid_event` int(11) unsigned NOT NULL DEFAULT '1397322000',
   `fleet_event_active_1` int(11) NOT NULL DEFAULT '1398963900',
   `fleet_event_active_2` int(11) NOT NULL DEFAULT '1399223100',
@@ -1316,7 +1316,7 @@ CREATE TABLE IF NOT EXISTS `%PREFIX%users` (
   `v1` int(11) unsigned NOT NULL DEFAULT '0',
   `v2` int(11) unsigned NOT NULL DEFAULT '0',
   `v3` int(11) unsigned NOT NULL DEFAULT '0',
-  `training` tinyint(3) unsigned NOT NULL DEFAULT '1',
+  `training` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `training_step` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `frisbee` int(11) unsigned NOT NULL DEFAULT '0',
   `alien` int(11) unsigned NOT NULL DEFAULT '0',
@@ -2412,6 +2412,140 @@ INSERT INTO `%PREFIX%vars_requriements` (`elementID`, `requireID`, `requireLevel
 (5, 6, 12),
 (5, 113, 18),
 (5, 123, 8);
+
+/**
+* STELLAR WARS CUSTOM
+**/
+
+-- RACE SYSTEM
+-- Create the races table
+CREATE TABLE IF NOT EXISTS `%PREFIX%races` (
+  `race_id` int(11) NOT NULL AUTO_INCREMENT,  
+  `race_name` varchar(50) NOT NULL,  
+  `race_fleet_construction_time` float NOT NULL DEFAULT '1',  
+  `race_research_construction_time` float NOT NULL DEFAULT '1',  
+  `race_building_construction_time` float NOT NULL DEFAULT '1',  
+  `race_defence_construction_time` float NOT NULL DEFAULT '1',  
+  UNIQUE KEY `race_id` (`race_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5;
+
+-- Fil the races table with the 4 standard races
+INSERT INTO `%PREFIX%races` (`race_id`, `race_name`, `race_fleet_construction_time`, `race_research_construction_time`, `race_building_construction_time`, `race_defence_construction_time`) VALUES
+  (1, 'Altairians', 0.8, 1, 1, 1),
+  (2, 'Cetians', 1, 0.8, 1, 1),
+  (3, 'Jawas', 1, 1, 0.8, 1),
+  (4, 'Nordics', 1, 1, 1, 0.8);
+  
+-- Add column to the users table so we can find what race a user is
+ALTER TABLE `%PREFIX%users` ADD `race` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `authlevel`;
+
+-- Add new column to the vars table so we can make race specific buildings / ships / researches / defenses
+ALTER TABLE  `%PREFIX%vars` ADD  `specificRace` INT NOT NULL DEFAULT  '0';
+
+-- Alter row in vars so that one building is race specific (Orbital station)
+UPDATE `%PREFIX%vars` SET  `specificRace` =  '1' WHERE  `%PREFIX%vars`.`elementID` =411;
+
+-- Change the validation table so that the race can be filt uppon registration (Thx for reunien for noticing)
+ALTER TABLE `%PREFIX%users_valid` ADD `race` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `language`;
+
+--TICK SYSTEM
+-- Coluna que informa o tick atual
+ALTER TABLE `%PREFIX%config` ADD `tick` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%config` ADD `tick_last_time` INT(11) NOT NULL DEFAULT '0';
+
+ALTER TABLE `%PREFIX%fleets` ADD `tickinicial` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%fleets` ADD `tickfinal` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%fleets` ADD `tickretorno` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+
+ALTER TABLE `%PREFIX%fleets_alarm` ADD `tickinicial` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%fleets_alarm` ADD `tickfinal` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%fleets_alarm` ADD `tickretorno` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+
+ALTER TABLE `%PREFIX%log_fleets` ADD `tickinicial` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%log_fleets` ADD `tickfinal` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `%PREFIX%log_fleets` ADD `tickretorno` INT(11) UNSIGNED NOT NULL DEFAULT '0';
+
+-- SHIP SYSTEM
+CREATE TABLE IF NOT EXISTS `%PREFIX%ships` (
+  `ship_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ship_name` char(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ship_destroyed` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `owner_id`int(10) unsigned NOT NULL,
+  `hull` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `engines` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `power` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `computer` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `sensors` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `beams` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `torp_launchers` tinyint(3) NOT NULL DEFAULT '0',
+  `torps` bigint(20) NOT NULL DEFAULT '0',
+  `shields` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `armor` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `armor_pts` bigint(20) NOT NULL DEFAULT '0',
+  `cloak` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `credits` bigint(20) NOT NULL DEFAULT '0',
+  `galaxy` int(10) unsigned NOT NULL DEFAULT '0',
+  `system` int(10) unsigned NOT NULL DEFAULT '0',
+  `ship_ore` bigint(20) NOT NULL DEFAULT '0',
+  `ship_organics` bigint(20) NOT NULL DEFAULT '0',
+  `ship_goods` bigint(20) NOT NULL DEFAULT '0',
+  `ship_energy` bigint(20) NOT NULL DEFAULT '0',
+  `ship_colonists` bigint(20) NOT NULL DEFAULT '0',
+  `ship_fighters` bigint(20) NOT NULL DEFAULT '0',
+  `ship_damage` smallint(5) NOT NULL DEFAULT '0',
+  `turns` smallint(4) NOT NULL DEFAULT '0',
+  `on_planet` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `dev_warpedit` smallint(5) NOT NULL DEFAULT '0',
+  `dev_genesis` smallint(5) NOT NULL DEFAULT '0',
+  `dev_beacon` smallint(5) NOT NULL DEFAULT '0',
+  `dev_emerwarp` smallint(5) NOT NULL DEFAULT '0',
+  `dev_escapepod` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `dev_fuelscoop` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `dev_minedeflector` bigint(20) NOT NULL DEFAULT '0',
+  `turns_used` int(10) unsigned NOT NULL DEFAULT '0',
+  `last_login` datetime DEFAULT NULL,
+  `last_kami` datetime DEFAULT NULL,
+  `last_sofa` datetime DEFAULT NULL,
+  `ship_kills` int(11) NOT NULL DEFAULT '0',
+  `ship_deaths` int(11) NOT NULL DEFAULT '0',
+  `rating` int(11) NOT NULL DEFAULT '0',
+  `score` int(11) NOT NULL DEFAULT '0',
+  `points` int(11) NOT NULL DEFAULT '0',
+  `team` int(11) NOT NULL DEFAULT '0',
+  `team_invite` int(11) NOT NULL DEFAULT '0',
+  `planet_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `preset1` int(11) NOT NULL DEFAULT '0',
+  `preset2` int(11) NOT NULL DEFAULT '0',
+  `preset3` int(11) NOT NULL DEFAULT '0',
+  `preset4` int(11) NOT NULL DEFAULT '0',
+  `preset5` int(11) NOT NULL DEFAULT '0',
+  `trade_colonists` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
+  `trade_fighters` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `trade_torps` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
+  `trade_energy` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
+  `cleared_defences` tinytext COLLATE utf8_unicode_ci,
+  `dev_lssd` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y'
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- BOT SYSTEM
+CREATE TABLE IF NOT EXISTS `%PREFIX%bots` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `player` bigint(11) NOT NULL,
+  `last_time` int(11) NOT NULL,
+  `every_time` int(11) NOT NULL,
+  `last_planet` bigint(11) NOT NULL,
+  `type` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0;
+
+INSERT INTO `%PREFIX%cronjobs` (`cronjobID`, `name`, `isActive`, `min`, `hours`, `dom`, `month`, `dow`, `class`, `nextTime`, `lock`) VALUES 
+  (NULL, 'bot', '1', '*/5', '*', '*', '*', '*', 'BotCronjob', '0', NULL);
+
+-- ASTEROID EVENT SYSTEM
+INSERT INTO `%PREFIX%cronjobs` (`cronjobID`, `name`, `isActive`, `min`, `hours`, `dom`, `month`, `dow`, `class`, `nextTime`, `lock`) VALUES
+(12, 'Asteroid Cronjon', 1, '25', '9,15,21', '*', '*', '*', 'AsteroidCronJob', 1430551500, NULL);
+
+ALTER TABLE `%PREFIX%planets` ADD `der_deuterium` DOUBLE(50,0) UNSIGNED NOT NULL DEFAULT '0' AFTER `der_crystal`;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

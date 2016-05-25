@@ -12,6 +12,61 @@ class ShowAchievementsPage extends AbstractPage
 	{
     global $CONF, $LNG, $PLANET, $USER, $db, $resource, $UNI;
 	$status   = HTTP::_GP('group', '');
+	
+	// Calculo do total de pontos de conquista
+		$AchPoints = 0;
+		$AchPoints += ($peace_reward_points = 9) * $USER['achievement_peace_level'];
+		$AchPoints += ($combat_reward_points = 13) * $USER['achievement_combat_level'];
+		$AchPoints += ($attack_reward_points = 50) * $USER['achievements_level_attack'];
+		$AchPoints += ($hostal_reward_points = 50) * $USER['achievements_level_hostal'];
+		$AchPoints += ($expe_reward_points = 50) * $USER['achievements_level_expe'];
+		$AchPoints += ($metal_reward_points = 2) * $USER['achievement_build_metal'];
+		$AchPoints += ($crystal_reward_points = 2) * $USER['achievement_build_crystal'];
+		$AchPoints += ($deuterium_reward_points = 3) * $USER['achievement_build_deuterium'];
+		$AchPoints += ($light_reward_points = 3) * $USER['achievement_build_light'];
+		$AchPoints += ($medium_reward_points = 3) * $USER['achievement_build_medium'];
+		$AchPoints += ($heavy_reward_points = 3) * $USER['achievement_build_heavy'];
+		$AchPoints += ($university_reward_points = 9) * $USER['achievement_build_university'];
+		$AchPoints += ($moon_reward_points = 6) * $USER['achievement_build_moon'];
+		$AchPoints += ($phalanx_reward_points = 8) * $USER['achievement_build_phalanx'];
+		$AchPoints += ($terraformer_reward_points = 7) * $USER['achievement_build_terraformer'];
+		$AchPoints += ($easy_reward_points = 15) * $USER['achievement_defense_easy'];
+		$AchPoints += ($simple_reward_points = 18) * $USER['achievement_defense_simple'];
+		$AchPoints += ($average_reward_points = 25) * $USER['achievement_defense_average'];
+		$AchPoints += ($high_reward_points = 30) * $USER['achievement_defense_high'];
+		$AchPoints += ($heavy_reward_points = 37) * $USER['achievement_defense_heavy'];
+		$AchPoints += ($massive_reward_points = 42) * $USER['achievement_defense_massive'];
+		$AchPoints += ($imperial_reward_points = 47) * $USER['achievement_defense_imperial'];
+		$AchPoints += ($fighter_reward_points = 15) * $USER['achievements_misc_fighter'];
+		$AchPoints += ($destructor_reward_points = 60) * $USER['achievements_misc_destructor'];
+		$AchPoints += ($moons_reward_points = 50) * $USER['achievements_misc_moons'];
+		$AchPoints += ($hostal_reward_points = 40) * $USER['achievements_misc_hostal'];
+		$AchPoints += ($expe_reward_points = 50) * $USER['achievements_misc_expe'];
+		$AchPoints += ($seeker_reward_points = 20) * $USER['achievements_misc_seeker'];
+		$AchPoints += ($upgrades_reward_points = 25) * $USER['achievements_misc_upgrades'];
+		$AchPoints += ($integrator_reward_points = 50) * $USER['achievements_misc_integrator'];
+		$AchPoints += ($small_reward_points = 15) * $USER['achievements_fleets_small'];
+		$AchPoints += ($support_reward_points = 18) * $USER['achievements_fleets_support'];
+		$AchPoints += ($battle_reward_points = 25) * $USER['achievements_fleets_battle'];
+		$AchPoints += ($destruction_reward_points = 30) * $USER['achievements_fleets_destruction'];
+		$AchPoints += ($seige_reward_points = 37) * $USER['achievements_fleets_seige'];
+		$AchPoints += ($heavy_reward_points = 42) * $USER['achievements_fleets_heavy'];
+		$AchPoints += ($imperial_reward_points = 47) * $USER['achievements_fleets_imperial'];
+		$AchPoints += ($spy_reward_points = 8) * $USER['achievements_tech_spy'];
+		$AchPoints += ($hacker_reward_points = 11) * $USER['achievements_tech_hacker'];
+		$AchPoints += ($invincible_reward_points = 9) * $USER['achievements_tech_invincible'];
+		$AchPoints += ($expedition_reward_points = 15) * $USER['achievements_tech_expedition'];
+		$AchPoints += ($graviton_reward_points = 40) * $USER['achievements_tech_graviton'];
+		$AchPoints += ($power_reward_points = 25) * $USER['achievements_tech_power'];
+		$AchPoints += ($energy_reward_points = 32) * $USER['achievements_tech_energy'];
+		$AchPoints += ($brotherhood_reward_points = 10) * $USER['achievements_tech_brotherhood'];
+		$AchPoints += ($speed_reward_points = 20) * $USER['achievements_tech_speed'];
+		$AchPoints += ($geologist_reward_points = 10) * $USER['achievements_tech_geologist'];
+		
+		$QryUpdateAch = "UPDATE ".USERS." SET ach_points_total = '". $AchPoints ."' WHERE id = '". $USER['id'] ."';";
+		$GLOBALS['DATABASE']->query($QryUpdateAch);
+	// Fim	
+	
     switch($status){
 	case '':
 	$peace_reward_am = 47;
@@ -46,6 +101,7 @@ class ShowAchievementsPage extends AbstractPage
 	'next_points_combat' => $combat_reward_points + ($USER['achievement_combat_level'] * $combat_reward_points),
 	'next_am_peace' => $peace_reward_am + ($USER['achievement_peace_level'] * $peace_reward_am),
 	'next_am_combat' => $combat_reward_am + ($USER['achievement_combat_level'] * $combat_reward_am),
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.default.tpl');
 	break;
@@ -75,6 +131,7 @@ class ShowAchievementsPage extends AbstractPage
 	'next_points_combat' => $combat_reward_points + ($USER['achievement_combat_level'] * $combat_reward_points),
 	'next_am_peace' => $peace_reward_am + ($USER['achievement_peace_level'] * $peace_reward_am),
 	'next_am_combat' => $combat_reward_am + ($USER['achievement_combat_level'] * $combat_reward_am),
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.general.tpl');
 	break;
@@ -107,6 +164,7 @@ class ShowAchievementsPage extends AbstractPage
 	'achievement_next_require_attack' => (5 * $USER['achievements_level_attack']) + 15,
 	'achievement_next_require_hostal' => (5 * $USER['achievements_level_hostal']) + 20,
 	'achievement_next_require_expe' => (5 * $USER['achievements_level_expe']) + 20,
+	'ach_points_total' => $AchPoints,
 	
 	));
 	$this->display('page.achievements.daily.tpl');
@@ -188,6 +246,7 @@ class ShowAchievementsPage extends AbstractPage
 	'achievement_next_require_moon' => (2 * $USER['achievement_build_moon']) + 2,
 	'achievement_next_require_phalanx' => (2 * $USER['achievement_build_phalanx']) + 2,
 	'achievement_next_require_terraformer' => (2 * $USER['achievement_build_terraformer']) + 2,
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.build.tpl');
 	break;
@@ -257,6 +316,7 @@ class ShowAchievementsPage extends AbstractPage
 	'heavy_reward_points' => $heavy_reward_points + ($USER['achievement_defense_heavy'] * $heavy_reward_points),
 	'massive_reward_points' => $massive_reward_points + ($USER['achievement_defense_massive'] * $massive_reward_points),
 	'imperial_reward_points' => $imperial_reward_points + ($USER['achievement_defense_imperial'] * $imperial_reward_points),
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.def.tpl');
 	break;
@@ -324,6 +384,7 @@ class ShowAchievementsPage extends AbstractPage
 	'seeker_reward_am' => $seeker_reward_am + ($USER['achievements_misc_seeker'] * $seeker_reward_am),
 	'upgrades_reward_am' => $upgrades_reward_am + ($USER['achievements_misc_upgrades'] * $upgrades_reward_am),
 	'integrator_reward_am' => $integrator_reward_am + ($USER['achievements_misc_integrator'] * $integrator_reward_am),
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.varia.tpl');
 	break;
@@ -391,6 +452,7 @@ class ShowAchievementsPage extends AbstractPage
 	'seige_reward_points' => $seige_reward_points + ($USER['achievements_fleets_seige'] * $seige_reward_points),
 	'heavy_reward_points' => $heavy_reward_points + ($USER['achievements_fleets_heavy'] * $heavy_reward_points),
 	'imperial_reward_points' => $imperial_reward_points + ($USER['achievements_fleets_imperial'] * $imperial_reward_points),
+	'ach_points_total' => $AchPoints,
 	));
 	$this->display('page.achievements.fleet.tpl');
 	break;
@@ -480,7 +542,7 @@ class ShowAchievementsPage extends AbstractPage
 	'brotherhood_reward_points' => $brotherhood_reward_points + ($USER['achievements_tech_brotherhood'] * $brotherhood_reward_points),
 	'speed_reward_points' => $speed_reward_points + ($USER['achievements_tech_speed'] * $speed_reward_points),
 	'geologist_reward_points' => $geologist_reward_points + ($USER['achievements_tech_geologist'] * $geologist_reward_points),
-	
+	'ach_points_total' => $AchPoints,
 	));
 	
 	

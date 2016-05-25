@@ -154,10 +154,9 @@ class statbuilder
 	private function GetAchPoints($USER) 
 	{
 		global $resource, $reslist, $pricelist;
+		
 		$AchCounts = 0;
 		$AchPoints = $USER['ach_points_total'];
-
-		
 		
 		return array('count' => $AchCounts, 'points' => ($AchPoints));
 	}
@@ -449,7 +448,7 @@ class statbuilder
 			$UserPoints[$UserData['id']]['defense']['points']	= $DefensePoints['points'];
 			$UserPoints[$UserData['id']]['techno']['count'] 	= $TechnoPoints['count'];
 			$UserPoints[$UserData['id']]['techno']['points'] 	= $TechnoPoints['points'];
-			$UserPoints[$UserData['id']]['achie']['count'] 	= $AchPoints['count'];
+			$UserPoints[$UserData['id']]['achie']['count'] 		= $AchPoints['count'];
 			$UserPoints[$UserData['id']]['achie']['points'] 	= $AchPoints['points'];
 			
 			$UserPoints[$UserData['id']]['total']['count'] 		= $UserPoints[$UserData['id']]['techno']['count']
@@ -463,8 +462,8 @@ class statbuilder
 																+ $UserPoints[$UserData['id']]['defense']['points'] 
 																+ $UserPoints[$UserData['id']]['fleet']['points']
 																+ $UserPoints[$UserData['id']]['achie']['points'];
-			$UserPoints[$UserData['id']]['achie']['count'] 	= $AchPoints['count'];
-			$UserPoints[$UserData['id']]['achie']['points'] 	= $AchPoints['points'];
+			//$UserPoints[$UserData['id']]['achie']['count'] 		= $AchPoints['count'];
+			//$UserPoints[$UserData['id']]['achie']['points'] 	= $AchPoints['points'];
 
 			if($UserData['ally_id'] != 0)
 			{
@@ -480,7 +479,7 @@ class statbuilder
 					$AllyPoints[$UserData['ally_id']]['techno']['points']	= 0;
 					$AllyPoints[$UserData['ally_id']]['total']['count']		= 0;
 					$AllyPoints[$UserData['ally_id']]['total']['points']	= 0;			
-					$AllyPoints[$UserData['ally_id']]['achie']['count']	= 0;
+					$AllyPoints[$UserData['ally_id']]['achie']['count']		= 0;
 					$AllyPoints[$UserData['ally_id']]['achie']['points']	= 0;
 				}
 			

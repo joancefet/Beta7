@@ -464,7 +464,7 @@ CREATE TABLE IF NOT EXISTS `%PREFIX%cronjobs` (
   `lock` varchar(32) DEFAULT NULL,
   UNIQUE KEY `cronjobID` (`cronjobID`),
   KEY `isActive` (`isActive`,`nextTime`,`lock`,`cronjobID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18;
 
 CREATE TABLE IF NOT EXISTS `%PREFIX%diplo` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -2427,7 +2427,7 @@ CREATE TABLE IF NOT EXISTS `%PREFIX%races` (
   `race_building_construction_time` float NOT NULL DEFAULT '1',  
   `race_defence_construction_time` float NOT NULL DEFAULT '1',  
   UNIQUE KEY `race_id` (`race_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5;
 
 -- Fil the races table with the 4 standard races
 INSERT INTO `%PREFIX%races` (`race_id`, `race_name`, `race_fleet_construction_time`, `race_research_construction_time`, `race_building_construction_time`, `race_defence_construction_time`) VALUES
@@ -2448,7 +2448,7 @@ UPDATE `%PREFIX%vars` SET  `specificRace` =  '1' WHERE  `%PREFIX%vars`.`elementI
 -- Change the validation table so that the race can be filt uppon registration (Thx for reunien for noticing)
 ALTER TABLE `%PREFIX%users_valid` ADD `race` TINYINT UNSIGNED NOT NULL DEFAULT '0' AFTER `language`;
 
---TICK SYSTEM
+-- TICK SYSTEM
 -- Coluna que informa o tick atual
 ALTER TABLE `%PREFIX%config` ADD `tick` INT(11) UNSIGNED NOT NULL DEFAULT '0';
 ALTER TABLE `%PREFIX%config` ADD `tick_last_time` INT(11) NOT NULL DEFAULT '0';
@@ -2524,8 +2524,9 @@ CREATE TABLE IF NOT EXISTS `%PREFIX%ships` (
   `trade_torps` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
   `trade_energy` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
   `cleared_defences` tinytext COLLATE utf8_unicode_ci,
-  `dev_lssd` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `dev_lssd` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`ship_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 -- BOT SYSTEM
 CREATE TABLE IF NOT EXISTS `%PREFIX%bots` (
@@ -2543,7 +2544,7 @@ INSERT INTO `%PREFIX%cronjobs` (`cronjobID`, `name`, `isActive`, `min`, `hours`,
 
 -- ASTEROID EVENT SYSTEM
 INSERT INTO `%PREFIX%cronjobs` (`cronjobID`, `name`, `isActive`, `min`, `hours`, `dom`, `month`, `dow`, `class`, `nextTime`, `lock`) VALUES
-(12, 'Asteroid Cronjon', 1, '25', '9,15,21', '*', '*', '*', 'AsteroidCronJob', 1430551500, NULL);
+(17, 'Asteroid Cronjon', 1, '25', '9,15,21', '*', '*', '*', 'AsteroidCronJob', 1430551500, NULL);
 
 ALTER TABLE `%PREFIX%planets` ADD `der_deuterium` DOUBLE(50,0) UNSIGNED NOT NULL DEFAULT '0' AFTER `der_crystal`;
 

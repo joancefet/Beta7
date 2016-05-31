@@ -223,7 +223,7 @@ qtips('#fildes_band', 'Due to lack of energy, The production of mines is reduced
 			    <div class="required_block  required_smal_text">
            <a href="#" onclick="return Dialog.info({$i.requireID})" class="tooltip" data-tooltip-content="Explore:<br />{$LNG.tech.{$i.requireID}} lvl.  {$i.requireLevel} ">
                     <img src="./styles/theme/gow/gebaeude/{$i.requireID}.{if $i.requireID >=600 && $i.requireID <= 699}jpg{else}gif{/if}" alt="{$LNG.tech.{$i.requireID}}">
-                    <div class="text">{$i.requireLevel}</div>
+                    <div class="text"  style="{if $i.rlevel < $i.requireLevel}color:red; {else}  color:green; {/if}"> {$i.rlevel}/{$i.requireLevel}</div>
                 </a>           
         </div>
 		

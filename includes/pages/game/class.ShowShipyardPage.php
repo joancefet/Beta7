@@ -377,6 +377,11 @@ class ShowShipyardPage extends AbstractPage
 			$GetAll = $GLOBALS['DATABASE']->query("SELECT * FROM `uni1_vars_requriements` WHERE elementID = ".$Element." ;");
 			if($GLOBALS['DATABASE']->numRows($GetAll)>0){
 			while($x = $GLOBALS['DATABASE']->fetch_array($GetAll)){
+				 if($x['requireID'] <=  99){
+            $x['rlevel'] = $PLANET[$resource[$x['requireID']]];
+            }else{
+                $x['rlevel'] =  $USER[$resource[$x['requireID']]];
+            } 
 			$AllTech[] = $x;
 			}
 			}
@@ -425,6 +430,11 @@ class ShowShipyardPage extends AbstractPage
 			$GetAll = $GLOBALS['DATABASE']->query("SELECT * FROM `uni1_vars_requriements` WHERE elementID = ".$Element." ;");
 			if($GLOBALS['DATABASE']->numRows($GetAll)>0){
 			while($x = $GLOBALS['DATABASE']->fetch_array($GetAll)){
+				 if($x['requireID'] <=  99){
+            $x['rlevel'] = $PLANET[$resource[$x['requireID']]];
+            }else{
+                $x['rlevel'] =  $USER[$resource[$x['requireID']]];
+            } 
 			$AllTech[] = $x;
 			}
 			}
@@ -471,6 +481,11 @@ class ShowShipyardPage extends AbstractPage
 			$GetAll = $GLOBALS['DATABASE']->query("SELECT * FROM `uni1_vars_requriements` WHERE elementID = ".$Element." ;");
 			if($GLOBALS['DATABASE']->numRows($GetAll)>0){
 			while($x = $GLOBALS['DATABASE']->fetch_array($GetAll)){
+				 if($x['requireID'] <=  99){
+            $x['rlevel'] = $PLANET[$resource[$x['requireID']]];
+            }else{
+                $x['rlevel'] =  $USER[$resource[$x['requireID']]];
+            } 
 			$AllTech[] = $x;
 			}
 			}
@@ -516,6 +531,11 @@ class ShowShipyardPage extends AbstractPage
 			$GetAll = $GLOBALS['DATABASE']->query("SELECT * FROM `uni1_vars_requriements` WHERE elementID = ".$Element." ;");
 			if($GLOBALS['DATABASE']->numRows($GetAll)>0){
 			while($x = $GLOBALS['DATABASE']->fetch_array($GetAll)){
+				 if($x['requireID'] <=  99){
+            $x['rlevel'] = $PLANET[$resource[$x['requireID']]];
+            }else{
+                $x['rlevel'] =  $USER[$resource[$x['requireID']]];
+            } 
 			$AllTech[] = $x;
 			}
 			}
